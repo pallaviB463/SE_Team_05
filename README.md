@@ -9,7 +9,7 @@ Used for lab submissions and the semester mini-project.
 |------|-----|
 | Pallavi B | PES1UG24AM906 |
 | Neha Rastogi | PES1UG24AM175 |
-| Madhuri RaviKumar | PES1UG2AM152 |
+| Madhuri RaviKumar | PES1UG24AM152 |
 | Manasvi G V | PES1UG24AM156 |
 
 ## Repository Structure
