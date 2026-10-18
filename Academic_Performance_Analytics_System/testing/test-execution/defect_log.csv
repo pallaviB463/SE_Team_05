@@ -1,0 +1,2 @@
+Defect ID,Test Case ID,Requirement ID,Title,Description,Steps to Reproduce,Expected,Actual,Severity,Priority,Status,Assigned To,Evidence,Reported By,Date Reported
+DEF-001 (example),TC-REC-02,APAS-F-005,Grade 101 accepted,Grade above max saved,"Enter 101 in grade field, submit",Rejected with message,Saved,Major,High,New,Madhuri Ravikumar,screenshot.png,Manasvi G V,
