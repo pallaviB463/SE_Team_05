@@ -1,0 +1,174 @@
+{
+  "_note": "Defect log maintained by the Test Engineer (STP 14.2). Execution defects were found by the automated suite in cycle 1 and retested in cycle 2. Review defects were found during static review of SRS v1.0 and STP v1.0.",
+  "execution_defects": [
+    {
+      "id": "DEF-001",
+      "title": "HTTPS enforcement bypassed by a client-supplied X-Forwarded-Proto header",
+      "module": "Security / API Gateway (apas/__init__.py require_https)",
+      "test_case": "TC-SEC-03.3",
+      "requirements": ["APAS-SR-003"],
+      "severity": "Critical",
+      "priority": "P1",
+      "environment": "APAS reference build, production configuration (ENFORCE_HTTPS=True), Flask test client over plain HTTP",
+      "description": "The HTTPS check treated any request carrying the header X-Forwarded-Proto: https as secure, even when no reverse proxy is deployed. A client on plain HTTP could therefore submit credentials and receive a session token over an unencrypted connection.",
+      "steps": [
+        "Start APAS with the production configuration (no reverse proxy).",
+        "Send POST http://<host>/api/auth/login with a valid username/password and the header X-Forwarded-Proto: https.",
+        "Send GET http://<host>/dashboard with the same header."
+      ],
+      "expected": "POST rejected with HTTP 403 \"HTTPS is required\"; GET redirected to https:// with HTTP 301.",
+      "actual": "POST returned HTTP 200 with a session token over plain HTTP; GET was served (HTTP 302 to /login) instead of being redirected to HTTPS.",
+      "evidence": "results/cycle1/execution_results.json (TC-SEC-03.3: 'spoofed GET -> HTTP 302; spoofed POST login -> HTTP 200')",
+      "root_cause": "require_https() trusted request.headers['X-Forwarded-Proto'] unconditionally.",
+      "resolution": "The header is now honoured only when TRUST_PROXY=True, through werkzeug ProxyFix (x_proto=1). Otherwise only the real connection scheme (request.is_secure) is used.",
+      "found_in": "Cycle 1",
+      "fixed_in": "Cycle 2",
+      "status": "Closed",
+      "lifecycle": ["New", "Assigned", "In Progress", "Fixed", "Retest", "Closed"],
+      "reported_by": "Manasvi G V (Test Engineer)",
+      "assigned_to": "Madhuri Ravikumar (Developer)",
+      "retest": "TC-SEC-03.3 passed in cycle 2 (GET 301, POST 403). Regression: TC-SEC-03.1/03.2 and all suites passed."
+    },
+    {
+      "id": "DEF-002",
+      "title": "Administrator overview dashboard exceeds the 3-second response target under concurrent load",
+      "module": "Reporting and Dashboard Service / Authentication Service (apas/api.py student_overview, apas/security.py current_user)",
+      "test_case": "TC-PERF-01.1",
+      "requirements": ["APAS-NF-001"],
+      "severity": "Major",
+      "priority": "P2",
+      "environment": "APAS on HTTPS (werkzeug threaded server), SQLite, 306 students (~42 000 grade/attendance rows), 10 concurrent clients, MacBook (darwin)",
+      "description": "With 10 concurrent users, the 95th-percentile response time of the administrator overview dashboard (GET /api/dashboard as admin) was 4.19 s, with a maximum of 7.10 s. Overall p95 across all dashboards was 2.74 s, but one dashboard type broke the APAS-NF-001 target.",
+      "steps": [
+        "Seed the test data plus 300 synthetic students (apas.seed.add_synthetic_students).",
+        "Run APAS over HTTPS and log in as admin, fac.rao and aarav.",
+        "Send 300 dashboard requests (6 dashboard types, 50 each) from 10 concurrent threads.",
+        "Compute the 95th percentile per dashboard type."
+      ],
+      "expected": "95th percentile <= 3.0 s for every dashboard type.",
+      "actual": "admin API overview p95 = 4.189 s (max 7.102 s); faculty API overview p95 = 2.994 s (close to the limit).",
+      "evidence": "results/cycle1/performance_results.json",
+      "root_cause": "(1) Every overview request re-analysed all 306 students, even when nothing had changed. (2) Every authenticated request wrote sessions.last_seen, so concurrent read-only requests queued for SQLite's single write lock.",
+      "resolution": "Overview results are cached per database and invalidated through a data_version counter maintained by triggers on students/subjects/grades/attendance/config. The session last_seen timestamp is written at most once per 60 s.",
+      "found_in": "Cycle 1",
+      "fixed_in": "Cycle 2",
+      "status": "Closed",
+      "lifecycle": ["New", "Assigned", "In Progress", "Fixed", "Retest", "Closed"],
+      "reported_by": "Manasvi G V (Test Engineer)",
+      "assigned_to": "Madhuri Ravikumar (Developer)",
+      "retest": "Cycle 2 retest at the team load profile TD-12 (50 concurrent users, stricter than cycle 1): TC-PERF-01.1 overall p95 0.46 s (max 0.54 s); TC-PERF-01.2 with concurrent grade writes p95 0.90 s. New regression test TC-VIS-01.5 confirms the cache is invalidated immediately after a grade change."
+    }
+  ],
+  "test_script_corrections": [
+    {
+      "id": "TS-001",
+      "test_case": "All suites (dry run)",
+      "description": "First dry run: 169 of 189 tests returned HTTP 301 because the test client did not send requests over https:// (werkzeug ignores environ_base['wsgi.url_scheme']). The application behaved correctly by redirecting plain HTTP.",
+      "correction": "Added the https_client() fixture, which defaults base_url to https://localhost. The dry run is not counted as an execution cycle."
+    },
+    {
+      "id": "TS-002",
+      "test_case": "TC-AUD-01.2",
+      "description": "The expected result for an 18-month retention period omitted the 12-months-2-days entry, which is correctly retained because it is younger than 18 months.",
+      "correction": "Expected result corrected to keep 30d, 11m29d, 12m2d and 13m."
+    },
+    {
+      "id": "TS-003",
+      "test_case": "TC-AUD-01.3",
+      "description": "After the expected 'append-only' error, the test's own database connection kept an open transaction. The application's next write timed out on the lock and returned HTTP 500.",
+      "correction": "The test now rolls back after the rejected UPDATE."
+    }
+  ],
+  "review_defects": [
+    {
+      "id": "DOC-001",
+      "title": "Risk and performance thresholds are not specified",
+      "document": "SRS v1.0, APAS-F-009 and APAS-F-014",
+      "severity": "Major", "priority": "P2",
+      "description": "F-009 refers to 'configured thresholds' and F-014 to 'predefined risk criteria' without numeric values, so expected results cannot be derived from the SRS.",
+      "impact": "Testers had to assume values: attendance < 75%, overall performance < 50%, failed subject < 40%; high risk = predicted SGPA < 5.0 or attendance < 65%; medium risk = predicted SGPA < 6.0 or attendance < 75%.",
+      "recommendation": "Add default threshold values and state whether comparisons are strict (<) or inclusive (<=). Boundary tests TC-ANA-03.1 / TC-PRED-02.1 assume strict '<'.",
+      "status": "New", "assigned_to": "Neha Rastogi (QA Lead) / requirement owners"
+    },
+    {
+      "id": "DOC-002",
+      "title": "Assignment submission tracking has no functional requirement or test case",
+      "document": "SRS v1.0 sections 1.2 and 2.2 vs section 4 / RTM",
+      "severity": "Major", "priority": "P2",
+      "description": "Scope (1.2) and Major Product Functions (2.2) include 'Assignment submission and marks tracking', but no requirement from APAS-F-001 to F-015 and no RTM row covers it.",
+      "impact": "This function is untraceable and untested. The current build models only ISA/ESA assessments.",
+      "recommendation": "Either add a functional requirement (e.g. APAS-F-016) with acceptance criteria and a test case, or remove the function from the scope.",
+      "status": "New", "assigned_to": "Pallavi B (Project Lead)"
+    },
+    {
+      "id": "DOC-003",
+      "title": "'Normal operating conditions' for the response-time target are not quantified",
+      "document": "SRS v1.0 APAS-NF-001, STP 5.2",
+      "severity": "Minor", "priority": "P3",
+      "description": "The 3-second target has no defined concurrent-user count, data volume or network conditions.",
+      "impact": "Cycle 1 assumed 10 concurrent users. Cycle 2 uses the team test-data profile TD-12 (50 concurrent users, 306 students), which is still not an SRS-approved figure.",
+      "recommendation": "Define the load profile (e.g. N concurrent users, M students, request mix) in the SRS or STP.",
+      "status": "New", "assigned_to": "Neha Rastogi (QA Lead)"
+    },
+    {
+      "id": "DOC-004",
+      "title": "No acceptance criterion for prediction quality",
+      "document": "SRS v1.0 APAS-F-013, section 6; STP 15.1",
+      "severity": "Minor", "priority": "P3",
+      "description": "F-013 requires predictions to be 'generated and displayed' but sets no accuracy or error bound. The STP correctly forbids inventing one.",
+      "impact": "TC-PRED-01.4 can only report MAE/RMSE/precision/recall, not pass or fail on accuracy.",
+      "recommendation": "Agree a target (e.g. MAE <= 0.5 SGPA on historical data) or record that prediction quality is informational only.",
+      "status": "New", "assigned_to": "Pallavi B (Project Lead)"
+    },
+    {
+      "id": "DOC-005",
+      "title": "RTM maps two different requirements to the same test case TC-SEC-01",
+      "document": "SRS v1.0 section 8 RTM; STP 13.2",
+      "severity": "Minor", "priority": "P3",
+      "description": "APAS-NF-003 (access restricted by role and permission) and APAS-SR-001 (valid credentials required) both map only to TC-SEC-01. NF-003 is about authorisation, which TC-SEC-02 covers.",
+      "impact": "Role-based restriction under NF-003 is not traceable to the RBAC test case.",
+      "recommendation": "Map APAS-NF-003 to TC-SEC-01 and TC-SEC-02 (as done in the execution RTM).",
+      "status": "New", "assigned_to": "Neha Rastogi (QA Lead)"
+    },
+    {
+      "id": "DOC-006",
+      "title": "SRS allows plain HTTP, which contradicts APAS-SR-003",
+      "document": "SRS v1.0 section 3.4 vs APAS-SR-003",
+      "severity": "Minor", "priority": "P3",
+      "description": "Section 3.4 says communication 'shall use HTTP or HTTPS', while SR-003 requires HTTPS with TLS 1.2+ and requires insecure connections to be rejected or redirected.",
+      "impact": "Ambiguous whether HTTP is acceptable anywhere.",
+      "recommendation": "State that HTTP is permitted only in local development environments without real student data.",
+      "status": "New", "assigned_to": "Requirement owners"
+    },
+    {
+      "id": "DOC-007",
+      "title": "Session timeout and account-lockout policy are not specified",
+      "document": "SRS v1.0 APAS-F-003, APAS-SR-001",
+      "severity": "Minor", "priority": "P3",
+      "description": "The SRS requires secure sessions but does not define an idle timeout or a brute-force lockout policy.",
+      "impact": "The test build assumes a 30-minute idle timeout and a 15-minute lockout after 5 failed logins (TC-AUTH-03.3, TC-AUTH-01.6).",
+      "recommendation": "Add explicit values to the SRS security requirements.",
+      "status": "New", "assigned_to": "Requirement owners"
+    },
+    {
+      "id": "DOC-008",
+      "title": "Table text appears cut off in the SRS",
+      "document": "SRS v1.0 section 4.1 (APAS-F-003) and 4.4 (APAS-F-012)",
+      "severity": "Trivial", "priority": "P4",
+      "description": "Text extracted from the 'Comments / Dependencies' column ends mid-word: 'Requires session mana' (F-003) and 'reporting servic' (F-012). This suggests the table cells overflow the page.",
+      "impact": "Readability only.",
+      "recommendation": "Check visually and widen or rewrap the table columns.",
+      "status": "New", "assigned_to": "Document owner"
+    },
+    {
+      "id": "DOC-009",
+      "title": "Inconsistent document metadata",
+      "document": "SRS v1.0 revision history; STP v1.0 section 15.3",
+      "severity": "Trivial", "priority": "P4",
+      "description": "The SRS revision history lists '1.0, 18-08-2025, Instructor, SRS with diagrams embedded' (template leftover), while the document is dated 12-10-2026 by Team 05. The STP approval table says 'To be assigned' although section 9 names the QA Lead (Neha Rastogi) and Project Lead (Pallavi B).",
+      "impact": "Traceability of approvals.",
+      "recommendation": "Remove the template row and fill in the approval table with the assigned names.",
+      "status": "New", "assigned_to": "Neha Rastogi (QA Lead)"
+    }
+  ]
+}

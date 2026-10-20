@@ -1,0 +1,4709 @@
+{
+  "started_at": "2026-10-20T11:11:07+05:30",
+  "finished_at": "2026-10-20T11:13:31+05:30",
+  "environment": {
+    "python": "3.12.0",
+    "flask": "3.1.3",
+    "pytest": "9.1.1",
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "database": "SQLite 3.42.0"
+  },
+  "results": [
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[100-10-S]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "100% -> (10, 'S')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[90-10-S]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "90% -> (10, 'S')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[89.99-9-A]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "89.99% -> (9, 'A')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[80-9-A]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "80% -> (9, 'A')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[79.99-8-B]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "79.99% -> (8, 'B')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[70-8-B]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "70% -> (8, 'B')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[60-7-C]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "60% -> (7, 'C')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[59.99-6-D]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "59.99% -> (6, 'D')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[50-6-D]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "50% -> (6, 'D')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[40-5-E]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "40% -> (5, 'E')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[39.99-0-F]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "39.99% -> (0, 'F')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.1",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_grade_scale_boundaries[0-0-F]",
+      "priority": "High",
+      "test_type": "Unit",
+      "limitation": null,
+      "spec": {
+        "title": "Grade-point scale is applied correctly at every boundary",
+        "objective": "Verify the configured 10-point grading rule at boundary values.",
+        "preconditions": "Scale S>=90, A>=80, B>=70, C>=60, D>=50, E>=40, F<40.",
+        "test_data": "Percentages on and just below each cut-off.",
+        "steps": "1. Call the grade calculation for each percentage.",
+        "expected": "Each percentage maps to the grade point and letter shown in the parameter table."
+      },
+      "actual": [
+        "0% -> (0, 'F')"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:11:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.2",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_overall_performance[PES1UG24AM001]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Overall performance (CGPA and overall %) matches the hand calculation",
+        "objective": "Verify the automatic overall academic performance calculation.",
+        "preconditions": "Seeded grade records for students AM001-AM005.",
+        "test_data": "See EXPECTED table (hand-calculated, credit-weighted).",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "CGPA and overall percentage equal the hand-calculated values to 2 decimals."
+      },
+      "actual": [
+        "PES1UG24AM001: CGPA 9.39 (exp 9.39), overall 86.91% (exp 86.91%)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:09+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.2",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_overall_performance[PES1UG24AM002]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Overall performance (CGPA and overall %) matches the hand calculation",
+        "objective": "Verify the automatic overall academic performance calculation.",
+        "preconditions": "Seeded grade records for students AM001-AM005.",
+        "test_data": "See EXPECTED table (hand-calculated, credit-weighted).",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "CGPA and overall percentage equal the hand-calculated values to 2 decimals."
+      },
+      "actual": [
+        "PES1UG24AM002: CGPA 7.82 (exp 7.82), overall 70.64% (exp 70.64%)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:10+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.2",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_overall_performance[PES1UG24AM003]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Overall performance (CGPA and overall %) matches the hand calculation",
+        "objective": "Verify the automatic overall academic performance calculation.",
+        "preconditions": "Seeded grade records for students AM001-AM005.",
+        "test_data": "See EXPECTED table (hand-calculated, credit-weighted).",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "CGPA and overall percentage equal the hand-calculated values to 2 decimals."
+      },
+      "actual": [
+        "PES1UG24AM003: CGPA 5.52 (exp 5.52), overall 53.73% (exp 53.73%)"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:11:10+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.2",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_overall_performance[PES1UG24AM004]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Overall performance (CGPA and overall %) matches the hand calculation",
+        "objective": "Verify the automatic overall academic performance calculation.",
+        "preconditions": "Seeded grade records for students AM001-AM005.",
+        "test_data": "See EXPECTED table (hand-calculated, credit-weighted).",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "CGPA and overall percentage equal the hand-calculated values to 2 decimals."
+      },
+      "actual": [
+        "PES1UG24AM004: CGPA 6.09 (exp 6.09), overall 53.09% (exp 53.09%)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:10+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.2",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_overall_performance[PES1UG24AM005]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Overall performance (CGPA and overall %) matches the hand calculation",
+        "objective": "Verify the automatic overall academic performance calculation.",
+        "preconditions": "Seeded grade records for students AM001-AM005.",
+        "test_data": "See EXPECTED table (hand-calculated, credit-weighted).",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "CGPA and overall percentage equal the hand-calculated values to 2 decimals."
+      },
+      "actual": [
+        "PES1UG24AM005: CGPA 6.0 (exp 6.0), overall 50.0% (exp 50.0%)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:11+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.3",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_recalculation_after_grade_change",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Performance values are recalculated after a grade update",
+        "objective": "Verify that calculations always reflect the stored grades.",
+        "preconditions": "Ishita (AM004): AM301 60%, AM302 50%, AM303 48%; SGPA 6.09.",
+        "test_data": "AM302 ESA changed 25 -> 40 (AM302 becomes 65% -> C(7)).",
+        "steps": "1. POST the updated AM302 ESA grade as fac.rao.\n2. GET the performance summary.",
+        "expected": "SGPA = (4*7 + 4*7 + 3*5)/11 = 6.45; overall = (240+260+144)/11 = 58.55%."
+      },
+      "actual": [
+        "SGPA 6.45, overall 58.55%"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:11:11+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.4",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_incomplete_records_handled",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Incomplete subject records are reported but excluded from GPA",
+        "objective": "Verify that incomplete academic records are handled appropriately (SRS 2.5).",
+        "preconditions": "Meera (AM006) has no grades.",
+        "test_data": "Only AM301 ISA = 40 entered (ESA missing).",
+        "steps": "1. POST the ISA grade.\n2. GET the performance summary.",
+        "expected": "AM301 status \"incomplete\", no grade letter; CGPA and overall % are null; AM301 listed in incomplete_subjects."
+      },
+      "actual": [
+        "AM301 status=incomplete, grade=None, CGPA=None, incomplete=['AM301']"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:11:12+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-01.5",
+      "requirements": [
+        "APAS-F-007"
+      ],
+      "suite": "analysis",
+      "function": "test_no_records",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "A student with no records produces empty results without errors",
+        "objective": "Verify behaviour when no academic data exists.",
+        "preconditions": "Meera (AM006) has no grades or attendance.",
+        "steps": "1. GET /api/analytics/performance/PES1UG24AM006.",
+        "expected": "HTTP 200 with empty subject/semester lists and null CGPA/attendance; student not flagged."
+      },
+      "actual": [
+        "HTTP 200; subjects=[], CGPA=None, attendance=None, flagged=False"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:12+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-02.1",
+      "requirements": [
+        "APAS-F-008"
+      ],
+      "suite": "analysis",
+      "function": "test_semester_wise_analysis[PES1UG24AM001]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Semester-wise SGPA and percentage match the hand calculation",
+        "objective": "Verify semester-wise performance comparison.",
+        "preconditions": "Three semesters of grades for AM001-AM003.",
+        "test_data": "See EXPECTED table.",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "semesters[] lists semesters 1, 2, 3 with the expected SGPA and percentage."
+      },
+      "actual": [
+        "PES1UG24AM001: SGPA [9.09, 9.36, 9.73], % [84.55, 86.82, 89.36]"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:12+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-02.1",
+      "requirements": [
+        "APAS-F-008"
+      ],
+      "suite": "analysis",
+      "function": "test_semester_wise_analysis[PES1UG24AM002]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Semester-wise SGPA and percentage match the hand calculation",
+        "objective": "Verify semester-wise performance comparison.",
+        "preconditions": "Three semesters of grades for AM001-AM003.",
+        "test_data": "See EXPECTED table.",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "semesters[] lists semesters 1, 2, 3 with the expected SGPA and percentage."
+      },
+      "actual": [
+        "PES1UG24AM002: SGPA [7.73, 7.73, 8.0], % [69.91, 70.55, 71.45]"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:13+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-02.1",
+      "requirements": [
+        "APAS-F-008"
+      ],
+      "suite": "analysis",
+      "function": "test_semester_wise_analysis[PES1UG24AM003]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Semester-wise SGPA and percentage match the hand calculation",
+        "objective": "Verify semester-wise performance comparison.",
+        "preconditions": "Three semesters of grades for AM001-AM003.",
+        "test_data": "See EXPECTED table.",
+        "steps": "1. GET /api/analytics/performance/<student>.",
+        "expected": "semesters[] lists semesters 1, 2, 3 with the expected SGPA and percentage."
+      },
+      "actual": [
+        "PES1UG24AM003: SGPA [7.36, 6.0, 3.18], % [65.73, 55.18, 40.27]"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:13+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-02.2",
+      "requirements": [
+        "APAS-F-008"
+      ],
+      "suite": "analysis",
+      "function": "test_subject_wise_analysis",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Subject-wise results are accurate for every subject",
+        "objective": "Verify subject-wise performance figures.",
+        "preconditions": "Kabir (AM003) seeded with 9 subjects.",
+        "test_data": "Semester 3: AM301 20+22=42% (E,5), AM302 18+17=35% (F,0), AM303 22+23=45% (E,5).",
+        "steps": "1. GET /api/analytics/performance/PES1UG24AM003.",
+        "expected": "9 subjects; semester-3 percentages, grades and grade points as listed."
+      },
+      "actual": [
+        "9 subjects returned; semester 3: {'AM301': (42.0, 'E', 5), 'AM302': (35.0, 'F', 0), 'AM303': (45.0, 'E', 5)}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:14+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-02.3",
+      "requirements": [
+        "APAS-F-008"
+      ],
+      "suite": "analysis",
+      "function": "test_trend_direction",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Performance trends identify improving and declining students",
+        "objective": "Verify that the semester comparison exposes the trend direction.",
+        "preconditions": "Aarav improves every semester; Kabir declines every semester.",
+        "steps": "1. GET /api/analytics/trends/<id> for Aarav and Kabir.",
+        "expected": "Aarav SGPA strictly increasing; Kabir SGPA strictly decreasing."
+      },
+      "actual": [
+        "Aarav [9.09, 9.36, 9.73] (increasing); Kabir [7.36, 6.0, 3.18] (decreasing)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:14+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.1",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_flagged_students_default_thresholds",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Students below default thresholds are flagged",
+        "objective": "Verify identification of low performance / low attendance.",
+        "preconditions": "Default thresholds: attendance 75%, performance 50%; a failed subject is also flagged.",
+        "test_data": "Diya attendance 60%; Kabir failed AM302; Rohan exactly 75% attendance and 50% performance (boundary).",
+        "steps": "1. GET /api/analytics/flagged as fac.rao.",
+        "expected": "Exactly Diya (attendance reasons for AM301-AM303) and Kabir (Failed AM302) are flagged; Rohan is NOT flagged (thresholds are \"below\")."
+      },
+      "actual": [
+        "flagged={'PES1UG24AM002': ['Attendance in AM301 is 60.0% (below 75%)', 'Attendance in AM302 is 60.0% (below 75%)', 'Attendance in AM303 is 60.0% (below 75%)'], 'PES1UG24AM003': ['Failed AM302 (35.0%)']}; Rohan (boundary 75%/50%) not flagged"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:15+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.2",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_flagging_uses_configured_thresholds",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Flagging follows thresholds configured by the administrator",
+        "objective": "Verify that changing the configured thresholds changes the flagged list.",
+        "preconditions": "Default thresholds.",
+        "test_data": "min_attendance_pct 75 -> 55; min_performance_pct 50 -> 55.",
+        "steps": "1. PUT /api/config/thresholds as admin.\n2. GET /api/analytics/flagged.",
+        "expected": "Diya no longer flagged for attendance (60% >= 55%); Kabir (53.73%), Ishita (53.09%) and Rohan (50%) flagged for performance."
+      },
+      "actual": [
+        "thresholds updated (HTTP 200); flagged=['PES1UG24AM003', 'PES1UG24AM004', 'PES1UG24AM005']"
+      ],
+      "duration_s": 0.42,
+      "executed_at": "2026-10-20T11:11:15+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.3",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_invalid_threshold_config[payload0]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid threshold values are rejected",
+        "objective": "Verify validation of threshold configuration.",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Out-of-range, non-numeric and unknown thresholds.",
+        "steps": "1. PUT /api/config/thresholds with the invalid payload.",
+        "expected": "HTTP 400; thresholds unchanged."
+      },
+      "actual": [
+        "{'min_attendance_pct': 101} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:16+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.3",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_invalid_threshold_config[payload1]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid threshold values are rejected",
+        "objective": "Verify validation of threshold configuration.",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Out-of-range, non-numeric and unknown thresholds.",
+        "steps": "1. PUT /api/config/thresholds with the invalid payload.",
+        "expected": "HTTP 400; thresholds unchanged."
+      },
+      "actual": [
+        "{'min_attendance_pct': -1} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:16+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.3",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_invalid_threshold_config[payload2]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid threshold values are rejected",
+        "objective": "Verify validation of threshold configuration.",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Out-of-range, non-numeric and unknown thresholds.",
+        "steps": "1. PUT /api/config/thresholds with the invalid payload.",
+        "expected": "HTTP 400; thresholds unchanged."
+      },
+      "actual": [
+        "{'risk_high_sgpa': 11} -> HTTP 400 'risk_high_sgpa must be a number between 0 and 10'"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:17+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.3",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_invalid_threshold_config[payload3]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid threshold values are rejected",
+        "objective": "Verify validation of threshold configuration.",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Out-of-range, non-numeric and unknown thresholds.",
+        "steps": "1. PUT /api/config/thresholds with the invalid payload.",
+        "expected": "HTTP 400; thresholds unchanged."
+      },
+      "actual": [
+        "{'min_attendance_pct': '75'} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:17+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-ANA-03.3",
+      "requirements": [
+        "APAS-F-009"
+      ],
+      "suite": "analysis",
+      "function": "test_invalid_threshold_config[payload4]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid threshold values are rejected",
+        "objective": "Verify validation of threshold configuration.",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Out-of-range, non-numeric and unknown thresholds.",
+        "steps": "1. PUT /api/config/thresholds with the invalid payload.",
+        "expected": "HTTP 400; thresholds unchanged."
+      },
+      "actual": [
+        "{'unknown_key': 5} -> HTTP 400 'Unknown threshold 'unknown_key''"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:18+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUD-01.1",
+      "requirements": [
+        "APAS-NF-004"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_record_modifications_logged",
+      "priority": "High",
+      "test_type": "Audit",
+      "limitation": null,
+      "spec": {
+        "title": "Every academic record modification is logged with user ID, timestamp and details",
+        "objective": "Verify audit coverage of profile, grade, attendance and configuration changes.",
+        "steps": "1. admin creates and updates a student profile, and changes a threshold.\n2. fac.rao creates a grade, updates it, records and corrects attendance.\n3. GET /api/audit as admin.",
+        "expected": "Entries student.create, student.update, config.update, grade.create, grade.update, attendance.create, attendance.update \u2014 each with user_id, username, ISO timestamp and old/new values."
+      },
+      "actual": [
+        "logged: ['attendance.create', 'attendance.update', 'config.update', 'grade.create', 'grade.update', 'student.create', 'student.update']; grade.update {'assessment': 'ISA', 'new': 35, 'old': 30.0, 'subject_code': 'AM101'}; student.update {'current_semester': {'new': 2, 'old': 1}}"
+      ],
+      "duration_s": 0.431,
+      "executed_at": "2026-10-20T11:12:14+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUD-01.2",
+      "requirements": [
+        "APAS-NF-004"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_audit_retention_minimum_12_months",
+      "priority": "High",
+      "test_type": "Audit",
+      "limitation": null,
+      "spec": {
+        "title": "Audit records are retained for at least 12 months",
+        "objective": "Verify the retention policy and its 12-month minimum.",
+        "test_data": "Entries aged 30 days, 11 months 29 days, 12 months + 2 days, 13 months, 24 months.",
+        "steps": "1. Insert the aged entries.\n2. Run the purge with retention 12 months; check what remains.\n3. Re-insert and run the purge with a mis-configured retention of 6 months.\n4. Run the purge with retention 18 months.",
+        "expected": "Step 2 keeps the 30-day and 11m29d entries and removes the older three; step 3 behaves like 12 months (minimum enforced); step 4 keeps the 13-month entry."
+      },
+      "actual": [],
+      "duration_s": 0.005,
+      "executed_at": "2026-10-20T11:12:14+05:30",
+      "status": "Fail",
+      "failure": "AssertionError: assert ['11m29d', '1... '13m', '30d'] == ['11m29d', '13m', '30d']\n  \n  At index 1 diff: '12m2d' != '13m'\n  Left contains one more item: '30d'\n  Use -v to get more diff"
+    },
+    {
+      "tc_id": "TC-AUD-01.3",
+      "requirements": [
+        "APAS-NF-004"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_audit_log_tamper_protection",
+      "priority": "High",
+      "test_type": "Audit",
+      "limitation": null,
+      "spec": {
+        "title": "Audit records cannot be modified",
+        "objective": "Verify that audit logs are protected against modification (SAD 3.9.6).",
+        "steps": "1. Attempt an UPDATE on audit_log directly in the database.\n2. Attempt PUT and DELETE on /api/audit as admin.",
+        "expected": "Database rejects the UPDATE (\"audit_log is append-only\"); API returns HTTP 405 for both."
+      },
+      "actual": [],
+      "duration_s": 32.362,
+      "executed_at": "2026-10-20T11:12:46+05:30",
+      "status": "Fail",
+      "failure": "AssertionError: {'error': 'An unexpected error occurred', 'status': 500}\nassert 500 == 200\n +  where 500 = <WrapperTestResponse streamed [500 INTERNAL SERVER ERROR]>.status_code"
+    },
+    {
+      "tc_id": "TC-AUD-01.4",
+      "requirements": [
+        "APAS-NF-004"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_audit_log_retrieval",
+      "priority": "High",
+      "test_type": "Audit",
+      "limitation": null,
+      "spec": {
+        "title": "Audit entries can be retrieved and filtered by an administrator",
+        "objective": "Verify that logs can be retrieved for investigation.",
+        "steps": "1. Generate a grade.update entry for PES1UG24AM003.\n2. GET /api/audit?event_type=grade.update&entity=PES1UG24AM003 as admin.",
+        "expected": "Only matching entries are returned, newest first."
+      },
+      "actual": [
+        "1 entry returned: grade.update by fac.rao at 2026-10-20T05:42:47+00:00"
+      ],
+      "duration_s": 0.418,
+      "executed_at": "2026-10-20T11:12:47+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.1",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_valid_login_each_role[admin-admin]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Valid credentials grant access for every role",
+        "objective": "Verify that registered administrator, faculty and student users can log in with valid credentials.",
+        "preconditions": "Active accounts admin, fac.rao and aarav exist in the test data.",
+        "test_data": "Valid username/password pairs from test_data/apas_test_data.json.",
+        "steps": "1. POST /api/auth/login with the valid username and password.\n2. Call GET /api/dashboard with the returned bearer token.",
+        "expected": "Login returns HTTP 200 with a session token and the correct role; dashboard returns HTTP 200."
+      },
+      "actual": [
+        "admin: login HTTP 200, role=admin, token issued (43 chars); dashboard HTTP 200"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:18+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.1",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_valid_login_each_role[fac.rao-faculty]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Valid credentials grant access for every role",
+        "objective": "Verify that registered administrator, faculty and student users can log in with valid credentials.",
+        "preconditions": "Active accounts admin, fac.rao and aarav exist in the test data.",
+        "test_data": "Valid username/password pairs from test_data/apas_test_data.json.",
+        "steps": "1. POST /api/auth/login with the valid username and password.\n2. Call GET /api/dashboard with the returned bearer token.",
+        "expected": "Login returns HTTP 200 with a session token and the correct role; dashboard returns HTTP 200."
+      },
+      "actual": [
+        "fac.rao: login HTTP 200, role=faculty, token issued (43 chars); dashboard HTTP 200"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:18+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.1",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_valid_login_each_role[aarav-student]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Valid credentials grant access for every role",
+        "objective": "Verify that registered administrator, faculty and student users can log in with valid credentials.",
+        "preconditions": "Active accounts admin, fac.rao and aarav exist in the test data.",
+        "test_data": "Valid username/password pairs from test_data/apas_test_data.json.",
+        "steps": "1. POST /api/auth/login with the valid username and password.\n2. Call GET /api/dashboard with the returned bearer token.",
+        "expected": "Login returns HTTP 200 with a session token and the correct role; dashboard returns HTTP 200."
+      },
+      "actual": [
+        "aarav: login HTTP 200, role=student, token issued (43 chars); dashboard HTTP 200"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:19+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.2",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_wrong_password_rejected",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Wrong password is rejected",
+        "objective": "Verify that an incorrect password is rejected.",
+        "preconditions": "Account fac.rao exists.",
+        "test_data": "username=fac.rao, password=WrongPass@1",
+        "steps": "1. POST /api/auth/login with a wrong password.",
+        "expected": "HTTP 401, generic error message, no token issued."
+      },
+      "actual": [
+        "HTTP 401, message='Invalid username or password', no token"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:11:19+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.3",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_unknown_user_same_message",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Unknown username is rejected without revealing whether the account exists",
+        "objective": "Verify that login with a non-registered username fails with the same message as a wrong password.",
+        "preconditions": "No account named ghost.user exists.",
+        "test_data": "username=ghost.user, password=Whatever@123",
+        "steps": "1. POST /api/auth/login with the unknown username.",
+        "expected": "HTTP 401 with the same generic message used for a wrong password."
+      },
+      "actual": [
+        "HTTP 401, message identical to wrong-password case: 'Invalid username or password'"
+      ],
+      "duration_s": 0.212,
+      "executed_at": "2026-10-20T11:11:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.4",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_missing_credentials[payload0]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Missing or malformed credential fields are rejected",
+        "objective": "Verify input validation on the login request.",
+        "preconditions": "None.",
+        "test_data": "Empty body, missing fields, blank strings, wrong JSON types.",
+        "steps": "1. POST /api/auth/login with each malformed payload.",
+        "expected": "HTTP 400 \"Username and password are required\"; no session created."
+      },
+      "actual": [
+        "payload={} -> HTTP 400 'Username and password are required'"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.4",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_missing_credentials[payload1]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Missing or malformed credential fields are rejected",
+        "objective": "Verify input validation on the login request.",
+        "preconditions": "None.",
+        "test_data": "Empty body, missing fields, blank strings, wrong JSON types.",
+        "steps": "1. POST /api/auth/login with each malformed payload.",
+        "expected": "HTTP 400 \"Username and password are required\"; no session created."
+      },
+      "actual": [
+        "payload={'username': 'fac.rao'} -> HTTP 400 'Username and password are required'"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.4",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_missing_credentials[payload2]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Missing or malformed credential fields are rejected",
+        "objective": "Verify input validation on the login request.",
+        "preconditions": "None.",
+        "test_data": "Empty body, missing fields, blank strings, wrong JSON types.",
+        "steps": "1. POST /api/auth/login with each malformed payload.",
+        "expected": "HTTP 400 \"Username and password are required\"; no session created."
+      },
+      "actual": [
+        "payload={'password': 'x'} -> HTTP 400 'Username and password are required'"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.4",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_missing_credentials[payload3]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Missing or malformed credential fields are rejected",
+        "objective": "Verify input validation on the login request.",
+        "preconditions": "None.",
+        "test_data": "Empty body, missing fields, blank strings, wrong JSON types.",
+        "steps": "1. POST /api/auth/login with each malformed payload.",
+        "expected": "HTTP 400 \"Username and password are required\"; no session created."
+      },
+      "actual": [
+        "payload={'username': '', 'password': ''} -> HTTP 400 'Username and password are required'"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.4",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_missing_credentials[payload4]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Missing or malformed credential fields are rejected",
+        "objective": "Verify input validation on the login request.",
+        "preconditions": "None.",
+        "test_data": "Empty body, missing fields, blank strings, wrong JSON types.",
+        "steps": "1. POST /api/auth/login with each malformed payload.",
+        "expected": "HTTP 400 \"Username and password are required\"; no session created."
+      },
+      "actual": [
+        "payload={'username': '  ', 'password': 'x'} -> HTTP 400 'Username and password are required'"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.4",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_missing_credentials[payload5]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Missing or malformed credential fields are rejected",
+        "objective": "Verify input validation on the login request.",
+        "preconditions": "None.",
+        "test_data": "Empty body, missing fields, blank strings, wrong JSON types.",
+        "steps": "1. POST /api/auth/login with each malformed payload.",
+        "expected": "HTTP 400 \"Username and password are required\"; no session created."
+      },
+      "actual": [
+        "payload={'username': 123, 'password': ['x']} -> HTTP 400 'Username and password are required'"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.5",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_inactive_account_rejected",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Deactivated account cannot log in",
+        "objective": "Verify that a deactivated account is rejected even with the correct password.",
+        "preconditions": "Account inactive.user exists with active=false.",
+        "test_data": "username=inactive.user with its correct password.",
+        "steps": "1. POST /api/auth/login with the correct credentials of the inactive account.",
+        "expected": "HTTP 401 with the generic error message."
+      },
+      "actual": [
+        "HTTP 401 'Invalid username or password'"
+      ],
+      "duration_s": 0.002,
+      "executed_at": "2026-10-20T11:11:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.6",
+      "requirements": [
+        "APAS-F-001",
+        "APAS-SR-001"
+      ],
+      "suite": "auth",
+      "function": "test_lockout_after_repeated_failures",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Account is temporarily locked after 5 consecutive failed attempts",
+        "objective": "Verify brute-force protection on the login service.",
+        "preconditions": "Account diya exists and is unlocked.",
+        "test_data": "5 wrong passwords followed by the correct password.",
+        "steps": "1. POST /api/auth/login five times with a wrong password.\n2. POST /api/auth/login with the correct password.",
+        "expected": "The 6th attempt (correct password) is rejected with HTTP 401 and a lockout message."
+      },
+      "actual": [
+        "After 5 failures, correct password -> HTTP 401 'Account temporarily locked after repeated failed attempts. Try again later.'"
+      ],
+      "duration_s": 1.038,
+      "executed_at": "2026-10-20T11:11:22+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.7",
+      "requirements": [
+        "APAS-F-001"
+      ],
+      "suite": "auth",
+      "function": "test_web_login_form",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Web login form accepts valid and rejects invalid credentials",
+        "objective": "Verify login through the browser interface.",
+        "preconditions": "Account aarav exists.",
+        "test_data": "aarav / valid password; aarav / wrong password.",
+        "steps": "1. POST the login form with wrong credentials.\n2. POST the login form with valid credentials and follow the redirect.",
+        "expected": "Wrong credentials re-display the form with an error (HTTP 401); valid credentials redirect to /dashboard and set an HttpOnly, Secure session cookie."
+      },
+      "actual": [
+        "invalid -> HTTP 401 with alert; valid -> 302 to /dashboard, cookie flags: HttpOnly, Secure, SameSite=Lax; dashboard HTTP 200"
+      ],
+      "duration_s": 0.435,
+      "executed_at": "2026-10-20T11:11:23+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.8",
+      "requirements": [
+        "APAS-F-001",
+        "APAS-SR-001"
+      ],
+      "suite": "auth",
+      "function": "test_sql_injection_login[' OR '1'='1]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "SQL injection in the username field does not bypass authentication",
+        "objective": "Verify that injection strings are treated as data.",
+        "preconditions": "None.",
+        "test_data": "Classic SQL injection payloads in the username field.",
+        "steps": "1. POST /api/auth/login with the injection payload and any password.\n2. Check that the users table is intact.",
+        "expected": "HTTP 401; users table still contains all accounts."
+      },
+      "actual": [
+        "'' OR '1'='1' -> HTTP 401; users table intact (9 rows)"
+      ],
+      "duration_s": 0.206,
+      "executed_at": "2026-10-20T11:11:23+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.8",
+      "requirements": [
+        "APAS-F-001",
+        "APAS-SR-001"
+      ],
+      "suite": "auth",
+      "function": "test_sql_injection_login[admin'--]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "SQL injection in the username field does not bypass authentication",
+        "objective": "Verify that injection strings are treated as data.",
+        "preconditions": "None.",
+        "test_data": "Classic SQL injection payloads in the username field.",
+        "steps": "1. POST /api/auth/login with the injection payload and any password.\n2. Check that the users table is intact.",
+        "expected": "HTTP 401; users table still contains all accounts."
+      },
+      "actual": [
+        "'admin'--' -> HTTP 401; users table intact (9 rows)"
+      ],
+      "duration_s": 0.206,
+      "executed_at": "2026-10-20T11:11:24+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.8",
+      "requirements": [
+        "APAS-F-001",
+        "APAS-SR-001"
+      ],
+      "suite": "auth",
+      "function": "test_sql_injection_login[admin\" OR \"\"=\"]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "SQL injection in the username field does not bypass authentication",
+        "objective": "Verify that injection strings are treated as data.",
+        "preconditions": "None.",
+        "test_data": "Classic SQL injection payloads in the username field.",
+        "steps": "1. POST /api/auth/login with the injection payload and any password.\n2. Check that the users table is intact.",
+        "expected": "HTTP 401; users table still contains all accounts."
+      },
+      "actual": [
+        "'admin\" OR \"\"=\"' -> HTTP 401; users table intact (9 rows)"
+      ],
+      "duration_s": 0.207,
+      "executed_at": "2026-10-20T11:11:24+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-01.8",
+      "requirements": [
+        "APAS-F-001",
+        "APAS-SR-001"
+      ],
+      "suite": "auth",
+      "function": "test_sql_injection_login[fac.rao; DROP TABLE users]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "SQL injection in the username field does not bypass authentication",
+        "objective": "Verify that injection strings are treated as data.",
+        "preconditions": "None.",
+        "test_data": "Classic SQL injection payloads in the username field.",
+        "steps": "1. POST /api/auth/login with the injection payload and any password.\n2. Check that the users table is intact.",
+        "expected": "HTTP 401; users table still contains all accounts."
+      },
+      "actual": [
+        "'fac.rao; DROP TABLE users' -> HTTP 401; users table intact (9 rows)"
+      ],
+      "duration_s": 0.207,
+      "executed_at": "2026-10-20T11:11:25+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.1",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_role_specific_dashboards",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Each role receives a role-appropriate dashboard",
+        "objective": "Verify that the dashboard content depends on the authenticated role.",
+        "preconditions": "admin, fac.rao and aarav accounts exist.",
+        "steps": "1. GET /api/dashboard as admin, faculty and student.",
+        "expected": "Admin sees institution totals; faculty sees assigned subjects and student list; student sees only their own profile and results."
+      },
+      "actual": [
+        "admin totals={'faculty': 3, 'students': 6, 'users': 9}; faculty subjects=['AM101', 'AM102', 'AM201', 'AM202', 'AM301', 'AM302']; student sees only PES1UG24AM001"
+      ],
+      "duration_s": 0.628,
+      "executed_at": "2026-10-20T11:11:26+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[admin-post-/api/students-new-201]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "admin POST /api/students -> HTTP 201 (expected 201)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:26+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[fac.rao-post-/api/students-new-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "fac.rao POST /api/students -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:11:26+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-post-/api/students-new-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav POST /api/students -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:27+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[fac.rao-post-/api/students/PES1UG24AM006/grades-grade-201]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "fac.rao POST /api/students/PES1UG24AM006/grades -> HTTP 201 (expected 201)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:27+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[admin-post-/api/students/PES1UG24AM006/grades-grade-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "admin POST /api/students/PES1UG24AM006/grades -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.229,
+      "executed_at": "2026-10-20T11:11:28+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-post-/api/students/PES1UG24AM006/grades-grade-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav POST /api/students/PES1UG24AM006/grades -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:28+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[fac.rao-post-/api/students/PES1UG24AM006/attendance-att-201]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "fac.rao POST /api/students/PES1UG24AM006/attendance -> HTTP 201 (expected 201)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:29+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-post-/api/students/PES1UG24AM006/attendance-att-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav POST /api/students/PES1UG24AM006/attendance -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:29+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[admin-get-/api/audit-None-200]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "admin GET /api/audit -> HTTP 200 (expected 200)"
+      ],
+      "duration_s": 0.207,
+      "executed_at": "2026-10-20T11:11:29+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[fac.rao-get-/api/audit-None-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "fac.rao GET /api/audit -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:11:30+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-get-/api/audit-None-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav GET /api/audit -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:30+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[admin-put-/api/config/thresholds-cfg-200]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "admin PUT /api/config/thresholds -> HTTP 200 (expected 200)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:31+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[fac.rao-put-/api/config/thresholds-cfg-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "fac.rao PUT /api/config/thresholds -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:31+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[fac.rao-get-/api/analytics/at-risk-None-200]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "fac.rao GET /api/analytics/at-risk -> HTTP 200 (expected 200)"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:32+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-get-/api/analytics/at-risk-None-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav GET /api/analytics/at-risk -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:32+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-get-/api/analytics/flagged-None-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav GET /api/analytics/flagged -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:11:32+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-02.2",
+      "requirements": [
+        "APAS-F-002"
+      ],
+      "suite": "auth",
+      "function": "test_function_permission_matrix[aarav-get-/api/students-None-403]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Users can access only the functions permitted for their role",
+        "objective": "Verify the role/function permission matrix defined in SAD 3.9.2.",
+        "preconditions": "admin, fac.rao (assigned AM301) and aarav accounts exist.",
+        "test_data": "One request per (role, function) pair; see parameter table.",
+        "steps": "1. Authenticate as the role.\n2. Call the function endpoint.",
+        "expected": "Permitted pairs succeed (200/201); all others return HTTP 403."
+      },
+      "actual": [
+        "aarav GET /api/students -> HTTP 403 (expected 403)"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:33+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-03.1",
+      "requirements": [
+        "APAS-F-003"
+      ],
+      "suite": "auth",
+      "function": "test_api_logout_invalidates_token",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Logout terminates the session token",
+        "objective": "Verify that a token cannot be reused after logout.",
+        "preconditions": "fac.rao is logged in.",
+        "steps": "1. GET /api/dashboard with the token (expect 200).\n2. POST /api/auth/logout.\n3. GET /api/dashboard again with the same token.",
+        "expected": "Step 3 returns HTTP 401 \"Authentication required\"."
+      },
+      "actual": [
+        "before logout 200; logout 200; reuse of token -> HTTP 401"
+      ],
+      "duration_s": 0.213,
+      "executed_at": "2026-10-20T11:11:33+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-03.2",
+      "requirements": [
+        "APAS-F-003"
+      ],
+      "suite": "auth",
+      "function": "test_web_logout_blocks_protected_pages",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Browser logout clears the session and protected pages require login again",
+        "objective": "Verify logout from the web interface.",
+        "preconditions": "aarav logged in through the login form.",
+        "steps": "1. Open /dashboard (expect 200, Cache-Control: no-store).\n2. Submit the Log out form.\n3. Open /dashboard again.",
+        "expected": "After logout the session cookie is cleared and /dashboard redirects to /login."
+      },
+      "actual": [
+        "dashboard 200 (no-store); logout -> 302 /login; dashboard afterwards -> 302 /login"
+      ],
+      "duration_s": 0.227,
+      "executed_at": "2026-10-20T11:11:34+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-03.3",
+      "requirements": [
+        "APAS-F-003"
+      ],
+      "suite": "auth",
+      "function": "test_idle_session_expires",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Idle sessions expire after 30 minutes",
+        "objective": "Verify automatic session termination after inactivity.",
+        "preconditions": "fac.rao is logged in.",
+        "test_data": "Session last activity set to 31 minutes ago.",
+        "steps": "1. Set sessions.last_seen to now - 31 minutes.\n2. GET /api/dashboard with the token.",
+        "expected": "HTTP 401; the expired session is removed."
+      },
+      "actual": [
+        "after 31 min idle -> HTTP 401; sessions remaining=0"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:11:34+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-AUTH-03.4",
+      "requirements": [
+        "APAS-F-003"
+      ],
+      "suite": "auth",
+      "function": "test_logout_requires_session",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Logout without a session is rejected",
+        "objective": "Verify that logout cannot be called anonymously.",
+        "steps": "1. POST /api/auth/logout without a token.",
+        "expected": "HTTP 401."
+      },
+      "actual": [
+        "HTTP 401"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:11:34+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PERF-01.1",
+      "requirements": [
+        "APAS-NF-001"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_dashboard_response_time",
+      "priority": "High",
+      "test_type": "Performance",
+      "limitation": "'Normal operating conditions' are not quantified in the SRS; assumed 10 concurrent users and a cohort of 306 students on a single developer laptop. Repeat on the deployment infrastructure.",
+      "spec": {
+        "title": "Dashboards load within 3 seconds for at least 95% of requests",
+        "objective": "Measure dashboard response time under normal load.",
+        "preconditions": "Seeded data plus 300 synthetic students (306 total, ~42 000 grade/attendance rows); APAS on a real HTTPS socket.",
+        "test_data": "300 requests, 10 concurrent clients, mix of admin/faculty overview dashboards, student dashboards and HTML dashboards.",
+        "steps": "1. Add 300 synthetic students to the database.\n2. Start the HTTPS server and log in as admin, fac.rao and aarav.\n3. Send 300 dashboard requests from 10 worker threads; time each request end-to-end.\n4. Compute the 95th-percentile response time overall and per dashboard type.",
+        "expected": "All requests HTTP 200; 95th percentile <= 3.0 s overall and for every dashboard type."
+      },
+      "actual": [],
+      "duration_s": 30.041,
+      "executed_at": "2026-10-20T11:12:09+05:30",
+      "status": "Fail",
+      "failure": "assert False\n +  where False = all(<generator object test_dashboard_response_time.<locals>.<genexpr> at 0x106f75560>)"
+    },
+    {
+      "tc_id": "TC-PRED-01.1",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_for_students_with_history[PES1UG24AM001-10.0-improving-medium]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Predictions are generated for students with sufficient history",
+        "objective": "Verify predicted SGPA, trend and confidence against the hand calculation.",
+        "preconditions": "Three completed semesters for AM001-AM003; fac.rao logged in.",
+        "test_data": "Expected values in the parameter table (Aarav's prediction is clipped at the 10.0 maximum).",
+        "steps": "1. GET /api/analytics/predictions/<student>.",
+        "expected": "status \"ok\", predicted semester 4, predicted SGPA/trend/confidence as expected."
+      },
+      "actual": [
+        "PES1UG24AM001: predicted SGPA 10.0 (exp 10.0), trend improving, confidence medium"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:49+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.1",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_for_students_with_history[PES1UG24AM002-8.09-improving-medium]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Predictions are generated for students with sufficient history",
+        "objective": "Verify predicted SGPA, trend and confidence against the hand calculation.",
+        "preconditions": "Three completed semesters for AM001-AM003; fac.rao logged in.",
+        "test_data": "Expected values in the parameter table (Aarav's prediction is clipped at the 10.0 maximum).",
+        "steps": "1. GET /api/analytics/predictions/<student>.",
+        "expected": "status \"ok\", predicted semester 4, predicted SGPA/trend/confidence as expected."
+      },
+      "actual": [
+        "PES1UG24AM002: predicted SGPA 8.09 (exp 8.09), trend improving, confidence medium"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:49+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.1",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_for_students_with_history[PES1UG24AM003-1.33-declining-medium]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Predictions are generated for students with sufficient history",
+        "objective": "Verify predicted SGPA, trend and confidence against the hand calculation.",
+        "preconditions": "Three completed semesters for AM001-AM003; fac.rao logged in.",
+        "test_data": "Expected values in the parameter table (Aarav's prediction is clipped at the 10.0 maximum).",
+        "steps": "1. GET /api/analytics/predictions/<student>.",
+        "expected": "status \"ok\", predicted semester 4, predicted SGPA/trend/confidence as expected."
+      },
+      "actual": [
+        "PES1UG24AM003: predicted SGPA 1.33 (exp 1.33), trend declining, confidence medium"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:49+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.2",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_insufficient_history[PES1UG24AM004]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Students without sufficient history get an explicit 'insufficient data' result",
+        "objective": "Verify that no prediction is fabricated when history is insufficient.",
+        "preconditions": "AM004/AM005 have one semester; AM006 has none.",
+        "steps": "1. GET /api/analytics/predictions/<student>.",
+        "expected": "status \"insufficient_data\", predicted_sgpa null, explanatory message."
+      },
+      "actual": [
+        "PES1UG24AM004: status=insufficient_data, message='At least 2 completed semesters are required for a prediction.'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:50+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.2",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_insufficient_history[PES1UG24AM005]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Students without sufficient history get an explicit 'insufficient data' result",
+        "objective": "Verify that no prediction is fabricated when history is insufficient.",
+        "preconditions": "AM004/AM005 have one semester; AM006 has none.",
+        "steps": "1. GET /api/analytics/predictions/<student>.",
+        "expected": "status \"insufficient_data\", predicted_sgpa null, explanatory message."
+      },
+      "actual": [
+        "PES1UG24AM005: status=insufficient_data, message='At least 2 completed semesters are required for a prediction.'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:50+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.2",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_insufficient_history[PES1UG24AM006]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Students without sufficient history get an explicit 'insufficient data' result",
+        "objective": "Verify that no prediction is fabricated when history is insufficient.",
+        "preconditions": "AM004/AM005 have one semester; AM006 has none.",
+        "steps": "1. GET /api/analytics/predictions/<student>.",
+        "expected": "status \"insufficient_data\", predicted_sgpa null, explanatory message."
+      },
+      "actual": [
+        "PES1UG24AM006: status=insufficient_data, message='At least 2 completed semesters are required for a prediction.'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:12:51+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.3",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_access",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Only faculty and administrators can retrieve predictions",
+        "objective": "Verify role restrictions on predictions (SRS stakeholders: Faculty, Administrator).",
+        "steps": "1. GET /api/analytics/predictions/PES1UG24AM001 as aarav (own record) and as fac.rao.",
+        "expected": "Student -> 403; faculty -> 200."
+      },
+      "actual": [
+        "student -> 403; faculty -> 200"
+      ],
+      "duration_s": 0.417,
+      "executed_at": "2026-10-20T11:12:51+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-01.4",
+      "requirements": [
+        "APAS-F-013"
+      ],
+      "suite": "prediction",
+      "function": "test_prediction_backtest",
+      "priority": "High",
+      "test_type": "Predictive Evaluation",
+      "limitation": "Evaluation uses a synthetic cohort; results describe the method's behaviour, not real-world accuracy. No accuracy threshold is asserted because the SRS does not define one (STP 15.1).",
+      "spec": {
+        "title": "Back-test the prediction method on a synthetic cohort",
+        "objective": "Evaluate prediction error and risk classification using hold-out data.",
+        "preconditions": "300 synthetic students with 3 semesters of grades (seed 2026).",
+        "test_data": "Semesters 1-2 used as history; actual semester-3 SGPA held out.",
+        "steps": "1. Generate the synthetic cohort.\n2. Predict semester-3 SGPA from semesters 1-2 for each student.\n3. Compare with the actual semester-3 SGPA; classify \"at risk\" as SGPA < 6.0.",
+        "expected": "A prediction is produced for 100% of eligible students, every prediction lies in [0, 10]; MAE, RMSE, precision and recall are recorded in results/prediction_evaluation.json."
+      },
+      "actual": [
+        "300/300 predictions; MAE 0.858, RMSE 1.39; risk precision 0.814, recall 0.775, accuracy 0.863"
+      ],
+      "duration_s": 2.108,
+      "executed_at": "2026-10-20T11:12:54+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-02.1",
+      "requirements": [
+        "APAS-F-014"
+      ],
+      "suite": "prediction",
+      "function": "test_at_risk_list",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Students meeting the risk criteria appear in the academic risk list",
+        "objective": "Verify at-risk classification with default risk criteria.",
+        "preconditions": "Default criteria: high if predicted SGPA < 5 or attendance < 65%; medium if predicted SGPA < 6 or attendance < 75%.",
+        "test_data": "Kabir predicted 1.33 (high); Diya attendance 60% (high); Aarav, Ishita, Rohan (75% boundary), Meera low.",
+        "steps": "1. GET /api/analytics/at-risk as fac.rao.",
+        "expected": "Exactly Diya and Kabir, both \"high\", with their risk factors; Rohan at exactly 75% is not listed."
+      },
+      "actual": [
+        "at-risk={'PES1UG24AM002': ('high', ['Attendance 60.0% below 65%']), 'PES1UG24AM003': ('high', ['Predicted SGPA 1.33 below 5', 'SGPA trend is declining'])}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:54+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-02.2",
+      "requirements": [
+        "APAS-F-014"
+      ],
+      "suite": "prediction",
+      "function": "test_risk_criteria_configurable",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Changing the predefined risk criteria changes the classification",
+        "objective": "Verify that risk levels follow the configured criteria.",
+        "test_data": "risk_high_attendance_pct 65 -> 55 (Diya 60% now medium); risk_medium_sgpa 6 -> 8.5 (Diya predicted 8.09 -> medium).",
+        "steps": "1. PUT /api/config/thresholds as admin.\n2. GET /api/analytics/at-risk.",
+        "expected": "Diya listed as \"medium\"; Kabir still \"high\"."
+      },
+      "actual": [
+        "risk list (ordered high->medium) = [('PES1UG24AM003', 'high'), ('PES1UG24AM002', 'medium')]"
+      ],
+      "duration_s": 0.418,
+      "executed_at": "2026-10-20T11:12:55+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-03.1",
+      "requirements": [
+        "APAS-F-015"
+      ],
+      "suite": "prediction",
+      "function": "test_insights_for_weak_student",
+      "priority": "Medium",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Recommendations address the identified weaknesses and risk factors",
+        "objective": "Verify that insights are relevant to the student's weaknesses.",
+        "preconditions": "Kabir: AM301 42%, AM302 35% (failed), AM303 45%, declining SGPA, predicted 1.33.",
+        "steps": "1. GET /api/analytics/insights/PES1UG24AM003 as fac.rao.",
+        "expected": "critical recommendation for AM302; academic recommendations for AM301 and AM303; one trend and one risk recommendation; no attendance recommendation (80%)."
+      },
+      "actual": [
+        "5 recommendations: [('academic', 'AM301'), ('academic', 'AM303'), ('critical', 'AM302'), ('risk', ''), ('trend', '')]"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:12:55+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-03.2",
+      "requirements": [
+        "APAS-F-015"
+      ],
+      "suite": "prediction",
+      "function": "test_insights_attendance_and_positive[PES1UG24AM002-expected0]",
+      "priority": "Medium",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Attendance recommendations for low attendance; positive message when on track",
+        "objective": "Verify insight rules for attendance and for students without weaknesses.",
+        "steps": "1. GET /api/analytics/insights for Diya and Aarav.",
+        "expected": "Diya -> one attendance recommendation per subject; Aarav -> a single \"on track\" message."
+      },
+      "actual": [
+        "PES1UG24AM002: ['Attendance in Design and Analysis of Algorithms is 60.0%, below the required 75%. Attend classes regularly.', 'Attendance in Database Management Systems is 60.0%, below the required 75%. Attend classes regularly.', 'Attendance in Software Engineering is 60.0%, below the required 75%. Attend classes regularly.']"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:12:55+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-03.2",
+      "requirements": [
+        "APAS-F-015"
+      ],
+      "suite": "prediction",
+      "function": "test_insights_attendance_and_positive[PES1UG24AM001-expected1]",
+      "priority": "Medium",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Attendance recommendations for low attendance; positive message when on track",
+        "objective": "Verify insight rules for attendance and for students without weaknesses.",
+        "steps": "1. GET /api/analytics/insights for Diya and Aarav.",
+        "expected": "Diya -> one attendance recommendation per subject; Aarav -> a single \"on track\" message."
+      },
+      "actual": [
+        "PES1UG24AM001: ['Performance is on track. Maintain consistent study and attendance.']"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:56+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-PRED-03.3",
+      "requirements": [
+        "APAS-F-015"
+      ],
+      "suite": "prediction",
+      "function": "test_student_sees_own_insights_only",
+      "priority": "Medium",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Students can see their own insights but not another student's",
+        "steps": "1. GET /api/analytics/insights/PES1UG24AM003 as kabir and as aarav.",
+        "expected": "kabir -> 200; aarav -> 403."
+      },
+      "actual": [
+        "own -> 200; other student -> 403"
+      ],
+      "duration_s": 0.43,
+      "executed_at": "2026-10-20T11:12:56+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.1",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_create_and_view_profile",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Administrator creates a student profile and it is stored correctly",
+        "objective": "Verify profile creation and retrieval.",
+        "preconditions": "Logged in as admin; PES1UG24AM007 does not exist.",
+        "test_data": "id=PES1UG24AM007, name=Neel Kapoor, email=neel.kapoor@apas.test, semester=1.",
+        "steps": "1. POST /api/students with the new profile.\n2. GET /api/students/PES1UG24AM007.\n3. Inspect the students table.",
+        "expected": "HTTP 201; GET returns identical field values; one row stored in the database."
+      },
+      "actual": [
+        "create HTTP 201; GET returned {id=PES1UG24AM007, name=Neel Kapoor, email=neel.kapoor@apas.test, program=B.Tech CSE (AI & ML), current_semester=1}; DB row present"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:57+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.2",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_update_profile",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Administrator updates a student profile",
+        "objective": "Verify that profile updates are saved and timestamps change.",
+        "preconditions": "Student PES1UG24AM004 exists (semester 3).",
+        "test_data": "name=\"Ishita R. Rao\", current_semester=4.",
+        "steps": "1. PUT /api/students/PES1UG24AM004 with the changes.\n2. GET the profile again.",
+        "expected": "HTTP 200; new values returned and persisted; updated_at changed; other fields unchanged."
+      },
+      "actual": [
+        "HTTP 200; name 'Ishita Rao' -> 'Ishita R. Rao', semester 3 -> 4; updated_at changed"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:12:57+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[id-]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "id='' -> HTTP 400 {'id': 'is required'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:58+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[id-abc]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "id='abc' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:12:58+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[id-PES 1UG]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "id='PES 1UG' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:12:59+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[id-PES1UG24AM001-XYZ-TOO-LONG]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "id='PES1UG24AM001-XYZ-TOO-LONG' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:12:59+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[id-pes1ug24am007]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "id='pes1ug24am007' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
+      ],
+      "duration_s": 0.207,
+      "executed_at": "2026-10-20T11:12:59+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[current_semester-0]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "current_semester=0 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:00+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[current_semester-9]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "current_semester=9 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:00+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[current_semester--1]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "current_semester=-1 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:01+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[current_semester-3]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "current_semester='3' -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:01+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[current_semester-2.5]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "current_semester=2.5 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:02+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[current_semester-True]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "current_semester=True -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:02+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[email-not-an-email]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "email='not-an-email' -> HTTP 400 {'email': 'must be a valid email address'}"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:02+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[name-]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "name='' -> HTTP 400 {'name': 'is required'}"
+      ],
+      "duration_s": 0.207,
+      "executed_at": "2026-10-20T11:13:03+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[name-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "name='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' -> HTTP 400 {'name': 'must be 1-100 characters'}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:03+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.3",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_invalid_profile_rejected[unexpected-1]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid or incomplete profile data is rejected",
+        "objective": "Verify validation of student profile fields (boundary and invalid values).",
+        "preconditions": "Logged in as admin.",
+        "test_data": "Invalid IDs, semesters outside 1-8, malformed email, empty/over-long name, unknown field.",
+        "steps": "1. POST /api/students with one invalid field.",
+        "expected": "HTTP 400 naming the invalid field; no row is created."
+      },
+      "actual": [
+        "unexpected=1 -> HTTP 400 {'unknown_fields': ['unexpected']}"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:04+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-01.4",
+      "requirements": [
+        "APAS-F-004"
+      ],
+      "suite": "records",
+      "function": "test_duplicate_and_missing_profiles",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Duplicate IDs/emails and unknown students are handled",
+        "objective": "Verify conflict and not-found handling for profiles.",
+        "preconditions": "PES1UG24AM001 exists; PES1UG24AM999 does not.",
+        "steps": "1. POST a profile reusing id PES1UG24AM001.\n2. POST a profile reusing aarav's email.\n3. GET and PUT PES1UG24AM999.\n4. PUT PES1UG24AM001 with a different id.",
+        "expected": "Steps 1-2 HTTP 409; step 3 HTTP 404; step 4 HTTP 400 (ID is immutable)."
+      },
+      "actual": [
+        "duplicate id/email/missing GET/missing PUT/change id -> [409, 409, 404, 404, 400]"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:13:04+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.1",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_enter_grade_and_display",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty enters a valid grade and it is saved and displayed",
+        "objective": "Verify grade entry by an authorised faculty member.",
+        "preconditions": "fac.rao is assigned AM301; PES1UG24AM006 has no grades.",
+        "test_data": "AM301 ISA=42, ESA=45.",
+        "steps": "1. POST /api/students/PES1UG24AM006/grades for ISA and ESA.\n2. GET the grades and the performance summary.",
+        "expected": "HTTP 201 for both; stored scores 42 and 45; AM301 percentage 87.00, grade A."
+      },
+      "actual": [
+        "POST ISA/ESA -> 201/201; stored ISA=42, ESA=45; AM301 = 87.0% grade A"
+      ],
+      "duration_s": 0.214,
+      "executed_at": "2026-10-20T11:13:05+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.2",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_update_grade",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty updates an existing grade",
+        "objective": "Verify grade updates through POST (upsert) and PUT.",
+        "preconditions": "Ishita (PES1UG24AM004) has AM302 ESA=25.",
+        "test_data": "ESA 25 -> 40 (POST), then 40 -> 38 (PUT).",
+        "steps": "1. POST the AM302 ESA grade with score 40.\n2. PUT /api/students/PES1UG24AM004/grades/<id> with score 38.",
+        "expected": "Step 1 HTTP 200 (updated, not duplicated); step 2 HTTP 200; final score 38 with only one ESA row."
+      },
+      "actual": [
+        "upsert -> HTTP 200; PUT -> HTTP 200; final ESA=38.0, rows=1"
+      ],
+      "duration_s": 0.213,
+      "executed_at": "2026-10-20T11:13:05+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.3",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_valid_boundary_scores[0]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Boundary grade values within 0-50 are accepted",
+        "objective": "Verify boundary-value acceptance for assessment scores.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "0, 0.5, 25, 49.5, 50 (max).",
+        "steps": "1. POST an ISA grade with the boundary score.",
+        "expected": "HTTP 201 and the stored score equals the input."
+      },
+      "actual": [
+        "score=0 -> HTTP 201, stored 0.0"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:05+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.3",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_valid_boundary_scores[0.5]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Boundary grade values within 0-50 are accepted",
+        "objective": "Verify boundary-value acceptance for assessment scores.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "0, 0.5, 25, 49.5, 50 (max).",
+        "steps": "1. POST an ISA grade with the boundary score.",
+        "expected": "HTTP 201 and the stored score equals the input."
+      },
+      "actual": [
+        "score=0.5 -> HTTP 201, stored 0.5"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:06+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.3",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_valid_boundary_scores[25]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Boundary grade values within 0-50 are accepted",
+        "objective": "Verify boundary-value acceptance for assessment scores.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "0, 0.5, 25, 49.5, 50 (max).",
+        "steps": "1. POST an ISA grade with the boundary score.",
+        "expected": "HTTP 201 and the stored score equals the input."
+      },
+      "actual": [
+        "score=25 -> HTTP 201, stored 25.0"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:13:06+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.3",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_valid_boundary_scores[49.5]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Boundary grade values within 0-50 are accepted",
+        "objective": "Verify boundary-value acceptance for assessment scores.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "0, 0.5, 25, 49.5, 50 (max).",
+        "steps": "1. POST an ISA grade with the boundary score.",
+        "expected": "HTTP 201 and the stored score equals the input."
+      },
+      "actual": [
+        "score=49.5 -> HTTP 201, stored 49.5"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.3",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_valid_boundary_scores[50]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Boundary grade values within 0-50 are accepted",
+        "objective": "Verify boundary-value acceptance for assessment scores.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "0, 0.5, 25, 49.5, 50 (max).",
+        "steps": "1. POST an ISA grade with the boundary score.",
+        "expected": "HTTP 201 and the stored score equals the input."
+      },
+      "actual": [
+        "score=50 -> HTTP 201, stored 50.0"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:07+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[-1]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=-1 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:08+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[-0.01]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=-0.01 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:08+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[50.01]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=50.01 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:08+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[51]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=51 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:09+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[100]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=100 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:09+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[45]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score='45' -> HTTP 400 'score must be a number'; grade rows unchanged"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:10+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[None]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=None -> HTTP 400 'score must be a number'; grade rows unchanged"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:10+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[True]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score=True -> HTTP 400 'score must be a number'; grade rows unchanged"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:11+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.4",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_invalid_scores_rejected[abc]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid grade values are rejected and nothing is stored",
+        "objective": "Verify that out-of-range and non-numeric grades are rejected.",
+        "preconditions": "fac.rao assigned AM302.",
+        "test_data": "-1, -0.01, 50.01, 51, 100, \"45\", null, true, \"abc\".",
+        "steps": "1. POST an ISA grade with the invalid score.",
+        "expected": "HTTP 400 with a validation message; grade count unchanged."
+      },
+      "actual": [
+        "score='abc' -> HTTP 400 'score must be a number'; grade rows unchanged"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:11+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.5",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_grade_reference_validation[payload0-400]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Grades for unknown subjects or assessments are rejected",
+        "objective": "Verify referential validation of grade entries.",
+        "preconditions": "fac.rao logged in.",
+        "test_data": "Unknown subject XX999, unknown assessment \"Quiz\", missing subject.",
+        "steps": "1. POST the grade.",
+        "expected": "HTTP 400."
+      },
+      "actual": [
+        "{'subject_code': 'XX999', 'assessment': 'ISA', 'score': 10} -> HTTP 400 'subject_code must be an existing subject'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:11+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.5",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_grade_reference_validation[payload1-400]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Grades for unknown subjects or assessments are rejected",
+        "objective": "Verify referential validation of grade entries.",
+        "preconditions": "fac.rao logged in.",
+        "test_data": "Unknown subject XX999, unknown assessment \"Quiz\", missing subject.",
+        "steps": "1. POST the grade.",
+        "expected": "HTTP 400."
+      },
+      "actual": [
+        "{'subject_code': 'AM301', 'assessment': 'Quiz', 'score': 10} -> HTTP 400 'assessment must be one of ['ESA', 'ISA']'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:12+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.5",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_grade_reference_validation[payload2-400]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Grades for unknown subjects or assessments are rejected",
+        "objective": "Verify referential validation of grade entries.",
+        "preconditions": "fac.rao logged in.",
+        "test_data": "Unknown subject XX999, unknown assessment \"Quiz\", missing subject.",
+        "steps": "1. POST the grade.",
+        "expected": "HTTP 400."
+      },
+      "actual": [
+        "{'assessment': 'ISA', 'score': 10} -> HTTP 400 'subject_code must be an existing subject'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:12+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-02.6",
+      "requirements": [
+        "APAS-F-005"
+      ],
+      "suite": "records",
+      "function": "test_grade_unknown_student_and_bad_body",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Grade entry for a non-existent student or with a non-JSON body is rejected",
+        "objective": "Verify error handling for invalid grade requests.",
+        "steps": "1. POST a grade for PES1UG24AM999.\n2. POST plain text instead of JSON.",
+        "expected": "Step 1 HTTP 404; step 2 HTTP 400; no server error."
+      },
+      "actual": [
+        "unknown student -> 404; non-JSON body -> 400"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:13+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.1",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_attendance_percentage_seeded",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Attendance percentage matches recorded attendance",
+        "objective": "Verify the automatic attendance percentage calculation.",
+        "preconditions": "Seeded attendance: Aarav 19/20, Diya 12/20, Rohan 15/20 per subject (3 subjects).",
+        "steps": "1. GET /api/students/<id>/attendance for each student.",
+        "expected": "Aarav 95.00% (57/60), Diya 60.00% (36/60), Rohan 75.00% (45/60), per subject and overall."
+      },
+      "actual": [
+        "{'PES1UG24AM001': '57/60 = 95.0%', 'PES1UG24AM002': '36/60 = 60.0%', 'PES1UG24AM005': '45/60 = 75.0%'}"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:13:13+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.2",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_record_and_correct_attendance",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty records attendance; corrections update the percentage",
+        "objective": "Verify attendance recording, duplicate-date handling and recalculation.",
+        "preconditions": "Meera (PES1UG24AM006) has no attendance; fac.rao assigned AM301.",
+        "test_data": "2026-10-12 present, 10-13 present, 10-14 present, 10-15 absent; then 10-15 corrected to present.",
+        "steps": "1. POST four attendance entries.\n2. POST 2026-10-15 again with status present.",
+        "expected": "After step 1 percentage 75.00% (3/4); step 2 returns HTTP 200 (update, not duplicate) and 100.00% (4/4)."
+      },
+      "actual": [
+        "after 4 entries: 3/4 = 75.0%; correction HTTP 200 -> 4/4 = 100.0%"
+      ],
+      "duration_s": 0.22,
+      "executed_at": "2026-10-20T11:13:14+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[status-Present]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "status='Present' -> HTTP 400 'status must be 'present' or 'absent''"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:14+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[status-P]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "status='P' -> HTTP 400 'status must be 'present' or 'absent''"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:14+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[status-]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "status='' -> HTTP 400 'status must be 'present' or 'absent''"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:15+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[status-late]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "status='late' -> HTTP 400 'status must be 'present' or 'absent''"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:15+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[status-None]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "status=None -> HTTP 400 'status must be 'present' or 'absent''"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:16+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[status-1]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "status=1 -> HTTP 400 'status must be 'present' or 'absent''"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:16+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-2026-13-01]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='2026-13-01' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:16+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-2026-02-30]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='2026-02-30' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:17+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-03-08-2026]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='03-08-2026' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:17+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-2026/08/03]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='2026/08/03' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:18+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:18+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-yesterday]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='yesterday' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:19+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[date-FUTURE]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "date='2026-10-21' -> HTTP 400 'Attendance cannot be recorded for a future date'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:19+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.3",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_invalid_attendance_rejected[subject_code-XX999]",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Invalid attendance entries are rejected",
+        "objective": "Verify validation of attendance status, date and subject.",
+        "preconditions": "fac.rao assigned AM301.",
+        "test_data": "Invalid statuses, malformed/impossible dates, a future date, unknown subject.",
+        "steps": "1. POST the attendance entry with one invalid field.",
+        "expected": "HTTP 400; attendance table unchanged."
+      },
+      "actual": [
+        "subject_code='XX999' -> HTTP 400 'subject_code must be an existing subject'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:19+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REC-03.4",
+      "requirements": [
+        "APAS-F-006"
+      ],
+      "suite": "records",
+      "function": "test_attendance_unassigned_faculty",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty cannot record attendance for a subject they do not teach",
+        "objective": "Verify that only authorised faculty record attendance.",
+        "preconditions": "fac.iyer is assigned AM303 only.",
+        "test_data": "AM301 attendance for PES1UG24AM006.",
+        "steps": "1. POST attendance for AM301 as fac.iyer.",
+        "expected": "HTTP 403; no row stored."
+      },
+      "actual": [
+        "HTTP 403; rows stored=0"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REL-01.1",
+      "requirements": [
+        "APAS-NF-002"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_availability_under_faults",
+      "priority": "High",
+      "test_type": "Reliability",
+      "limitation": "Monthly availability (>= 99%) can only be confirmed by monitoring a deployed instance for a full calendar month (tools/availability_monitor.py). This run covers a short soak test with fault injection.",
+      "spec": {
+        "title": "Service stays available while receiving malformed and hostile requests",
+        "objective": "Estimate availability during a soak test with injected faulty requests.",
+        "preconditions": "APAS on a real HTTPS socket.",
+        "test_data": "400 health probes interleaved with malformed JSON, oversized bodies, unknown routes and invalid methods.",
+        "steps": "1. Start the server.\n2. Send 400 /api/health probes; after every probe send one faulty request.\n3. Availability = successful probes / total probes.",
+        "expected": "Availability >= 99% in the window; faulty requests receive 4xx responses (never 5xx, never a dropped connection)."
+      },
+      "actual": [
+        "400/400 probes OK = 100.00% over 2.9 s; fault responses [400, 401, 404, 405], 5xx/dropped = 0"
+      ],
+      "duration_s": 3.169,
+      "executed_at": "2026-10-20T11:12:13+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REL-01.2",
+      "requirements": [
+        "APAS-NF-002"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_unexpected_error_contained",
+      "priority": "High",
+      "test_type": "Reliability",
+      "limitation": null,
+      "spec": {
+        "title": "An internal failure returns a generic error and the service keeps running",
+        "objective": "Verify graceful handling of unexpected server-side errors (SAD 4.4.1).",
+        "preconditions": "Logged in as fac.rao.",
+        "test_data": "The subjects table is dropped to simulate a database failure.",
+        "steps": "1. Drop the subjects table.\n2. GET /api/analytics/performance/PES1UG24AM001.\n3. GET /api/health.",
+        "expected": "Step 2 HTTP 500 with \"An unexpected error occurred\" and no SQL/stack-trace details; step 3 HTTP 200."
+      },
+      "actual": [
+        "failure -> HTTP 500 {'error': 'An unexpected error occurred', 'status': 500}; health afterwards HTTP 200"
+      ],
+      "duration_s": 0.427,
+      "executed_at": "2026-10-20T11:12:13+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REP-01.1",
+      "requirements": [
+        "APAS-F-012"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_generate_csv_report",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty generates and downloads an accurate CSV report",
+        "objective": "Verify report generation, content accuracy and download headers.",
+        "preconditions": "fac.rao logged in; Aarav records seeded.",
+        "test_data": "student_id=PES1UG24AM001, format=csv.",
+        "steps": "1. POST /api/reports.\n2. Parse the CSV.",
+        "expected": "HTTP 200, text/csv, Content-Disposition attachment named APAS_Report_PES1UG24AM001_<date>.csv; 9 subject rows; CGPA 9.39; overall 86.91; attendance 57/60 = 95.0."
+      },
+      "actual": [
+        "HTTP 200 text/csv; attachment; filename=\"APAS_Report_PES1UG24AM001_2026-10-20.csv\"; 9 subject rows; CGPA 9.39; overall 86.91; attendance ['57', '60', '95.0']"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:11:38+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REP-01.2",
+      "requirements": [
+        "APAS-F-012"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_report_contains_flags_and_json",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Reports include threshold flags and are available as JSON",
+        "objective": "Verify report summaries for a flagged student and JSON format.",
+        "preconditions": "admin logged in; Kabir failed AM302.",
+        "steps": "1. POST /api/reports for Kabir in CSV and JSON formats.",
+        "expected": "CSV \"Flags\" row contains \"Failed AM302 (35.0%)\"; JSON report contains the same CGPA 5.52 and a .json attachment name."
+      },
+      "actual": [
+        "CSV flags='Failed AM302 (35.0%)'; JSON CGPA=5.52"
+      ],
+      "duration_s": 0.212,
+      "executed_at": "2026-10-20T11:11:39+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-REP-01.3",
+      "requirements": [
+        "APAS-F-012"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_report_access_and_validation",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Report requests are validated and restricted to permitted students",
+        "objective": "Verify report authorisation and input validation.",
+        "preconditions": "aarav (student), fac.rao logged in.",
+        "steps": "1. aarav requests own report (no student_id).\n2. aarav requests Kabir's report.\n3. fac.rao requests a report for PES1UG24AM999.\n4. fac.rao requests format \"pdf\".",
+        "expected": "1 -> 200 (own report); 2 -> 403; 3 -> 404; 4 -> 400."
+      },
+      "actual": [
+        "own/other/missing/bad format -> [200, 403, 404, 400]"
+      ],
+      "duration_s": 0.42,
+      "executed_at": "2026-10-20T11:11:39+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-01.1",
+      "requirements": [
+        "APAS-SR-001",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_protected_endpoints_require_authentication",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Every protected endpoint rejects unauthenticated requests",
+        "objective": "Verify that academic information cannot be accessed without valid credentials.",
+        "preconditions": "No session.",
+        "test_data": "All 20 protected API operations (SAD 4.3.1) and the /dashboard page.",
+        "steps": "1. Call each protected operation without a token.\n2. Open /dashboard without a session.",
+        "expected": "Every API call returns HTTP 401 with no academic data; /dashboard redirects to /login."
+      },
+      "actual": [
+        "20 protected API operations -> all HTTP 401; /dashboard -> 302 /login"
+      ],
+      "duration_s": 0.005,
+      "executed_at": "2026-10-20T11:13:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-01.2",
+      "requirements": [
+        "APAS-SR-001",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_forged_tokens_rejected[Bearer invalidtoken]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Forged, malformed or tampered tokens are rejected",
+        "objective": "Verify that only server-issued session tokens grant access.",
+        "test_data": "Random token, empty bearer, HTTP Basic credentials, SQL injection string, a valid token with one character changed.",
+        "steps": "1. GET /api/dashboard with the forged Authorization header.",
+        "expected": "HTTP 401."
+      },
+      "actual": [
+        "Authorization 'Bearer invalidtoken...' -> HTTP 401"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:13:20+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-01.2",
+      "requirements": [
+        "APAS-SR-001",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_forged_tokens_rejected[Bearer ]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Forged, malformed or tampered tokens are rejected",
+        "objective": "Verify that only server-issued session tokens grant access.",
+        "test_data": "Random token, empty bearer, HTTP Basic credentials, SQL injection string, a valid token with one character changed.",
+        "steps": "1. GET /api/dashboard with the forged Authorization header.",
+        "expected": "HTTP 401."
+      },
+      "actual": [
+        "Authorization 'Bearer ...' -> HTTP 401"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:13:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-01.2",
+      "requirements": [
+        "APAS-SR-001",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_forged_tokens_rejected[Basic YWRtaW46QWRtaW5AQVBBUzIwMjY=]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Forged, malformed or tampered tokens are rejected",
+        "objective": "Verify that only server-issued session tokens grant access.",
+        "test_data": "Random token, empty bearer, HTTP Basic credentials, SQL injection string, a valid token with one character changed.",
+        "steps": "1. GET /api/dashboard with the forged Authorization header.",
+        "expected": "HTTP 401."
+      },
+      "actual": [
+        "Authorization 'Basic YWRtaW46QWRtaW5AQV...' -> HTTP 401"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:13:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-01.2",
+      "requirements": [
+        "APAS-SR-001",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_forged_tokens_rejected[Bearer ' OR '1'='1]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Forged, malformed or tampered tokens are rejected",
+        "objective": "Verify that only server-issued session tokens grant access.",
+        "test_data": "Random token, empty bearer, HTTP Basic credentials, SQL injection string, a valid token with one character changed.",
+        "steps": "1. GET /api/dashboard with the forged Authorization header.",
+        "expected": "HTTP 401."
+      },
+      "actual": [
+        "Authorization 'Bearer ' OR '1'='1...' -> HTTP 401"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:13:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-01.2",
+      "requirements": [
+        "APAS-SR-001",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_forged_tokens_rejected[TAMPER]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Forged, malformed or tampered tokens are rejected",
+        "objective": "Verify that only server-issued session tokens grant access.",
+        "test_data": "Random token, empty bearer, HTTP Basic credentials, SQL injection string, a valid token with one character changed.",
+        "steps": "1. GET /api/dashboard with the forged Authorization header.",
+        "expected": "HTTP 401."
+      },
+      "actual": [
+        "Authorization 'Bearer Lx4yevwBa_f9DOm37...' -> HTTP 401"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:21+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[get-/api/students/PES1UG24AM003-None]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "GET /api/students/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:22+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[get-/api/students/PES1UG24AM003/grades-None]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "GET /api/students/PES1UG24AM003/grades as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:22+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[get-/api/students/PES1UG24AM003/attendance-None]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "GET /api/students/PES1UG24AM003/attendance as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:23+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[get-/api/analytics/performance/PES1UG24AM003-None]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "GET /api/analytics/performance/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:23+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[get-/api/analytics/trends/PES1UG24AM003-None]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "GET /api/analytics/trends/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:13:23+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[get-/api/analytics/insights/PES1UG24AM003-None]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "GET /api/analytics/insights/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:24+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.1",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_student_cannot_read_other_student[post-/api/reports-body6]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A student cannot access another student's academic records",
+        "objective": "Verify horizontal access control between students.",
+        "preconditions": "aarav (PES1UG24AM001) logged in.",
+        "test_data": "Requests for Kabir (PES1UG24AM003).",
+        "steps": "1. Call the endpoint for the other student.",
+        "expected": "HTTP 403; the response contains none of Kabir's data."
+      },
+      "actual": [
+        "POST /api/reports as aarav -> HTTP 403, no data leaked"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:24+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.2",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_faculty_limited_to_assigned_subjects",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty cannot change grades of subjects they are not assigned to",
+        "objective": "Verify record-level authorisation for grade changes.",
+        "preconditions": "fac.iyer assigned AM103/AM203/AM303 only. Kabir AM301 ISA = 20.",
+        "test_data": "fac.iyer sets Kabir AM301 ISA to 50 via POST and via PUT.",
+        "steps": "1. POST the grade as fac.iyer.\n2. PUT /api/students/PES1UG24AM003/grades/<id> as fac.iyer.\n3. Read the grade from the database.",
+        "expected": "Both requests HTTP 403; stored score still 20."
+      },
+      "actual": [
+        "POST -> 403, PUT -> 403; stored score still 20.0"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:13:25+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-02.3",
+      "requirements": [
+        "APAS-SR-002"
+      ],
+      "suite": "security",
+      "function": "test_privilege_escalation_attempts",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Students cannot escalate privileges through crafted requests",
+        "objective": "Verify server-side enforcement independent of the UI.",
+        "preconditions": "aarav logged in.",
+        "test_data": "Self-grade change, profile edit, threshold change, audit read.",
+        "steps": "1. aarav POSTs a grade of 50 for himself.\n2. aarav PUTs his own profile.\n3. aarav PUTs thresholds and GETs /api/audit.",
+        "expected": "All HTTP 403; database unchanged."
+      },
+      "actual": [
+        "grade/profile/thresholds/audit -> [403, 403, 403, 403]; profile unchanged ('Aarav Sharma')"
+      ],
+      "duration_s": 0.213,
+      "executed_at": "2026-10-20T11:13:25+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-03.1",
+      "requirements": [
+        "APAS-SR-003"
+      ],
+      "suite": "security",
+      "function": "test_insecure_http_redirected_or_rejected",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Plain-HTTP requests are redirected (GET) or rejected (state-changing)",
+        "objective": "Verify that insecure connections are not served.",
+        "preconditions": "Production configuration (ENFORCE_HTTPS = True).",
+        "steps": "1. GET http://localhost/dashboard.\n2. POST http://localhost/api/auth/login.\n3. GET https://localhost/api/health.",
+        "expected": "Step 1 HTTP 301 to https://; step 2 HTTP 403 \"HTTPS is required\"; step 3 includes Strict-Transport-Security max-age >= 1 year; login cookie has the Secure flag."
+      },
+      "actual": [
+        "HTTP GET -> 301 https://localhost/dashboard; HTTP POST -> 403; HSTS='max-age=31536000; includeSubDomains'; cookie Secure"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:26+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-03.2",
+      "requirements": [
+        "APAS-SR-003"
+      ],
+      "suite": "security",
+      "function": "test_tls_protocol_versions",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": "Executed against the local test server; the deployed environment's TLS configuration must be re-checked (e.g. SSL Labs / testssl.sh) once a hosting platform is chosen (SAD 4.6.1 open issue 3).",
+      "spec": {
+        "title": "Server negotiates TLS 1.2/1.3 and refuses TLS 1.0/1.1",
+        "objective": "Verify the minimum TLS version on a real socket.",
+        "preconditions": "APAS served over HTTPS with make_ssl_context (minimum TLS 1.2), self-signed certificate.",
+        "test_data": "Client handshakes pinned to TLS 1.0, 1.1, 1.2 and 1.3.",
+        "steps": "1. Start the HTTPS server.\n2. Attempt a handshake with each protocol version.",
+        "expected": "TLS 1.2 and 1.3 handshakes succeed; TLS 1.0 and 1.1 handshakes fail."
+      },
+      "actual": [
+        "TLSv1: refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1000)); TLSv1.1: refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1000)); TLSv1.2: accepted (TLSv1.2, ECDHE-RSA-AES256-GCM-SHA384); TLSv1.3: accepted (TLSv1.3, TLS_AES_256_GCM_SHA384)"
+      ],
+      "duration_s": 0.267,
+      "executed_at": "2026-10-20T11:13:26+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-03.3",
+      "requirements": [
+        "APAS-SR-003"
+      ],
+      "suite": "security",
+      "function": "test_spoofed_forwarded_proto_not_trusted",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "A client-supplied X-Forwarded-Proto header cannot bypass HTTPS enforcement",
+        "objective": "Verify that plain-HTTP requests are not accepted just because the client claims HTTPS.",
+        "preconditions": "Production configuration; no reverse proxy configured.",
+        "test_data": "Plain-HTTP requests carrying \"X-Forwarded-Proto: https\".",
+        "steps": "1. GET http://localhost/dashboard with the spoofed header.\n2. POST http://localhost/api/auth/login with the spoofed header and valid credentials.",
+        "expected": "Step 1 HTTP 301 to https://; step 2 HTTP 403 \"HTTPS is required\" (credentials never accepted over plain HTTP)."
+      },
+      "actual": [
+        "spoofed GET -> HTTP 302; spoofed POST login -> HTTP 200"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:26+05:30",
+      "status": "Fail",
+      "failure": "assert (302 == 301)\n +  where 302 = <WrapperTestResponse streamed [302 FOUND]>.status_code"
+    },
+    {
+      "tc_id": "TC-SEC-04.1",
+      "requirements": [
+        "APAS-SR-004"
+      ],
+      "suite": "security",
+      "function": "test_passwords_hashed_not_plaintext",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Passwords are stored as salted PBKDF2 hashes, never in plaintext",
+        "objective": "Verify password storage in the users table and the raw database file.",
+        "preconditions": "9 seeded accounts.",
+        "steps": "1. Read users.password_hash for every account.\n2. Search the raw database file bytes for each plaintext password.",
+        "expected": "Every hash uses pbkdf2:sha256 with >= 600000 iterations and a salt; no hash equals or contains the plaintext; no plaintext password occurs anywhere in the database file."
+      },
+      "actual": [
+        "9 accounts: pbkdf2:sha256:600000, salt length 16, 64-hex digest; no plaintext passwords found in DB file (131072 bytes scanned)"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:13:26+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-04.2",
+      "requirements": [
+        "APAS-SR-004"
+      ],
+      "suite": "security",
+      "function": "test_hash_salting_and_verification",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Identical passwords produce different hashes; verification works",
+        "objective": "Verify per-user salting and correct password verification.",
+        "steps": "1. Hash the same password twice.\n2. Verify the correct and an incorrect password against the hash.",
+        "expected": "The two hashes differ; correct password verifies True; incorrect verifies False."
+      },
+      "actual": [
+        "same password -> 2 different hashes; correct verifies True; case-changed password verifies False"
+      ],
+      "duration_s": 0.818,
+      "executed_at": "2026-10-20T11:13:27+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-04.3",
+      "requirements": [
+        "APAS-SR-004"
+      ],
+      "suite": "security",
+      "function": "test_password_never_returned",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Password hashes are never exposed by the API",
+        "objective": "Verify that no API response contains password data.",
+        "steps": "1. Log in and call dashboard, student and audit endpoints as admin.",
+        "expected": "No response body contains \"password_hash\", \"pbkdf2\" or a plaintext password."
+      },
+      "actual": [
+        "4 responses scanned; no password data found"
+      ],
+      "duration_s": 0.419,
+      "executed_at": "2026-10-20T11:13:28+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-05.1",
+      "requirements": [
+        "APAS-SR-005"
+      ],
+      "suite": "security",
+      "function": "test_login_attempts_logged",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Successful and failed login attempts are logged with user, event type and timestamp",
+        "objective": "Verify security logging of authentication events.",
+        "steps": "1. Log in successfully as fac.rao.\n2. Fail a login for fac.rao (wrong password) and for unknown user \"ghost\".\n3. Read the audit log.",
+        "expected": "Three auth.login entries: success (fac.rao, user id), failure (fac.rao, \"wrong password\"), failure (ghost, \"unknown user\"); each with an ISO-8601 UTC timestamp within 60 s of now."
+      },
+      "actual": [
+        "entries=[('fac.rao', 'success', None), ('fac.rao', 'failure', 'wrong password'), ('ghost', 'failure', 'unknown user')]; timestamps ['2026-10-20T05:43:28+00:00', '2026-10-20T05:43:29+00:00', '2026-10-20T05:43:29+00:00']"
+      ],
+      "duration_s": 0.622,
+      "executed_at": "2026-10-20T11:13:29+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-05.2",
+      "requirements": [
+        "APAS-SR-005"
+      ],
+      "suite": "security",
+      "function": "test_modifications_and_denials_logged",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Academic record changes and denied access attempts are logged",
+        "objective": "Verify security logging of record modifications and authorisation failures.",
+        "steps": "1. fac.rao updates Kabir AM301 ISA 20 -> 25.\n2. aarav tries to read Kabir's grades.\n3. Read the audit log.",
+        "expected": "grade.update entry with user fac.rao, entity PES1UG24AM003, old 20, new 25; access.denied entry for aarav with the requested path."
+      },
+      "actual": [
+        "grade.update by fac.rao {'assessment': 'ISA', 'new': 25, 'old': 20.0, 'subject_code': 'AM301'} at 2026-10-20T05:43:29+00:00; access.denied for aarav {\"path\": \"/api/students/PES1UG24AM003/grades\"}"
+      ],
+      "duration_s": 0.418,
+      "executed_at": "2026-10-20T11:13:29+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-05.3",
+      "requirements": [
+        "APAS-SR-005"
+      ],
+      "suite": "security",
+      "function": "test_no_secrets_in_logs",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Passwords and session tokens are never written to the audit log",
+        "objective": "Verify SAD 4.4.2 (sensitive authentication information must not be logged).",
+        "steps": "1. Perform successful and failed logins.\n2. Search all audit_log columns for passwords and the issued token.",
+        "expected": "No password or token text appears in the audit log."
+      },
+      "actual": [
+        "2 audit entries scanned; no passwords or tokens present"
+      ],
+      "duration_s": 0.414,
+      "executed_at": "2026-10-20T11:13:30+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-05.4",
+      "requirements": [
+        "APAS-SR-005",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_malicious_input_handled_safely[/api/students/..%2F..%2Fetc%2Fpasswd]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Malicious path parameters are handled safely",
+        "objective": "Verify input validation does not cause errors or data exposure (STP 5.6 Input Validation).",
+        "test_data": "Path traversal, SQL injection and script injection in the student ID.",
+        "steps": "1. GET the URL as fac.rao.",
+        "expected": "HTTP 404 \"Student not found\" (no HTTP 500, no stack trace)."
+      },
+      "actual": [
+        "/api/students/..%2F..%2Fetc%2Fpasswd -> HTTP 404 'The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.'"
+      ],
+      "duration_s": 0.208,
+      "executed_at": "2026-10-20T11:13:31+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-05.4",
+      "requirements": [
+        "APAS-SR-005",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_malicious_input_handled_safely[/api/students/PES1'%20OR%20'1'='1]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Malicious path parameters are handled safely",
+        "objective": "Verify input validation does not cause errors or data exposure (STP 5.6 Input Validation).",
+        "test_data": "Path traversal, SQL injection and script injection in the student ID.",
+        "steps": "1. GET the URL as fac.rao.",
+        "expected": "HTTP 404 \"Student not found\" (no HTTP 500, no stack trace)."
+      },
+      "actual": [
+        "/api/students/PES1'%20OR%20'1'='1 -> HTTP 404 'Student not found'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:31+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-SEC-05.4",
+      "requirements": [
+        "APAS-SR-005",
+        "APAS-NF-003"
+      ],
+      "suite": "security",
+      "function": "test_malicious_input_handled_safely[/api/analytics/performance/%3Cscript%3E]",
+      "priority": "High",
+      "test_type": "Security",
+      "limitation": null,
+      "spec": {
+        "title": "Malicious path parameters are handled safely",
+        "objective": "Verify input validation does not cause errors or data exposure (STP 5.6 Input Validation).",
+        "test_data": "Path traversal, SQL injection and script injection in the student ID.",
+        "steps": "1. GET the URL as fac.rao.",
+        "expected": "HTTP 404 \"Student not found\" (no HTTP 500, no stack trace)."
+      },
+      "actual": [
+        "/api/analytics/performance/%3Cscript%3E -> HTTP 404 'Student not found'"
+      ],
+      "duration_s": 0.209,
+      "executed_at": "2026-10-20T11:13:31+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-UX-01.1",
+      "requirements": [
+        "APAS-NF-005"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_pages_structure_and_keyboard_access",
+      "priority": "Medium",
+      "test_type": "Accessibility",
+      "limitation": null,
+      "spec": {
+        "title": "Pages provide labels, landmarks, skip link and a logical keyboard order",
+        "objective": "Automated checks for WCAG 2.1 AA criteria 1.1.1, 1.3.1, 2.1.1, 2.4.1, 2.4.3, 3.1.1, 3.3.2, 4.1.2.",
+        "preconditions": "Login page, student dashboard (charts), admin overview dashboard.",
+        "steps": "1. Render each page.\n2. Check: html lang, labelled inputs, no positive tabindex, SVG charts with role=\"img\" and an accessible name, tables with caption and scoped headers, skip link as first focusable element.",
+        "expected": "No problems reported on any page."
+      },
+      "actual": [
+        "4 pages checked, 0 problems: ['login', 'student dashboard', 'admin overview', 'admin student view']"
+      ],
+      "duration_s": 0.446,
+      "executed_at": "2026-10-20T11:12:48+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-UX-01.2",
+      "requirements": [
+        "APAS-NF-005"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_error_messages_announced",
+      "priority": "Medium",
+      "test_type": "Accessibility",
+      "limitation": null,
+      "spec": {
+        "title": "Form errors are announced to assistive technology",
+        "objective": "Verify WCAG 3.3.1 (error identification) and 4.1.3 (status messages) on the login form.",
+        "steps": "1. Submit the login form with empty fields and with wrong credentials.",
+        "expected": "Error text is shown in an element with role=\"alert\" and linked to the username field via aria-describedby."
+      },
+      "actual": [
+        "Both error cases render role=\"alert\" message linked by aria-describedby"
+      ],
+      "duration_s": 0.211,
+      "executed_at": "2026-10-20T11:12:48+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-UX-01.3",
+      "requirements": [
+        "APAS-NF-005"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_colour_contrast",
+      "priority": "Medium",
+      "test_type": "Accessibility",
+      "limitation": null,
+      "spec": {
+        "title": "Text and UI colours meet WCAG 2.1 AA contrast ratios",
+        "objective": "Verify WCAG 1.4.3 (text >= 4.5:1) and 1.4.11 (non-text UI and graphics >= 3:1).",
+        "test_data": "Colour tokens from apas/static/style.css.",
+        "steps": "1. Read the CSS custom properties.\n2. Compute the contrast ratio of every foreground/background pair used by the UI.",
+        "expected": "All text pairs >= 4.5:1; all non-text pairs (borders, focus ring, chart marks) >= 3:1."
+      },
+      "actual": [
+        "text/bg 16.46:1; text/surface 15.21:1; text-muted/bg 7.84:1; text-muted/surface 7.25:1; link/bg 7.36:1; link/surface 6.8:1; on-primary/primary 7.36:1; danger/bg 7.52:1; warning-text/warning-bg 7.51:1; border/bg 4.76:1; border/surface 4.4:1; focus/bg 5.49:1; focus/surface 5.08:1; chart-bar/surface 6.8:1; chart-line/surface 4.97:1"
+      ],
+      "duration_s": 0.001,
+      "executed_at": "2026-10-20T11:12:48+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-UX-01.4",
+      "requirements": [
+        "APAS-NF-005"
+      ],
+      "suite": "nonfunctional",
+      "function": "test_focus_visible_and_reflow",
+      "priority": "Medium",
+      "test_type": "Accessibility",
+      "limitation": null,
+      "spec": {
+        "title": "Keyboard focus is visible and layout reflows at narrow widths",
+        "objective": "Verify WCAG 2.4.7 (focus visible) and 1.4.10 (reflow) support in the stylesheet.",
+        "steps": "1. Inspect apas/static/style.css and base.html.",
+        "expected": "A :focus-visible outline of at least 2px is defined; the skip link becomes visible on focus; viewport meta is present; tables are wrapped for horizontal scrolling instead of page overflow."
+      },
+      "actual": [
+        ":focus-visible outline 3px; skip link shown on focus; viewport meta present; tables in scroll wrapper"
+      ],
+      "duration_s": 0.0,
+      "executed_at": "2026-10-20T11:12:48+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-01.1",
+      "requirements": [
+        "APAS-F-010"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_student_dashboard_shows_own_data",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Student dashboard shows the student's own grades, attendance and performance",
+        "objective": "Verify dashboard accuracy for the logged-in student.",
+        "preconditions": "aarav logged in.",
+        "test_data": "Expected CGPA 9.39, overall 86.91%, attendance 95.00%.",
+        "steps": "1. GET /api/dashboard as aarav.\n2. GET /api/dashboard?student_id=PES1UG24AM003 as aarav (attempt to view another student).",
+        "expected": "Dashboard shows PES1UG24AM001 with the expected values; the student_id parameter is ignored for students (still own data)."
+      },
+      "actual": [
+        "student=PES1UG24AM001 CGPA=9.39 overall=86.91% attendance=95.0%; ?student_id=AM003 still returned PES1UG24AM001"
+      ],
+      "duration_s": 0.21,
+      "executed_at": "2026-10-20T11:11:35+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-01.2",
+      "requirements": [
+        "APAS-F-010"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_faculty_selected_student_dashboard",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Faculty dashboard for a selected student matches stored records",
+        "objective": "Verify dashboard data for the selected student.",
+        "preconditions": "fac.rao logged in.",
+        "test_data": "Diya (AM002): CGPA 7.82, overall 70.64%, attendance 60.00%, flagged.",
+        "steps": "1. GET /api/dashboard?student_id=PES1UG24AM002.\n2. GET /dashboard?student_id=PES1UG24AM002 (HTML).",
+        "expected": "API and HTML KPIs show CGPA 7.82, overall 70.64, attendance 60.0 and the \"Needs attention\" flags."
+      },
+      "actual": [
+        "API CGPA=7.82, attendance=60.0; HTML KPIs={'kpi-cgpa': '7.82', 'kpi-overall': '70.64', 'kpi-attendance': '60.0'}"
+      ],
+      "duration_s": 0.226,
+      "executed_at": "2026-10-20T11:11:35+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-01.3",
+      "requirements": [
+        "APAS-F-010"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_overview_dashboard_counts",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Overview dashboard lists all students with correct flag and risk counts",
+        "objective": "Verify the faculty/admin overview dashboard.",
+        "preconditions": "6 seeded students; 2 flagged (Diya, Kabir); 2 at risk (Diya, Kabir).",
+        "steps": "1. GET /api/dashboard and /dashboard as admin.",
+        "expected": "6 students, flagged_count=2, at_risk_count=2; HTML KPI cards show 6 / 2 / 2."
+      },
+      "actual": [
+        "API students=6, flagged=2, at_risk=2; HTML {'kpi-students': '6', 'kpi-flagged': '2', 'kpi-at-risk': '2'}"
+      ],
+      "duration_s": 0.22,
+      "executed_at": "2026-10-20T11:11:36+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-01.4",
+      "requirements": [
+        "APAS-F-010"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_dashboard_unknown_student",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Dashboard for a non-existent student returns a clear not-found response",
+        "objective": "Verify error handling on the dashboard.",
+        "steps": "1. GET /api/dashboard?student_id=PES1UG24AM999 and the HTML equivalent as fac.rao.",
+        "expected": "HTTP 404 with \"Student not found\" (no server error)."
+      },
+      "actual": [
+        "API 404, HTML 404 'Student not found'"
+      ],
+      "duration_s": 0.212,
+      "executed_at": "2026-10-20T11:11:36+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-02.1",
+      "requirements": [
+        "APAS-F-011"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_bar_chart_matches_data",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Bar charts represent the stored subject percentages accurately",
+        "objective": "Verify that bar chart values and bar heights match the data.",
+        "preconditions": "fac.rao logged in; Kabir semester-3 scores 42%, 35%, 45%; attendance 80% each.",
+        "steps": "1. GET /api/analytics/trends/PES1UG24AM003.\n2. Render /dashboard?student_id=PES1UG24AM003 and read the SVG bars.",
+        "expected": "One bar per subject; data-value equals the API percentage; bar height = value x 1.6 px (160 px plot area for 100%)."
+      },
+      "actual": [
+        "subject bars=[('AM301', '42.0', '67.2'), ('AM302', '35.0', '56.0'), ('AM303', '45.0', '72.0')]; attendance bars=[('AM301', 80.0), ('AM302', 80.0), ('AM303', 80.0)]"
+      ],
+      "duration_s": 0.227,
+      "executed_at": "2026-10-20T11:11:37+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-02.2",
+      "requirements": [
+        "APAS-F-011"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_line_graph_matches_sgpa_trend",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Line graph plots the semester SGPA trend correctly",
+        "objective": "Verify the SGPA line graph against calculated SGPA values.",
+        "preconditions": "Aarav SGPA 9.09, 9.36, 9.73.",
+        "steps": "1. Render /dashboard?student_id=PES1UG24AM001 and read the line-graph points.",
+        "expected": "Three points in semester order with data-value = SGPA; y = 200 - 16 x SGPA (higher SGPA plotted higher)."
+      },
+      "actual": [
+        "points=[('1', '9.09', '54.56'), ('2', '9.36', '50.24'), ('3', '9.73', '44.32')]"
+      ],
+      "duration_s": 0.225,
+      "executed_at": "2026-10-20T11:11:37+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-02.3",
+      "requirements": [
+        "APAS-F-011"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_charts_update_after_change",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Charts reflect newly recorded data",
+        "objective": "Verify that visualisations are generated from current data.",
+        "preconditions": "Kabir AM302 ISA=18, ESA=17 (35%).",
+        "test_data": "AM302 ESA updated to 32 -> 50%.",
+        "steps": "1. POST the new grade as fac.rao.\n2. Render Kabir's dashboard.",
+        "expected": "AM302 bar shows 50.0 with height 80 px."
+      },
+      "actual": [
+        "AM302 bar value=50.0 height=80.0"
+      ],
+      "duration_s": 0.227,
+      "executed_at": "2026-10-20T11:11:37+05:30",
+      "status": "Pass"
+    },
+    {
+      "tc_id": "TC-VIS-02.4",
+      "requirements": [
+        "APAS-F-011"
+      ],
+      "suite": "dashboard_reports",
+      "function": "test_chart_without_data",
+      "priority": "High",
+      "test_type": "Functional",
+      "limitation": null,
+      "spec": {
+        "title": "Dashboards without data show a message instead of an empty chart",
+        "objective": "Verify chart behaviour when there is no data.",
+        "preconditions": "Meera (AM006) has no records.",
+        "steps": "1. Render /dashboard?student_id=PES1UG24AM006.",
+        "expected": "HTTP 200; no chart SVGs; \"No data recorded yet\" / \"No completed semesters yet\" messages."
+      },
+      "actual": [
+        "HTTP 200; no SVG charts rendered; empty-state messages shown"
+      ],
+      "duration_s": 0.223,
+      "executed_at": "2026-10-20T11:11:38+05:30",
+      "status": "Pass"
+    }
+  ]
+}

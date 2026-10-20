@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block title %}{{ d.student.name }}{% endblock %}
+{% macro bars(chart, id, title) %}
+{% if chart %}
+<svg class="chart" id="{{ id }}" role="img" aria-labelledby="{{ id }}-title" viewBox="0 0 {{ chart.w }} {{ chart.h }}" width="100%">
+  <title id="{{ id }}-title">{{ title }}</title>
+  <line class="axis" x1="{{ chart.pad }}" y1="{{ chart.base }}" x2="{{ chart.w - chart.pad }}" y2="{{ chart.base }}"/>
+  {% for b in chart.bars %}
+  <rect class="bar" x="{{ b.x }}" y="{{ b.y }}" width="{{ b.w }}" height="{{ b.h }}" data-label="{{ b.label }}" data-value="{{ b.value }}"><title>{{ b.label }}: {{ b.value }}%</title></rect>
+  <text x="{{ b.x + b.w / 2 }}" y="{{ chart.base + 16 }}" text-anchor="middle">{{ b.label }}</text>
+  <text x="{{ b.x + b.w / 2 }}" y="{{ b.y - 4 }}" text-anchor="middle">{{ b.value }}</text>
+  {% endfor %}
+</svg>
+{% else %}<p class="muted">No data recorded yet.</p>{% endif %}
+{% endmacro %}
+{% block content %}
+{% if user.role != 'student' %}<p><a href="{{ url_for('web.dashboard_page') }}">All students</a></p>{% endif %}
+<h2>{{ d.student.name }} <span class="muted">({{ d.student.id }}, semester {{ d.student.current_semester }})</span></h2>
+<section class="kpis" aria-label="Summary">
+  <div class="card kpi"><div class="muted">CGPA</div><div class="value" id="kpi-cgpa">{{ d.performance.cgpa if d.performance.cgpa is not none else '-' }}</div></div>
+  <div class="card kpi"><div class="muted">Overall %</div><div class="value" id="kpi-overall">{{ d.performance.overall_percentage if d.performance.overall_percentage is not none else '-' }}</div></div>
+  <div class="card kpi"><div class="muted">Attendance %</div><div class="value" id="kpi-attendance">{{ d.attendance.overall_percentage if d.attendance.overall_percentage is not none else '-' }}</div></div>
+</section>
+{% if d.flags.flagged %}
+<div class="card" role="status"><strong>Needs attention:</strong>
+  <ul>{% for r in d.flags.reasons %}<li>{{ r }}</li>{% endfor %}</ul></div>
+{% endif %}
+<section class="card" aria-labelledby="h-sgpa"><h3 id="h-sgpa">SGPA trend by semester</h3>
+{% if sgpa_chart %}
+<svg class="chart" id="chart-sgpa" role="img" aria-labelledby="chart-sgpa-title" viewBox="0 0 {{ sgpa_chart.w }} {{ sgpa_chart.h }}" width="100%">
+  <title id="chart-sgpa-title">Line graph of SGPA by semester</title>
+  <line class="axis" x1="{{ sgpa_chart.pad }}" y1="{{ sgpa_chart.base }}" x2="{{ sgpa_chart.w - sgpa_chart.pad }}" y2="{{ sgpa_chart.base }}"/>
+  <polyline class="line" points="{{ sgpa_chart.path }}"/>
+  {% for p in sgpa_chart.points %}
+  <circle class="dot" cx="{{ p.x }}" cy="{{ p.y }}" r="5" data-label="{{ p.label }}" data-value="{{ p.value }}"><title>Semester {{ p.label }}: {{ p.value }}</title></circle>
+  <text x="{{ p.x }}" y="{{ sgpa_chart.base + 16 }}" text-anchor="middle">Sem {{ p.label }}</text>
+  <text x="{{ p.x }}" y="{{ p.y - 8 }}" text-anchor="middle">{{ p.value }}</text>
+  {% endfor %}
+</svg>
+{% else %}<p class="muted">No completed semesters yet.</p>{% endif %}
+</section>
+<section class="card" aria-labelledby="h-subj"><h3 id="h-subj">Latest semester subject scores (%)</h3>
+{{ bars(subject_chart, 'chart-subjects', 'Bar chart of subject percentages for the latest semester') }}</section>
+<section class="card" aria-labelledby="h-att"><h3 id="h-att">Attendance by subject (%)</h3>
+{{ bars(attendance_chart, 'chart-attendance', 'Bar chart of attendance percentage by subject') }}</section>
+<div class="table-wrap">
+<table id="table-subjects">
+  <caption>Subject-wise results</caption>
+  <thead><tr><th scope="col">Semester</th><th scope="col">Code</th><th scope="col">Subject</th><th scope="col">ISA</th>
+    <th scope="col">ESA</th><th scope="col">%</th><th scope="col">Grade</th><th scope="col">Status</th></tr></thead>
+  <tbody>
+  {% for s in d.performance.subjects %}
+  <tr><td>{{ s.semester }}</td><td>{{ s.subject_code }}</td><td>{{ s.subject_name }}</td>
+      <td>{{ s.scores.get('ISA', '-') }}</td><td>{{ s.scores.get('ESA', '-') }}</td>
+      <td>{{ s.percentage }}</td><td>{{ s.grade or '-' }}</td><td>{{ s.status }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div>
+<div class="table-wrap">
+<table id="table-semesters">
+  <caption>Semester-wise summary</caption>
+  <thead><tr><th scope="col">Semester</th><th scope="col">SGPA</th><th scope="col">Percentage</th></tr></thead>
+  <tbody>{% for s in d.performance.semesters %}<tr><td>{{ s.semester }}</td><td>{{ s.sgpa }}</td><td>{{ s.percentage }}</td></tr>{% endfor %}</tbody>
+</table>
+</div>
+{% endblock %}

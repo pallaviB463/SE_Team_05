@@ -1,0 +1,51 @@
+/* APAS colour tokens. Contrast pairs are verified by TC-UX-01 (WCAG 2.1 AA, 1.4.3 / 1.4.11). */
+:root {
+  --bg: #ffffff;
+  --surface: #f4f6fa;
+  --text: #1b1f2a;
+  --text-muted: #4a5263;
+  --link: #1a4fb8;
+  --primary: #1a4fb8;
+  --on-primary: #ffffff;
+  --danger: #a61b1b;
+  --warning-bg: #fff4d6;
+  --warning-text: #6b4800;
+  --border: #6b7385;
+  --focus: #b3470d;
+  --chart-bar: #1a4fb8;
+  --chart-line: #0f7a4a;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; font-size: 1rem;
+       line-height: 1.5; color: var(--text); background: var(--bg); }
+a { color: var(--link); }
+.skip-link { position: absolute; left: -999px; top: 0; background: var(--primary); color: var(--on-primary);
+             padding: 8px 12px; }
+.skip-link:focus { left: 8px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+header.site { display: flex; justify-content: space-between; align-items: center; gap: 12px;
+              padding: 12px 24px; background: var(--surface); border-bottom: 1px solid var(--border); }
+header.site h1 { font-size: 1.25rem; margin: 0; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px; }
+.muted { color: var(--text-muted); }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px;
+        margin-bottom: 16px; }
+.kpis { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.kpi .value { font-size: 1.6rem; font-weight: 700; }
+table { border-collapse: collapse; width: 100%; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid var(--border); }
+caption { text-align: left; font-weight: 600; padding-bottom: 6px; }
+label { display: block; font-weight: 600; margin-top: 12px; }
+input[type=text], input[type=password] { width: 100%; max-width: 360px; padding: 8px; font-size: 1rem;
+       border: 1px solid var(--border); border-radius: 4px; color: var(--text); background: var(--bg); }
+button { margin-top: 16px; padding: 8px 16px; font-size: 1rem; border: 0; border-radius: 4px;
+         background: var(--primary); color: var(--on-primary); cursor: pointer; }
+.error { color: var(--danger); font-weight: 600; }
+.flag { background: var(--warning-bg); color: var(--warning-text); padding: 2px 6px; border-radius: 4px; }
+.chart text { fill: var(--text); font-size: 12px; }
+.chart .bar { fill: var(--chart-bar); }
+.chart .line { stroke: var(--chart-line); fill: none; stroke-width: 3; }
+.chart .dot { fill: var(--chart-line); }
+.chart .axis { stroke: var(--border); }
+.table-wrap { overflow-x: auto; }
