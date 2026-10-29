@@ -1,0 +1,54 @@
+{
+  "requests": 300,
+  "concurrency": 10,
+  "students_in_db": 306,
+  "status_codes": [
+    200
+  ],
+  "overall": {
+    "p50_s": 0.679,
+    "p95_s": 2.744,
+    "max_s": 7.102,
+    "mean_s": 0.94,
+    "within_3s_pct": 96.0
+  },
+  "throughput_rps": 10.5,
+  "per_dashboard": {
+    "admin API overview": {
+      "n": 50,
+      "p50_s": 1.297,
+      "p95_s": 4.189,
+      "max_s": 7.102
+    },
+    "faculty API overview": {
+      "n": 50,
+      "p50_s": 1.157,
+      "p95_s": 2.994,
+      "max_s": 3.935
+    },
+    "student API dashboard": {
+      "n": 50,
+      "p50_s": 0.401,
+      "p95_s": 1.648,
+      "max_s": 5.419
+    },
+    "faculty selected student": {
+      "n": 50,
+      "p50_s": 0.187,
+      "p95_s": 1.591,
+      "max_s": 2.108
+    },
+    "admin HTML overview": {
+      "n": 50,
+      "p50_s": 0.733,
+      "p95_s": 2.11,
+      "max_s": 3.416
+    },
+    "faculty HTML student": {
+      "n": 50,
+      "p50_s": 0.345,
+      "p95_s": 1.752,
+      "max_s": 2.542
+    }
+  }
+}

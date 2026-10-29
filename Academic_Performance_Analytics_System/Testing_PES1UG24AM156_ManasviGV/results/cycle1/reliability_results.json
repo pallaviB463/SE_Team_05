@@ -1,0 +1,14 @@
+{
+  "probes": 400,
+  "successful": 400,
+  "availability_pct": 100.0,
+  "window_s": 2.9,
+  "fault_requests": 400,
+  "fault_status_codes": [
+    400,
+    401,
+    404,
+    405
+  ],
+  "fault_5xx_or_dropped": 0
+}
