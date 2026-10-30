@@ -6,7 +6,7 @@ A comprehensive student performance tracking system that analyzes grades, attend
 
 ## 📌 Project Management & Sprint Tracking
 
-* **Jira Workspace:** [APAS Jira Scrum Board](https://pallavibasavarajappa01-1791177333816.atlassian.net/jira/software/projects/APAS/boards/35)
+* **Jira Workspace:** [APAS Jira Scrum Board](https://pallavibasavarajappa01-1791177333816.atlassian.net/jira/software/projects/APAS/boards/35/backlog?atlOrigin=eyJpIjoiN2U1Y2E3OGIyOWQ2NGJhNjgzZWI0MTllYTE1ODU3YTYiLCJwIjoiaiJ9)
 * **Sprint Burndown Reports:** [APAS Burndown Chart](https://pallavibasavarajappa01-1791177333816.atlassian.net/jira/software/projects/APAS/boards/35/reports/burndown-chart)
 * **CI/CD Status:** [![APAS CI Pipeline](https://github.com/pallaviB463/SE_Team_05/actions/workflows/ci.yml/badge.svg)](https://github.com/pallaviB463/SE_Team_05/actions/workflows/ci.yml)
 
