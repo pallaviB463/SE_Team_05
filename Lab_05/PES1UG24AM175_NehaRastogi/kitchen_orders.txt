@@ -1,0 +1,1 @@
+{'T1': {'guest': 'Liam', 'items': 3, 'bill': 45.0, 'is_settled': False}, 'T3': {'guest': 'Mason', 'items': 4, 'bill': 72.0, 'is_settled': False}, 'T4': {'guest': 'Olivia', 'items': 2, 'bill': 30.0, 'is_settled': False}}
