@@ -1,0 +1,4 @@
+event_manager.py:61:43: E231 missing whitespace after ','
+event_manager.py:66:9: E225 missing whitespace around operator
+event_manager.py:75:28: E261 at least two spaces before inline comment
+event_manager.py:79:1: E305 expected 2 blank lines after class or function definition, found 1
