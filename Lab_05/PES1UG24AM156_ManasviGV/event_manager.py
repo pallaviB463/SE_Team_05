@@ -86,12 +86,12 @@ def print_badges(event_name):
 def main():
     """Run a short demonstration of the event manager."""
     create_event("Tech Meetup", "Hall A", 3)
-    create_event("Alumni Dinner", "Rooftop",2)
+    create_event("Alumni Dinner", "Rooftop", 2)
     register_guest("Tech Meetup", "Asha")
     register_guest("Tech Meetup", "Ravi")
     register_guest("Alumni Dinner", "Meena")
     register_guest("Workshop", "Kiran")
-    left=seats_left("Tech Meetup")
+    left = seats_left("Tech Meetup")
     print("Seats left at Tech Meetup:", left)
     print("Seats left at Alumni Dinner:", seats_left("Alumni Dinner"))
     print("Tech Meetup guests:", guest_report("Tech Meetup", "name"))
@@ -100,9 +100,10 @@ def main():
     winner = secrets.choice(events["Tech Meetup"]["guests"])
     print("Lucky draw winner:", winner)
     save_events()
-    restored = load_events() # reload to confirm the save worked
+    restored = load_events()  # reload to confirm the save worked
     print("Events restored from file:", len(restored))
     print("Venues:", [e["venue"] for e in restored.values()])
+
 
 if __name__ == "__main__":
     main()
