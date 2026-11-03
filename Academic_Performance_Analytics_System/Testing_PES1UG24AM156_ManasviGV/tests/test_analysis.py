@@ -207,9 +207,16 @@ def test_flagging_uses_configured_thresholds(client, login, record):
 
 
 @tc("TC-ANA-03.3", "APAS-F-009")
-@pytest.mark.parametrize("payload", [{"min_attendance_pct": 101}, {"min_attendance_pct": -1},
-                                     {"risk_high_sgpa": 11}, {"min_attendance_pct": "75"},
-                                     {"unknown_key": 5}])
+@pytest.mark.parametrize("payload", [
+    {"min_attendance_pct": 101},
+    {"min_attendance_pct": -1},
+    {"risk_high_sgpa": 11},
+    {"min_attendance_pct": "75"},
+    {"min_attendance_pct": True},
+    {"min_attendance_pct": float("nan")},
+    {"min_attendance_pct": float("inf")},
+    {"unknown_key": 5},
+])
 def test_invalid_threshold_config(client, login, record, payload):
     """Invalid threshold values are rejected
     Objective: Verify validation of threshold configuration.
