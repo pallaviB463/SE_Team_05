@@ -9,12 +9,15 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
   <header class="site">
-    <h1>Academic Performance Analytics System</h1>
+    <h1>
+      <span>🎓</span>
+      <span>Academic Performance Analytics System</span>
+    </h1>
     {% if user %}
     <nav aria-label="Account">
-      <span>{{ user.full_name }} ({{ user.role }})</span>
+      <span class="user-badge">👤 {{ user.full_name }} ({{ user.role|capitalize }})</span>
       <form method="post" action="{{ url_for('web.logout_page') }}" style="display:inline">
-        <button type="submit">Log out</button>
+        <button type="submit" style="margin-top:0; padding:7px 14px; font-size:0.88rem;">Log out</button>
       </form>
     </nav>
     {% endif %}

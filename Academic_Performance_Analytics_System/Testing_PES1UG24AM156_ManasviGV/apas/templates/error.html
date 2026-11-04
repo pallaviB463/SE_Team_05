@@ -1,7 +1,14 @@
 {% extends "base.html" %}
-{% block title %}Error{% endblock %}
+{% block title %}Error — APAS{% endblock %}
 {% block content %}
-<h2>Something went wrong</h2>
-<p role="alert">{{ message }}</p>
-<p><a href="{{ url_for('web.dashboard_page') }}">Back to dashboard</a></p>
+<div class="card" style="max-width: 540px; margin: 3rem auto; text-align: center; padding: 2.5rem 2rem;">
+  <div style="font-size: 2.8rem; margin-bottom: 0.5rem;" aria-hidden="true">⚠️</div>
+  <h2 style="margin-top: 0; color: var(--danger-text);">Something went wrong</h2>
+  <p role="alert" class="flash flash-error" style="margin: 1.5rem 0; font-weight: 500;">{{ message }}</p>
+  <p style="margin-top: 1.5rem;">
+    <a href="{{ url_for('web.dashboard_page') }}" class="btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem;">
+      &larr; Back to Dashboard
+    </a>
+  </p>
+</div>
 {% endblock %}

@@ -1,28 +1,61 @@
 {% extends "base.html" %}
 {% block title %}Dashboard{% endblock %}
 {% block content %}
-<h2>{{ 'Administrator' if user.role == 'admin' else 'Faculty' }} dashboard</h2>
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:16px; margin-bottom:18px;">
+  <div>
+    <h2 style="margin:0; font-size:1.6rem; color:#0f172a;">{{ 'Institution' if user.role == 'admin' else 'Faculty' }} Overview</h2>
+    <p class="muted" style="margin:4px 0 0 0;">Academic performance monitoring, attendance thresholds, and predictive risk tracking.</p>
+  </div>
+  <div>
+    <a href="/api/reports" class="btn-download" style="display:none;">API Reports</a>
+  </div>
+</div>
+
 <section class="kpis" aria-label="Summary">
-  <div class="card kpi"><div class="muted">Students</div><div class="value" id="kpi-students">{{ students|length }}</div></div>
-  <div class="card kpi"><div class="muted">Below thresholds</div><div class="value" id="kpi-flagged">{{ students|selectattr('flagged')|list|length }}</div></div>
-  <div class="card kpi"><div class="muted">At risk (predicted)</div><div class="value" id="kpi-at-risk">{{ students|selectattr('at_risk')|list|length }}</div></div>
+  <div class="card kpi">
+    <div class="muted">Students Enrolled</div>
+    <div class="value" id="kpi-students">{{ students|length }}</div>
+  </div>
+  <div class="card kpi" style="border-top-color:#d97706;">
+    <div class="muted">Below Thresholds</div>
+    <div class="value" id="kpi-flagged" style="color:#b45309;">{{ students|selectattr('flagged')|list|length }}</div>
+  </div>
+  <div class="card kpi" style="border-top-color:#dc2626;">
+    <div class="muted">At Risk (Predicted)</div>
+    <div class="value" id="kpi-at-risk" style="color:#b91c1c;">{{ students|selectattr('at_risk')|list|length }}</div>
+  </div>
 </section>
-<p class="muted">Thresholds: attendance {{ thresholds.min_attendance_pct|round(2) }}%, performance {{ thresholds.min_performance_pct|round(2) }}%.</p>
+
+<div class="card" style="padding:14px 20px; margin-bottom:20px; background:#f8fafc;">
+  <span class="muted">Active Threshold Policies:</span>
+  <strong>Minimum Attendance:</strong> {{ thresholds.min_attendance_pct|round(2) }}% &bull;
+  <strong>Minimum Performance:</strong> {{ thresholds.min_performance_pct|round(2) }}%
+</div>
+
 <div class="table-wrap">
 <table>
   <caption>Students</caption>
-  <thead><tr><th scope="col">ID</th><th scope="col">Name</th><th scope="col">CGPA</th><th scope="col">Overall %</th>
-    <th scope="col">Attendance %</th><th scope="col">Status</th><th scope="col">Risk</th></tr></thead>
+  <thead>
+    <tr>
+      <th scope="col">Student ID</th>
+      <th scope="col">Name</th>
+      <th scope="col">CGPA</th>
+      <th scope="col">Overall %</th>
+      <th scope="col">Attendance %</th>
+      <th scope="col">Status</th>
+      <th scope="col">Risk Level</th>
+    </tr>
+  </thead>
   <tbody>
   {% for s in students %}
     <tr data-student="{{ s.id }}">
-      <td><a href="{{ url_for('web.dashboard_page', student_id=s.id) }}">{{ s.id }}</a></td>
+      <td><strong><a href="{{ url_for('web.dashboard_page', student_id=s.id) }}">{{ s.id }}</a></strong></td>
       <td>{{ s.name }}</td>
-      <td>{{ s.cgpa if s.cgpa is not none else '-' }}</td>
+      <td><strong>{{ s.cgpa if s.cgpa is not none else '-' }}</strong></td>
       <td>{{ s.overall_percentage if s.overall_percentage is not none else '-' }}</td>
-      <td>{{ s.attendance_percentage if s.attendance_percentage is not none else '-' }}</td>
-      <td>{% if s.flagged %}<span class="flag">Below threshold</span>{% else %}OK{% endif %}</td>
-      <td>{{ s.risk_level }}</td>
+      <td>{{ s.attendance_percentage if s.attendance_percentage is not none else '-' }}%</td>
+      <td>{% if s.flagged %}<span class="flag">Below threshold</span>{% else %}<span class="badge-ok">OK</span>{% endif %}</td>
+      <td><span class="risk-pill risk-{{ s.risk_level }}">{{ s.risk_level }}</span></td>
     </tr>
   {% endfor %}
   </tbody>
