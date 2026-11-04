@@ -1,7 +1,11 @@
 """Web portals (SAD 3.4 items 1-3): login page and role-based dashboards."""
+import csv
+import io
+from datetime import date
 from flask import Blueprint, current_app, g, make_response, redirect, render_template, request, url_for
 
-from .api import student_dashboard, student_overview
+from . import analytics
+from .api import analysis_for, build_report_rows, student_dashboard, student_overview, student_or_404
 from .db import get_thresholds, get_db
 from .security import authenticate, audit, create_session, current_user, end_session, login_required, request_token
 
@@ -95,10 +99,39 @@ def dashboard_page():
         if not get_db().execute("SELECT 1 FROM students WHERE id = ?", (selected,)).fetchone():
             return make_response(render_template("error.html", user=user, message="Student not found."), 404)
         d = student_dashboard(selected)
+        db = get_db()
+        th = get_thresholds(db)
+        a = analysis_for(selected)
+        pred = a["prediction"]
+        recs = analytics.insights(a["performance"], a["attendance"], pred, th)
         ctx.update(d=d,
+                   prediction=pred,
+                   insights=recs,
                    subject_chart=bar_chart(d["trends"]["subject_scores"], "subject_code", "percentage"),
                    attendance_chart=bar_chart(d["trends"]["attendance"], "subject_code", "percentage"),
                    sgpa_chart=line_chart(d["trends"]["semester_sgpa"], "semester", "sgpa"))
         return render_template("student_dashboard.html", **ctx)
     ctx["students"] = student_overview()
     return render_template("overview_dashboard.html", **ctx)
+
+
+@bp.get("/reports/download/<student_id>")
+@login_required(html=True)
+def download_student_report(student_id):
+    user = g.user
+    if user["role"] == "student" and user["student_id"] != student_id:
+        return make_response(render_template("error.html", user=user, message="Access denied."), 403)
+    student = student_or_404(student_id)
+    if not student:
+        return make_response(render_template("error.html", user=user, message="Student not found."), 404)
+    a = analysis_for(student_id)
+    buf = io.StringIO()
+    writer = csv.writer(buf)
+    for row in build_report_rows(student, a):
+        writer.writerow(row)
+    filename = f"APAS_Report_{student_id}_{date.today().isoformat()}.csv"
+    resp = make_response(buf.getvalue(), 200)
+    resp.headers["Content-Type"] = "text/csv; charset=utf-8"
+    resp.headers["Content-Disposition"] = f'attachment; filename="{filename}"'
+    audit("report.download", entity=student_id, details={"format": "csv"})
+    return resp

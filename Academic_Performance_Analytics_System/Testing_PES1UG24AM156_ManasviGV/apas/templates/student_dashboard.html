@@ -14,8 +14,15 @@
 {% else %}<p class="muted">No data recorded yet.</p>{% endif %}
 {% endmacro %}
 {% block content %}
-{% if user.role != 'student' %}<p><a href="{{ url_for('web.dashboard_page') }}">All students</a></p>{% endif %}
-<h2>{{ d.student.name }} <span class="muted">({{ d.student.id }}, semester {{ d.student.current_semester }})</span></h2>
+<div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; margin-bottom:12px;">
+  <div>
+    {% if user.role != 'student' %}<p><a href="{{ url_for('web.dashboard_page') }}">&larr; Back to all students</a></p>{% endif %}
+    <h2 style="margin:0;">{{ d.student.name }} <span class="muted">({{ d.student.id }}, semester {{ d.student.current_semester }})</span></h2>
+  </div>
+  <div>
+    <a href="{{ url_for('web.download_student_report', student_id=d.student.id) }}" class="btn-download" download>Download CSV Report</a>
+  </div>
+</div>
 <section class="kpis" aria-label="Summary">
   <div class="card kpi"><div class="muted">CGPA</div><div class="value" id="kpi-cgpa">{{ d.performance.cgpa if d.performance.cgpa is not none else '-' }}</div></div>
   <div class="card kpi"><div class="muted">Overall %</div><div class="value" id="kpi-overall">{{ d.performance.overall_percentage if d.performance.overall_percentage is not none else '-' }}</div></div>
@@ -24,6 +31,29 @@
 {% if d.flags.flagged %}
 <div class="card" role="status"><strong>Needs attention:</strong>
   <ul>{% for r in d.flags.reasons %}<li>{{ r }}</li>{% endfor %}</ul></div>
+{% endif %}
+{% if prediction %}
+<section class="card" aria-labelledby="h-pred">
+  <h3 id="h-pred">Predictive Analytics & Recommendations (APAS-F-013, F-014, F-015)</h3>
+  {% if prediction.status == 'ok' %}
+    <p><strong>Predicted Next Semester SGPA:</strong> <span style="font-size:1.25rem; font-weight:700;">{{ prediction.predicted_sgpa }}</span>
+      <span class="muted">({{ prediction.trend|capitalize }} trend, {{ prediction.confidence }} confidence)</span>
+    </p>
+    <p><strong>Risk Assessment:</strong> <span class="flag"><strong>{{ prediction.risk_level|upper }} RISK</strong></span></p>
+    {% if insights %}
+      <div style="margin-top:12px;">
+        <strong>Academic Recommendations:</strong>
+        <ul style="margin-top:6px;">
+        {% for item in insights %}
+          <li>{{ item.message }}</li>
+        {% endfor %}
+        </ul>
+      </div>
+    {% endif %}
+  {% else %}
+    <p class="muted">{{ prediction.message if prediction.message else 'At least two completed semesters of history are required for future projection.' }}</p>
+  {% endif %}
+</section>
 {% endif %}
 <section class="card" aria-labelledby="h-sgpa"><h3 id="h-sgpa">SGPA trend by semester</h3>
 {% if sgpa_chart %}

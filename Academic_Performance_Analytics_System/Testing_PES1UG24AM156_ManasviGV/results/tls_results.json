@@ -1,5 +1,5 @@
 {
-  "openssl": "OpenSSL 3.0.16 11 Feb 2025",
+  "openssl": "OpenSSL 3.0.18 30 Sep 2025",
   "TLSv1": "refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1032))",
   "TLSv1.1": "refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1032))",
   "TLSv1.2": "accepted (TLSv1.2, ECDHE-RSA-AES256-GCM-SHA384)",

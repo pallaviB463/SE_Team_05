@@ -49,3 +49,6 @@ button { margin-top: 16px; padding: 8px 16px; font-size: 1rem; border: 0; border
 .chart .dot { fill: var(--chart-line); }
 .chart .axis { stroke: var(--border); }
 .table-wrap { overflow-x: auto; }
+
+.btn-download { display: inline-block; padding: 6px 12px; background: var(--surface); color: var(--link); border: 1px solid var(--border); border-radius: 4px; text-decoration: none; font-size: 0.9rem; font-weight: 600; }
+.btn-download:hover { background: var(--bg); text-decoration: underline; }

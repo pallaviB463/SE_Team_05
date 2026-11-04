@@ -6,49 +6,49 @@
     200
   ],
   "overall": {
-    "p50_s": 0.347,
-    "p95_s": 0.687,
-    "max_s": 0.745,
-    "mean_s": 0.376,
+    "p50_s": 0.656,
+    "p95_s": 1.417,
+    "max_s": 1.602,
+    "mean_s": 0.727,
     "within_3s_pct": 100.0
   },
-  "throughput_rps": 122.6,
+  "throughput_rps": 63.1,
   "per_dashboard": {
     "admin API overview": {
       "n": 50,
-      "p50_s": 0.346,
-      "p95_s": 0.704,
-      "max_s": 0.722
+      "p50_s": 0.821,
+      "p95_s": 1.441,
+      "max_s": 1.599
     },
     "faculty API overview": {
       "n": 50,
-      "p50_s": 0.342,
-      "p95_s": 0.724,
-      "max_s": 0.738
+      "p50_s": 0.8,
+      "p95_s": 1.488,
+      "max_s": 1.602
     },
     "student API dashboard": {
       "n": 50,
-      "p50_s": 0.357,
-      "p95_s": 0.473,
-      "max_s": 0.528
+      "p50_s": 0.558,
+      "p95_s": 0.93,
+      "max_s": 0.972
     },
     "faculty selected student": {
       "n": 50,
-      "p50_s": 0.373,
-      "p95_s": 0.562,
-      "max_s": 0.613
+      "p50_s": 0.633,
+      "p95_s": 0.922,
+      "max_s": 0.98
     },
     "admin HTML overview": {
       "n": 50,
-      "p50_s": 0.339,
-      "p95_s": 0.69,
-      "max_s": 0.745
+      "p50_s": 0.802,
+      "p95_s": 1.436,
+      "max_s": 1.46
     },
     "faculty HTML student": {
       "n": 50,
-      "p50_s": 0.367,
-      "p95_s": 0.495,
-      "max_s": 0.527
+      "p50_s": 0.67,
+      "p95_s": 0.988,
+      "max_s": 1.027
     }
   },
   "mixed_read_write": {
@@ -59,11 +59,11 @@
       200
     ],
     "dashboard": {
-      "p50_s": 0.98,
-      "p95_s": 1.311,
-      "max_s": 1.378,
-      "within_3s_pct": 100.0
+      "p50_s": 1.919,
+      "p95_s": 2.653,
+      "max_s": 3.503,
+      "within_3s_pct": 98.15
     },
-    "write_p95_s": 0.281
+    "write_p95_s": 1.208
   }
 }
