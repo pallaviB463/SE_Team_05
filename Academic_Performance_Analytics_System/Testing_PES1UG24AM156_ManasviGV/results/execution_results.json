@@ -1,12 +1,12 @@
 {
-  "started_at": "2026-11-04T09:05:52+05:30",
-  "finished_at": "2026-11-04T09:08:35+05:30",
+  "started_at": "2026-11-04T20:53:54+05:30",
+  "finished_at": "2026-11-04T20:54:56+05:30",
   "environment": {
-    "python": "3.13.9",
+    "python": "3.12.0",
     "flask": "3.1.3",
     "pytest": "9.1.1",
-    "platform": "Windows-11-10.0.26300-SP0",
-    "database": "SQLite 3.50.4"
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "database": "SQLite 3.42.0"
   },
   "results": [
     {
@@ -30,8 +30,8 @@
       "actual": [
         "100% -> (10, 'S')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -55,8 +55,8 @@
       "actual": [
         "90% -> (10, 'S')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -80,8 +80,8 @@
       "actual": [
         "89.99% -> (9, 'A')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -106,7 +106,7 @@
         "80% -> (9, 'A')"
       ],
       "duration_s": 0.0,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -130,8 +130,8 @@
       "actual": [
         "79.99% -> (8, 'B')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -156,7 +156,7 @@
         "70% -> (8, 'B')"
       ],
       "duration_s": 0.0,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -181,7 +181,7 @@
         "60% -> (7, 'C')"
       ],
       "duration_s": 0.0,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -206,7 +206,7 @@
         "59.99% -> (6, 'D')"
       ],
       "duration_s": 0.0,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -230,8 +230,8 @@
       "actual": [
         "50% -> (6, 'D')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -255,8 +255,8 @@
       "actual": [
         "40% -> (5, 'E')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -280,8 +280,8 @@
       "actual": [
         "39.99% -> (0, 'F')"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -306,7 +306,7 @@
         "0% -> (0, 'F')"
       ],
       "duration_s": 0.0,
-      "executed_at": "2026-11-04T09:05:54+05:30",
+      "executed_at": "2026-11-04T20:53:54+05:30",
       "status": "Pass"
     },
     {
@@ -330,8 +330,8 @@
       "actual": [
         "PES1UG24AM001: CGPA 9.39 (exp 9.39), overall 86.91% (exp 86.91%)"
       ],
-      "duration_s": 0.366,
-      "executed_at": "2026-11-04T09:05:57+05:30",
+      "duration_s": 0.149,
+      "executed_at": "2026-11-04T20:53:56+05:30",
       "status": "Pass"
     },
     {
@@ -355,8 +355,8 @@
       "actual": [
         "PES1UG24AM002: CGPA 7.82 (exp 7.82), overall 70.64% (exp 70.64%)"
       ],
-      "duration_s": 0.249,
-      "executed_at": "2026-11-04T09:05:58+05:30",
+      "duration_s": 0.148,
+      "executed_at": "2026-11-04T20:53:56+05:30",
       "status": "Pass"
     },
     {
@@ -380,8 +380,8 @@
       "actual": [
         "PES1UG24AM003: CGPA 5.52 (exp 5.52), overall 53.73% (exp 53.73%)"
       ],
-      "duration_s": 0.3,
-      "executed_at": "2026-11-04T09:05:59+05:30",
+      "duration_s": 0.136,
+      "executed_at": "2026-11-04T20:53:56+05:30",
       "status": "Pass"
     },
     {
@@ -405,8 +405,8 @@
       "actual": [
         "PES1UG24AM004: CGPA 6.09 (exp 6.09), overall 53.09% (exp 53.09%)"
       ],
-      "duration_s": 0.268,
-      "executed_at": "2026-11-04T09:05:59+05:30",
+      "duration_s": 0.133,
+      "executed_at": "2026-11-04T20:53:57+05:30",
       "status": "Pass"
     },
     {
@@ -430,8 +430,8 @@
       "actual": [
         "PES1UG24AM005: CGPA 6.0 (exp 6.0), overall 50.0% (exp 50.0%)"
       ],
-      "duration_s": 0.254,
-      "executed_at": "2026-11-04T09:06:00+05:30",
+      "duration_s": 0.139,
+      "executed_at": "2026-11-04T20:53:57+05:30",
       "status": "Pass"
     },
     {
@@ -455,8 +455,8 @@
       "actual": [
         "SGPA 6.45, overall 58.55%"
       ],
-      "duration_s": 0.309,
-      "executed_at": "2026-11-04T09:06:01+05:30",
+      "duration_s": 0.15,
+      "executed_at": "2026-11-04T20:53:57+05:30",
       "status": "Pass"
     },
     {
@@ -480,8 +480,8 @@
       "actual": [
         "AM301 status=incomplete, grade=None, CGPA=None, incomplete=['AM301']"
       ],
-      "duration_s": 0.335,
-      "executed_at": "2026-11-04T09:06:01+05:30",
+      "duration_s": 0.141,
+      "executed_at": "2026-11-04T20:53:58+05:30",
       "status": "Pass"
     },
     {
@@ -504,8 +504,8 @@
       "actual": [
         "HTTP 200; subjects=[], CGPA=None, attendance=None, flagged=False"
       ],
-      "duration_s": 0.337,
-      "executed_at": "2026-11-04T09:06:02+05:30",
+      "duration_s": 0.163,
+      "executed_at": "2026-11-04T20:53:58+05:30",
       "status": "Pass"
     },
     {
@@ -529,8 +529,8 @@
       "actual": [
         "PES1UG24AM001: SGPA [9.09, 9.36, 9.73], % [84.55, 86.82, 89.36]"
       ],
-      "duration_s": 0.312,
-      "executed_at": "2026-11-04T09:06:03+05:30",
+      "duration_s": 0.185,
+      "executed_at": "2026-11-04T20:53:58+05:30",
       "status": "Pass"
     },
     {
@@ -554,8 +554,8 @@
       "actual": [
         "PES1UG24AM002: SGPA [7.73, 7.73, 8.0], % [69.91, 70.55, 71.45]"
       ],
-      "duration_s": 0.257,
-      "executed_at": "2026-11-04T09:06:03+05:30",
+      "duration_s": 0.145,
+      "executed_at": "2026-11-04T20:53:59+05:30",
       "status": "Pass"
     },
     {
@@ -579,8 +579,8 @@
       "actual": [
         "PES1UG24AM003: SGPA [7.36, 6.0, 3.18], % [65.73, 55.18, 40.27]"
       ],
-      "duration_s": 0.247,
-      "executed_at": "2026-11-04T09:06:04+05:30",
+      "duration_s": 0.135,
+      "executed_at": "2026-11-04T20:53:59+05:30",
       "status": "Pass"
     },
     {
@@ -604,8 +604,8 @@
       "actual": [
         "9 subjects returned; semester 3: {'AM301': (42.0, 'E', 5), 'AM302': (35.0, 'F', 0), 'AM303': (45.0, 'E', 5)}"
       ],
-      "duration_s": 0.268,
-      "executed_at": "2026-11-04T09:06:04+05:30",
+      "duration_s": 0.132,
+      "executed_at": "2026-11-04T20:53:59+05:30",
       "status": "Pass"
     },
     {
@@ -628,8 +628,8 @@
       "actual": [
         "Aarav [9.09, 9.36, 9.73] (increasing); Kabir [7.36, 6.0, 3.18] (decreasing)"
       ],
-      "duration_s": 0.349,
-      "executed_at": "2026-11-04T09:06:05+05:30",
+      "duration_s": 0.157,
+      "executed_at": "2026-11-04T20:53:59+05:30",
       "status": "Pass"
     },
     {
@@ -653,8 +653,8 @@
       "actual": [
         "flagged={'PES1UG24AM002': ['Attendance in AM301 is 60.0% (below 75%)', 'Attendance in AM302 is 60.0% (below 75%)', 'Attendance in AM303 is 60.0% (below 75%)'], 'PES1UG24AM003': ['Failed AM302 (35.0%)']}; Rohan (boundary 75%/50%) not flagged"
       ],
-      "duration_s": 0.268,
-      "executed_at": "2026-11-04T09:06:06+05:30",
+      "duration_s": 0.143,
+      "executed_at": "2026-11-04T20:54:00+05:30",
       "status": "Pass"
     },
     {
@@ -678,8 +678,8 @@
       "actual": [
         "thresholds updated (HTTP 200); flagged=['PES1UG24AM003', 'PES1UG24AM004', 'PES1UG24AM005']"
       ],
-      "duration_s": 0.71,
-      "executed_at": "2026-11-04T09:06:07+05:30",
+      "duration_s": 0.325,
+      "executed_at": "2026-11-04T20:54:00+05:30",
       "status": "Pass"
     },
     {
@@ -703,8 +703,8 @@
       "actual": [
         "{'min_attendance_pct': 101} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
       ],
-      "duration_s": 0.297,
-      "executed_at": "2026-11-04T09:06:07+05:30",
+      "duration_s": 0.131,
+      "executed_at": "2026-11-04T20:54:00+05:30",
       "status": "Pass"
     },
     {
@@ -728,8 +728,8 @@
       "actual": [
         "{'min_attendance_pct': -1} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
       ],
-      "duration_s": 0.333,
-      "executed_at": "2026-11-04T09:06:08+05:30",
+      "duration_s": 0.13,
+      "executed_at": "2026-11-04T20:54:01+05:30",
       "status": "Pass"
     },
     {
@@ -753,8 +753,8 @@
       "actual": [
         "{'risk_high_sgpa': 11} -> HTTP 400 'risk_high_sgpa must be a number between 0 and 10'"
       ],
-      "duration_s": 0.27,
-      "executed_at": "2026-11-04T09:06:09+05:30",
+      "duration_s": 0.186,
+      "executed_at": "2026-11-04T20:54:01+05:30",
       "status": "Pass"
     },
     {
@@ -778,8 +778,8 @@
       "actual": [
         "{'min_attendance_pct': '75'} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
       ],
-      "duration_s": 0.326,
-      "executed_at": "2026-11-04T09:06:09+05:30",
+      "duration_s": 0.138,
+      "executed_at": "2026-11-04T20:54:01+05:30",
       "status": "Pass"
     },
     {
@@ -803,8 +803,8 @@
       "actual": [
         "{'min_attendance_pct': True} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
       ],
-      "duration_s": 0.349,
-      "executed_at": "2026-11-04T09:06:10+05:30",
+      "duration_s": 0.137,
+      "executed_at": "2026-11-04T20:54:02+05:30",
       "status": "Pass"
     },
     {
@@ -828,8 +828,8 @@
       "actual": [
         "{'min_attendance_pct': nan} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
       ],
-      "duration_s": 0.274,
-      "executed_at": "2026-11-04T09:06:10+05:30",
+      "duration_s": 0.199,
+      "executed_at": "2026-11-04T20:54:02+05:30",
       "status": "Pass"
     },
     {
@@ -853,8 +853,8 @@
       "actual": [
         "{'min_attendance_pct': inf} -> HTTP 400 'min_attendance_pct must be a number between 0 and 100'"
       ],
-      "duration_s": 0.234,
-      "executed_at": "2026-11-04T09:06:11+05:30",
+      "duration_s": 0.132,
+      "executed_at": "2026-11-04T20:54:02+05:30",
       "status": "Pass"
     },
     {
@@ -878,8 +878,8 @@
       "actual": [
         "{'unknown_key': 5} -> HTTP 400 'Unknown threshold 'unknown_key''"
       ],
-      "duration_s": 0.305,
-      "executed_at": "2026-11-04T09:06:12+05:30",
+      "duration_s": 0.167,
+      "executed_at": "2026-11-04T20:54:03+05:30",
       "status": "Pass"
     },
     {
@@ -901,8 +901,8 @@
       "actual": [
         "logged: ['attendance.create', 'attendance.update', 'config.update', 'grade.create', 'grade.update', 'student.create', 'student.update']; grade.update {'assessment': 'ISA', 'new': 35, 'old': 30.0, 'subject_code': 'AM101'}; student.update {'current_semester': {'new': 2, 'old': 1}}"
       ],
-      "duration_s": 0.716,
-      "executed_at": "2026-11-04T09:07:27+05:30",
+      "duration_s": 0.26,
+      "executed_at": "2026-11-04T20:54:28+05:30",
       "status": "Pass"
     },
     {
@@ -925,8 +925,8 @@
       "actual": [
         "retained with 12 months: ['11m29d', '30d']; with 6 (minimum 12 enforced): ['11m29d', '30d']; with 18: ['11m29d', '12m2d', '13m', '30d']"
       ],
-      "duration_s": 0.057,
-      "executed_at": "2026-11-04T09:07:27+05:30",
+      "duration_s": 0.003,
+      "executed_at": "2026-11-04T20:54:28+05:30",
       "status": "Pass"
     },
     {
@@ -948,8 +948,8 @@
       "actual": [
         "direct UPDATE -> 'audit_log is append-only'; API PUT/DELETE -> [405, 405]"
       ],
-      "duration_s": 0.535,
-      "executed_at": "2026-11-04T09:07:28+05:30",
+      "duration_s": 0.249,
+      "executed_at": "2026-11-04T20:54:28+05:30",
       "status": "Pass"
     },
     {
@@ -969,10 +969,10 @@
         "expected": "Only matching entries are returned, newest first."
       },
       "actual": [
-        "1 entry returned: grade.update by fac.rao at 2026-11-04T03:37:29+00:00"
+        "1 entry returned: grade.update by fac.rao at 2026-11-04T15:24:28+00:00"
       ],
-      "duration_s": 0.676,
-      "executed_at": "2026-11-04T09:07:29+05:30",
+      "duration_s": 0.246,
+      "executed_at": "2026-11-04T20:54:28+05:30",
       "status": "Pass"
     },
     {
@@ -996,8 +996,8 @@
       "actual": [
         "admin: login HTTP 200, role=admin, token issued (43 chars); dashboard HTTP 200"
       ],
-      "duration_s": 0.325,
-      "executed_at": "2026-11-04T09:06:12+05:30",
+      "duration_s": 0.157,
+      "executed_at": "2026-11-04T20:54:03+05:30",
       "status": "Pass"
     },
     {
@@ -1021,8 +1021,8 @@
       "actual": [
         "fac.rao: login HTTP 200, role=faculty, token issued (43 chars); dashboard HTTP 200"
       ],
-      "duration_s": 0.32,
-      "executed_at": "2026-11-04T09:06:13+05:30",
+      "duration_s": 0.171,
+      "executed_at": "2026-11-04T20:54:03+05:30",
       "status": "Pass"
     },
     {
@@ -1046,8 +1046,8 @@
       "actual": [
         "aarav: login HTTP 200, role=student, token issued (43 chars); dashboard HTTP 200"
       ],
-      "duration_s": 0.306,
-      "executed_at": "2026-11-04T09:06:14+05:30",
+      "duration_s": 0.149,
+      "executed_at": "2026-11-04T20:54:04+05:30",
       "status": "Pass"
     },
     {
@@ -1071,8 +1071,8 @@
       "actual": [
         "HTTP 401, message='Invalid username or password', no token"
       ],
-      "duration_s": 0.318,
-      "executed_at": "2026-11-04T09:06:14+05:30",
+      "duration_s": 0.134,
+      "executed_at": "2026-11-04T20:54:04+05:30",
       "status": "Pass"
     },
     {
@@ -1096,8 +1096,8 @@
       "actual": [
         "HTTP 401, message identical to wrong-password case: 'Invalid username or password'"
       ],
-      "duration_s": 0.284,
-      "executed_at": "2026-11-04T09:06:15+05:30",
+      "duration_s": 0.135,
+      "executed_at": "2026-11-04T20:54:04+05:30",
       "status": "Pass"
     },
     {
@@ -1121,8 +1121,8 @@
       "actual": [
         "payload={} -> HTTP 400 'Username and password are required'"
       ],
-      "duration_s": 0.002,
-      "executed_at": "2026-11-04T09:06:15+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:04+05:30",
       "status": "Pass"
     },
     {
@@ -1146,8 +1146,8 @@
       "actual": [
         "payload={'username': 'fac.rao'} -> HTTP 400 'Username and password are required'"
       ],
-      "duration_s": 0.002,
-      "executed_at": "2026-11-04T09:06:16+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:04+05:30",
       "status": "Pass"
     },
     {
@@ -1171,8 +1171,8 @@
       "actual": [
         "payload={'password': 'x'} -> HTTP 400 'Username and password are required'"
       ],
-      "duration_s": 0.002,
-      "executed_at": "2026-11-04T09:06:16+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:05+05:30",
       "status": "Pass"
     },
     {
@@ -1196,8 +1196,8 @@
       "actual": [
         "payload={'username': '', 'password': ''} -> HTTP 400 'Username and password are required'"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:06:16+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:05+05:30",
       "status": "Pass"
     },
     {
@@ -1221,8 +1221,8 @@
       "actual": [
         "payload={'username': '  ', 'password': 'x'} -> HTTP 400 'Username and password are required'"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:06:17+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:05+05:30",
       "status": "Pass"
     },
     {
@@ -1246,8 +1246,8 @@
       "actual": [
         "payload={'username': 123, 'password': ['x']} -> HTTP 400 'Username and password are required'"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:06:17+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:05+05:30",
       "status": "Pass"
     },
     {
@@ -1271,8 +1271,8 @@
       "actual": [
         "HTTP 401 'Invalid username or password'"
       ],
-      "duration_s": 0.026,
-      "executed_at": "2026-11-04T09:06:17+05:30",
+      "duration_s": 0.002,
+      "executed_at": "2026-11-04T20:54:05+05:30",
       "status": "Pass"
     },
     {
@@ -1297,8 +1297,8 @@
       "actual": [
         "After 5 failures, correct password -> HTTP 401 'Account temporarily locked after repeated failed attempts. Try again later.'"
       ],
-      "duration_s": 1.609,
-      "executed_at": "2026-11-04T09:06:19+05:30",
+      "duration_s": 0.751,
+      "executed_at": "2026-11-04T20:54:06+05:30",
       "status": "Pass"
     },
     {
@@ -1322,8 +1322,8 @@
       "actual": [
         "invalid -> HTTP 401 with alert; valid -> 302 to /dashboard, cookie flags: HttpOnly, Secure, SameSite=Lax; dashboard HTTP 200"
       ],
-      "duration_s": 0.78,
-      "executed_at": "2026-11-04T09:06:20+05:30",
+      "duration_s": 0.505,
+      "executed_at": "2026-11-04T20:54:07+05:30",
       "status": "Pass"
     },
     {
@@ -1348,8 +1348,8 @@
       "actual": [
         "'' OR '1'='1' -> HTTP 401; users table intact (9 rows)"
       ],
-      "duration_s": 0.313,
-      "executed_at": "2026-11-04T09:06:21+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:07+05:30",
       "status": "Pass"
     },
     {
@@ -1374,8 +1374,8 @@
       "actual": [
         "'admin'--' -> HTTP 401; users table intact (9 rows)"
       ],
-      "duration_s": 0.272,
-      "executed_at": "2026-11-04T09:06:22+05:30",
+      "duration_s": 0.138,
+      "executed_at": "2026-11-04T20:54:07+05:30",
       "status": "Pass"
     },
     {
@@ -1400,8 +1400,8 @@
       "actual": [
         "'admin\" OR \"\"=\"' -> HTTP 401; users table intact (9 rows)"
       ],
-      "duration_s": 0.272,
-      "executed_at": "2026-11-04T09:06:22+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:08+05:30",
       "status": "Pass"
     },
     {
@@ -1426,8 +1426,8 @@
       "actual": [
         "'fac.rao; DROP TABLE users' -> HTTP 401; users table intact (9 rows)"
       ],
-      "duration_s": 0.293,
-      "executed_at": "2026-11-04T09:06:23+05:30",
+      "duration_s": 0.141,
+      "executed_at": "2026-11-04T20:54:08+05:30",
       "status": "Pass"
     },
     {
@@ -1450,8 +1450,8 @@
       "actual": [
         "admin totals={'faculty': 3, 'students': 6, 'users': 9}; faculty subjects=['AM101', 'AM102', 'AM201', 'AM202', 'AM301', 'AM302']; student sees only PES1UG24AM001"
       ],
-      "duration_s": 1.062,
-      "executed_at": "2026-11-04T09:06:24+05:30",
+      "duration_s": 0.423,
+      "executed_at": "2026-11-04T20:54:09+05:30",
       "status": "Pass"
     },
     {
@@ -1475,8 +1475,8 @@
       "actual": [
         "admin POST /api/students -> HTTP 201 (expected 201)"
       ],
-      "duration_s": 0.312,
-      "executed_at": "2026-11-04T09:06:25+05:30",
+      "duration_s": 0.128,
+      "executed_at": "2026-11-04T20:54:09+05:30",
       "status": "Pass"
     },
     {
@@ -1500,8 +1500,8 @@
       "actual": [
         "fac.rao POST /api/students -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.352,
-      "executed_at": "2026-11-04T09:06:25+05:30",
+      "duration_s": 0.137,
+      "executed_at": "2026-11-04T20:54:09+05:30",
       "status": "Pass"
     },
     {
@@ -1525,8 +1525,8 @@
       "actual": [
         "aarav POST /api/students -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.389,
-      "executed_at": "2026-11-04T09:06:26+05:30",
+      "duration_s": 0.149,
+      "executed_at": "2026-11-04T20:54:09+05:30",
       "status": "Pass"
     },
     {
@@ -1550,8 +1550,8 @@
       "actual": [
         "fac.rao POST /api/students/PES1UG24AM006/grades -> HTTP 201 (expected 201)"
       ],
-      "duration_s": 0.329,
-      "executed_at": "2026-11-04T09:06:27+05:30",
+      "duration_s": 0.178,
+      "executed_at": "2026-11-04T20:54:10+05:30",
       "status": "Pass"
     },
     {
@@ -1575,8 +1575,8 @@
       "actual": [
         "admin POST /api/students/PES1UG24AM006/grades -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.411,
-      "executed_at": "2026-11-04T09:06:28+05:30",
+      "duration_s": 0.139,
+      "executed_at": "2026-11-04T20:54:10+05:30",
       "status": "Pass"
     },
     {
@@ -1600,8 +1600,8 @@
       "actual": [
         "aarav POST /api/students/PES1UG24AM006/grades -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.347,
-      "executed_at": "2026-11-04T09:06:28+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:10+05:30",
       "status": "Pass"
     },
     {
@@ -1625,8 +1625,8 @@
       "actual": [
         "fac.rao POST /api/students/PES1UG24AM006/attendance -> HTTP 201 (expected 201)"
       ],
-      "duration_s": 0.383,
-      "executed_at": "2026-11-04T09:06:29+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:10+05:30",
       "status": "Pass"
     },
     {
@@ -1650,8 +1650,8 @@
       "actual": [
         "aarav POST /api/students/PES1UG24AM006/attendance -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.375,
-      "executed_at": "2026-11-04T09:06:30+05:30",
+      "duration_s": 0.122,
+      "executed_at": "2026-11-04T20:54:11+05:30",
       "status": "Pass"
     },
     {
@@ -1675,8 +1675,8 @@
       "actual": [
         "admin GET /api/audit -> HTTP 200 (expected 200)"
       ],
-      "duration_s": 0.265,
-      "executed_at": "2026-11-04T09:06:30+05:30",
+      "duration_s": 0.134,
+      "executed_at": "2026-11-04T20:54:11+05:30",
       "status": "Pass"
     },
     {
@@ -1700,8 +1700,8 @@
       "actual": [
         "fac.rao GET /api/audit -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.272,
-      "executed_at": "2026-11-04T09:06:31+05:30",
+      "duration_s": 0.122,
+      "executed_at": "2026-11-04T20:54:11+05:30",
       "status": "Pass"
     },
     {
@@ -1725,8 +1725,8 @@
       "actual": [
         "aarav GET /api/audit -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.296,
-      "executed_at": "2026-11-04T09:06:32+05:30",
+      "duration_s": 0.177,
+      "executed_at": "2026-11-04T20:54:12+05:30",
       "status": "Pass"
     },
     {
@@ -1750,8 +1750,8 @@
       "actual": [
         "admin PUT /api/config/thresholds -> HTTP 200 (expected 200)"
       ],
-      "duration_s": 0.371,
-      "executed_at": "2026-11-04T09:06:32+05:30",
+      "duration_s": 0.641,
+      "executed_at": "2026-11-04T20:54:13+05:30",
       "status": "Pass"
     },
     {
@@ -1775,8 +1775,8 @@
       "actual": [
         "fac.rao PUT /api/config/thresholds -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.362,
-      "executed_at": "2026-11-04T09:06:33+05:30",
+      "duration_s": 0.226,
+      "executed_at": "2026-11-04T20:54:13+05:30",
       "status": "Pass"
     },
     {
@@ -1800,8 +1800,8 @@
       "actual": [
         "fac.rao GET /api/analytics/at-risk -> HTTP 200 (expected 200)"
       ],
-      "duration_s": 0.277,
-      "executed_at": "2026-11-04T09:06:34+05:30",
+      "duration_s": 0.138,
+      "executed_at": "2026-11-04T20:54:13+05:30",
       "status": "Pass"
     },
     {
@@ -1825,8 +1825,8 @@
       "actual": [
         "aarav GET /api/analytics/at-risk -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.246,
-      "executed_at": "2026-11-04T09:06:34+05:30",
+      "duration_s": 0.128,
+      "executed_at": "2026-11-04T20:54:14+05:30",
       "status": "Pass"
     },
     {
@@ -1850,8 +1850,8 @@
       "actual": [
         "aarav GET /api/analytics/flagged -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.344,
-      "executed_at": "2026-11-04T09:06:35+05:30",
+      "duration_s": 0.125,
+      "executed_at": "2026-11-04T20:54:14+05:30",
       "status": "Pass"
     },
     {
@@ -1875,8 +1875,8 @@
       "actual": [
         "aarav GET /api/students -> HTTP 403 (expected 403)"
       ],
-      "duration_s": 0.278,
-      "executed_at": "2026-11-04T09:06:35+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:14+05:30",
       "status": "Pass"
     },
     {
@@ -1899,8 +1899,8 @@
       "actual": [
         "before logout 200; logout 200; reuse of token -> HTTP 401"
       ],
-      "duration_s": 0.31,
-      "executed_at": "2026-11-04T09:06:36+05:30",
+      "duration_s": 0.125,
+      "executed_at": "2026-11-04T20:54:14+05:30",
       "status": "Pass"
     },
     {
@@ -1923,8 +1923,8 @@
       "actual": [
         "dashboard 200 (no-store); logout -> 302 /login; dashboard afterwards -> 302 /login"
       ],
-      "duration_s": 0.392,
-      "executed_at": "2026-11-04T09:06:37+05:30",
+      "duration_s": 0.148,
+      "executed_at": "2026-11-04T20:54:15+05:30",
       "status": "Pass"
     },
     {
@@ -1948,8 +1948,8 @@
       "actual": [
         "after 31 min idle -> HTTP 401; sessions remaining=0"
       ],
-      "duration_s": 0.296,
-      "executed_at": "2026-11-04T09:06:37+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:15+05:30",
       "status": "Pass"
     },
     {
@@ -1971,8 +1971,8 @@
       "actual": [
         "HTTP 401"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:06:38+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:15+05:30",
       "status": "Pass"
     },
     {
@@ -1994,10 +1994,10 @@
         "expected": "All requests HTTP 200; 95th percentile <= 3.0 s overall and for every dashboard type."
       },
       "actual": [
-        "300 requests @50 concurrent: p50 0.656 s, p95 1.417 s, max 1.602 s, 100.0% within 3 s; slowest p95 = 1.488 s"
+        "300 requests @50 concurrent: p50 0.188 s, p95 0.419 s, max 0.448 s, 100.0% within 3 s; slowest p95 = 0.433 s"
       ],
-      "duration_s": 7.656,
-      "executed_at": "2026-11-04T09:06:54+05:30",
+      "duration_s": 2.656,
+      "executed_at": "2026-11-04T20:54:21+05:30",
       "status": "Pass"
     },
     {
@@ -2019,10 +2019,10 @@
         "expected": "All requests succeed; dashboard 95th percentile <= 3.0 s."
       },
       "actual": [
-        "270 dashboard requests + 30 grade writes @50 concurrent: dashboard p50 1.919 s, p95 2.653 s, max 3.503 s"
+        "270 dashboard requests + 30 grade writes @50 concurrent: dashboard p50 0.435 s, p95 0.598 s, max 0.707 s"
       ],
-      "duration_s": 13.486,
-      "executed_at": "2026-11-04T09:07:07+05:30",
+      "duration_s": 3.421,
+      "executed_at": "2026-11-04T20:54:24+05:30",
       "status": "Pass"
     },
     {
@@ -2046,8 +2046,8 @@
       "actual": [
         "PES1UG24AM001: predicted SGPA 10.0 (exp 10.0), trend improving, confidence medium"
       ],
-      "duration_s": 0.234,
-      "executed_at": "2026-11-04T09:07:31+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:29+05:30",
       "status": "Pass"
     },
     {
@@ -2071,8 +2071,8 @@
       "actual": [
         "PES1UG24AM002: predicted SGPA 8.09 (exp 8.09), trend improving, confidence medium"
       ],
-      "duration_s": 0.283,
-      "executed_at": "2026-11-04T09:07:31+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:30+05:30",
       "status": "Pass"
     },
     {
@@ -2096,8 +2096,8 @@
       "actual": [
         "PES1UG24AM003: predicted SGPA 1.33 (exp 1.33), trend declining, confidence medium"
       ],
-      "duration_s": 0.282,
-      "executed_at": "2026-11-04T09:07:32+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:30+05:30",
       "status": "Pass"
     },
     {
@@ -2120,8 +2120,8 @@
       "actual": [
         "PES1UG24AM004: status=insufficient_data, message='At least 2 completed semesters are required for a prediction.'"
       ],
-      "duration_s": 0.259,
-      "executed_at": "2026-11-04T09:07:33+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:30+05:30",
       "status": "Pass"
     },
     {
@@ -2144,8 +2144,8 @@
       "actual": [
         "PES1UG24AM005: status=insufficient_data, message='At least 2 completed semesters are required for a prediction.'"
       ],
-      "duration_s": 0.284,
-      "executed_at": "2026-11-04T09:07:33+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:30+05:30",
       "status": "Pass"
     },
     {
@@ -2168,8 +2168,8 @@
       "actual": [
         "PES1UG24AM006: status=insufficient_data, message='At least 2 completed semesters are required for a prediction.'"
       ],
-      "duration_s": 0.297,
-      "executed_at": "2026-11-04T09:07:34+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:31+05:30",
       "status": "Pass"
     },
     {
@@ -2191,8 +2191,8 @@
       "actual": [
         "student -> 403; faculty -> 200"
       ],
-      "duration_s": 0.789,
-      "executed_at": "2026-11-04T09:07:35+05:30",
+      "duration_s": 0.246,
+      "executed_at": "2026-11-04T20:54:31+05:30",
       "status": "Pass"
     },
     {
@@ -2216,8 +2216,8 @@
       "actual": [
         "300/300 predictions; MAE 0.858, RMSE 1.39; risk precision 0.814, recall 0.775, F1 0.794, accuracy 0.863"
       ],
-      "duration_s": 3.488,
-      "executed_at": "2026-11-04T09:07:38+05:30",
+      "duration_s": 1.354,
+      "executed_at": "2026-11-04T20:54:32+05:30",
       "status": "Pass"
     },
     {
@@ -2241,8 +2241,8 @@
       "actual": [
         "at-risk={'PES1UG24AM002': ('high', ['Attendance 60.0% below 65%']), 'PES1UG24AM003': ('high', ['Predicted SGPA 1.33 below 5', 'SGPA trend is declining'])}"
       ],
-      "duration_s": 0.239,
-      "executed_at": "2026-11-04T09:07:39+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:33+05:30",
       "status": "Pass"
     },
     {
@@ -2265,8 +2265,8 @@
       "actual": [
         "risk list (ordered high->medium) = [('PES1UG24AM003', 'high'), ('PES1UG24AM002', 'medium')]"
       ],
-      "duration_s": 0.718,
-      "executed_at": "2026-11-04T09:07:40+05:30",
+      "duration_s": 0.255,
+      "executed_at": "2026-11-04T20:54:33+05:30",
       "status": "Pass"
     },
     {
@@ -2289,8 +2289,8 @@
       "actual": [
         "5 recommendations: [('academic', 'AM301'), ('academic', 'AM303'), ('critical', 'AM302'), ('risk', ''), ('trend', '')]"
       ],
-      "duration_s": 0.282,
-      "executed_at": "2026-11-04T09:07:41+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:33+05:30",
       "status": "Pass"
     },
     {
@@ -2312,8 +2312,8 @@
       "actual": [
         "PES1UG24AM002: ['Attendance in Design and Analysis of Algorithms is 60.0%, below the required 75%. Attend classes regularly.', 'Attendance in Database Management Systems is 60.0%, below the required 75%. Attend classes regularly.', 'Attendance in Software Engineering is 60.0%, below the required 75%. Attend classes regularly.']"
       ],
-      "duration_s": 0.311,
-      "executed_at": "2026-11-04T09:07:41+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:34+05:30",
       "status": "Pass"
     },
     {
@@ -2335,8 +2335,8 @@
       "actual": [
         "PES1UG24AM001: ['Performance is on track. Maintain consistent study and attendance.']"
       ],
-      "duration_s": 0.344,
-      "executed_at": "2026-11-04T09:07:42+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:34+05:30",
       "status": "Pass"
     },
     {
@@ -2357,8 +2357,8 @@
       "actual": [
         "own -> 200; other student -> 403"
       ],
-      "duration_s": 0.545,
-      "executed_at": "2026-11-04T09:07:43+05:30",
+      "duration_s": 0.245,
+      "executed_at": "2026-11-04T20:54:34+05:30",
       "status": "Pass"
     },
     {
@@ -2382,8 +2382,8 @@
       "actual": [
         "create HTTP 201; GET returned {id=PES1UG24AM007, name=Neel Kapoor, email=neel.kapoor@apas.test, program=B.Tech CSE (AI & ML), current_semester=1}; DB row present"
       ],
-      "duration_s": 0.407,
-      "executed_at": "2026-11-04T09:07:44+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:34+05:30",
       "status": "Pass"
     },
     {
@@ -2407,8 +2407,8 @@
       "actual": [
         "HTTP 200; name 'Ishita Rao' -> 'Ishita R. Rao', semester 3 -> 4; updated_at changed"
       ],
-      "duration_s": 0.259,
-      "executed_at": "2026-11-04T09:07:44+05:30",
+      "duration_s": 0.132,
+      "executed_at": "2026-11-04T20:54:35+05:30",
       "status": "Pass"
     },
     {
@@ -2432,8 +2432,8 @@
       "actual": [
         "id='' -> HTTP 400 {'id': 'is required'}"
       ],
-      "duration_s": 0.247,
-      "executed_at": "2026-11-04T09:07:45+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:35+05:30",
       "status": "Pass"
     },
     {
@@ -2457,8 +2457,8 @@
       "actual": [
         "id='abc' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
       ],
-      "duration_s": 0.253,
-      "executed_at": "2026-11-04T09:07:45+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:35+05:30",
       "status": "Pass"
     },
     {
@@ -2482,8 +2482,8 @@
       "actual": [
         "id='PES 1UG' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
       ],
-      "duration_s": 0.311,
-      "executed_at": "2026-11-04T09:07:46+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:35+05:30",
       "status": "Pass"
     },
     {
@@ -2507,8 +2507,8 @@
       "actual": [
         "id='PES1UG24AM001-XYZ-TOO-LONG' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
       ],
-      "duration_s": 0.254,
-      "executed_at": "2026-11-04T09:07:46+05:30",
+      "duration_s": 0.122,
+      "executed_at": "2026-11-04T20:54:36+05:30",
       "status": "Pass"
     },
     {
@@ -2532,8 +2532,8 @@
       "actual": [
         "id='pes1ug24am007' -> HTTP 400 {'id': 'must be 6-20 upper-case letters or digits'}"
       ],
-      "duration_s": 0.25,
-      "executed_at": "2026-11-04T09:07:47+05:30",
+      "duration_s": 0.134,
+      "executed_at": "2026-11-04T20:54:36+05:30",
       "status": "Pass"
     },
     {
@@ -2557,8 +2557,8 @@
       "actual": [
         "current_semester=0 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
       ],
-      "duration_s": 0.26,
-      "executed_at": "2026-11-04T09:07:47+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:36+05:30",
       "status": "Pass"
     },
     {
@@ -2582,8 +2582,8 @@
       "actual": [
         "current_semester=9 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
       ],
-      "duration_s": 0.326,
-      "executed_at": "2026-11-04T09:07:48+05:30",
+      "duration_s": 0.125,
+      "executed_at": "2026-11-04T20:54:36+05:30",
       "status": "Pass"
     },
     {
@@ -2607,8 +2607,8 @@
       "actual": [
         "current_semester=-1 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
       ],
-      "duration_s": 0.255,
-      "executed_at": "2026-11-04T09:07:49+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:37+05:30",
       "status": "Pass"
     },
     {
@@ -2632,8 +2632,8 @@
       "actual": [
         "current_semester='3' -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
       ],
-      "duration_s": 0.275,
-      "executed_at": "2026-11-04T09:07:49+05:30",
+      "duration_s": 0.161,
+      "executed_at": "2026-11-04T20:54:37+05:30",
       "status": "Pass"
     },
     {
@@ -2657,8 +2657,8 @@
       "actual": [
         "current_semester=2.5 -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
       ],
-      "duration_s": 0.242,
-      "executed_at": "2026-11-04T09:07:50+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:37+05:30",
       "status": "Pass"
     },
     {
@@ -2682,8 +2682,8 @@
       "actual": [
         "current_semester=True -> HTTP 400 {'current_semester': 'must be an integer between 1 and 8'}"
       ],
-      "duration_s": 0.276,
-      "executed_at": "2026-11-04T09:07:50+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:37+05:30",
       "status": "Pass"
     },
     {
@@ -2707,8 +2707,8 @@
       "actual": [
         "email='not-an-email' -> HTTP 400 {'email': 'must be a valid email address'}"
       ],
-      "duration_s": 0.276,
-      "executed_at": "2026-11-04T09:07:51+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:38+05:30",
       "status": "Pass"
     },
     {
@@ -2732,8 +2732,8 @@
       "actual": [
         "name='' -> HTTP 400 {'name': 'is required'}"
       ],
-      "duration_s": 0.303,
-      "executed_at": "2026-11-04T09:07:52+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:38+05:30",
       "status": "Pass"
     },
     {
@@ -2757,8 +2757,8 @@
       "actual": [
         "name='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx' -> HTTP 400 {'name': 'must be 1-100 characters'}"
       ],
-      "duration_s": 0.259,
-      "executed_at": "2026-11-04T09:07:52+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:38+05:30",
       "status": "Pass"
     },
     {
@@ -2782,8 +2782,8 @@
       "actual": [
         "unexpected=1 -> HTTP 400 {'unknown_fields': ['unexpected']}"
       ],
-      "duration_s": 0.283,
-      "executed_at": "2026-11-04T09:07:53+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:39+05:30",
       "status": "Pass"
     },
     {
@@ -2806,8 +2806,8 @@
       "actual": [
         "duplicate id/email/missing GET/missing PUT/change id -> [409, 409, 404, 404, 400]"
       ],
-      "duration_s": 0.346,
-      "executed_at": "2026-11-04T09:07:53+05:30",
+      "duration_s": 0.125,
+      "executed_at": "2026-11-04T20:54:39+05:30",
       "status": "Pass"
     },
     {
@@ -2831,8 +2831,8 @@
       "actual": [
         "POST ISA/ESA -> 201/201; stored ISA=42, ESA=45; AM301 = 87.0% grade A"
       ],
-      "duration_s": 0.328,
-      "executed_at": "2026-11-04T09:07:54+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:39+05:30",
       "status": "Pass"
     },
     {
@@ -2856,8 +2856,8 @@
       "actual": [
         "upsert -> HTTP 200; PUT -> HTTP 200; final ESA=38.0, rows=1"
       ],
-      "duration_s": 0.331,
-      "executed_at": "2026-11-04T09:07:55+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:39+05:30",
       "status": "Pass"
     },
     {
@@ -2881,8 +2881,8 @@
       "actual": [
         "score=0 -> HTTP 201, stored 0.0"
       ],
-      "duration_s": 0.259,
-      "executed_at": "2026-11-04T09:07:55+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:40+05:30",
       "status": "Pass"
     },
     {
@@ -2906,8 +2906,8 @@
       "actual": [
         "score=0.5 -> HTTP 201, stored 0.5"
       ],
-      "duration_s": 0.26,
-      "executed_at": "2026-11-04T09:07:56+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:40+05:30",
       "status": "Pass"
     },
     {
@@ -2931,8 +2931,8 @@
       "actual": [
         "score=25 -> HTTP 201, stored 25.0"
       ],
-      "duration_s": 0.298,
-      "executed_at": "2026-11-04T09:07:56+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:40+05:30",
       "status": "Pass"
     },
     {
@@ -2956,8 +2956,8 @@
       "actual": [
         "score=49.5 -> HTTP 201, stored 49.5"
       ],
-      "duration_s": 0.306,
-      "executed_at": "2026-11-04T09:07:57+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:40+05:30",
       "status": "Pass"
     },
     {
@@ -2981,8 +2981,8 @@
       "actual": [
         "score=50 -> HTTP 201, stored 50.0"
       ],
-      "duration_s": 0.242,
-      "executed_at": "2026-11-04T09:07:58+05:30",
+      "duration_s": 0.132,
+      "executed_at": "2026-11-04T20:54:41+05:30",
       "status": "Pass"
     },
     {
@@ -3006,8 +3006,8 @@
       "actual": [
         "score=-1 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
       ],
-      "duration_s": 0.285,
-      "executed_at": "2026-11-04T09:07:58+05:30",
+      "duration_s": 0.131,
+      "executed_at": "2026-11-04T20:54:41+05:30",
       "status": "Pass"
     },
     {
@@ -3031,8 +3031,8 @@
       "actual": [
         "score=-0.01 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
       ],
-      "duration_s": 0.248,
-      "executed_at": "2026-11-04T09:07:59+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:41+05:30",
       "status": "Pass"
     },
     {
@@ -3056,8 +3056,8 @@
       "actual": [
         "score=50.01 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
       ],
-      "duration_s": 0.274,
-      "executed_at": "2026-11-04T09:07:59+05:30",
+      "duration_s": 0.13,
+      "executed_at": "2026-11-04T20:54:41+05:30",
       "status": "Pass"
     },
     {
@@ -3081,8 +3081,8 @@
       "actual": [
         "score=51 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
       ],
-      "duration_s": 0.278,
-      "executed_at": "2026-11-04T09:08:00+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:42+05:30",
       "status": "Pass"
     },
     {
@@ -3106,8 +3106,8 @@
       "actual": [
         "score=100 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
       ],
-      "duration_s": 0.255,
-      "executed_at": "2026-11-04T09:08:00+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:42+05:30",
       "status": "Pass"
     },
     {
@@ -3131,8 +3131,8 @@
       "actual": [
         "score=1000 -> HTTP 400 'score must be between 0 and 50'; grade rows unchanged"
       ],
-      "duration_s": 0.28,
-      "executed_at": "2026-11-04T09:08:01+05:30",
+      "duration_s": 0.139,
+      "executed_at": "2026-11-04T20:54:42+05:30",
       "status": "Pass"
     },
     {
@@ -3156,8 +3156,8 @@
       "actual": [
         "score='45' -> HTTP 400 'score must be a number'; grade rows unchanged"
       ],
-      "duration_s": 0.3,
-      "executed_at": "2026-11-04T09:08:02+05:30",
+      "duration_s": 0.139,
+      "executed_at": "2026-11-04T20:54:42+05:30",
       "status": "Pass"
     },
     {
@@ -3181,8 +3181,8 @@
       "actual": [
         "score='' -> HTTP 400 'score must be a number'; grade rows unchanged"
       ],
-      "duration_s": 0.25,
-      "executed_at": "2026-11-04T09:08:02+05:30",
+      "duration_s": 0.131,
+      "executed_at": "2026-11-04T20:54:43+05:30",
       "status": "Pass"
     },
     {
@@ -3206,8 +3206,8 @@
       "actual": [
         "score=None -> HTTP 400 'score must be a number'; grade rows unchanged"
       ],
-      "duration_s": 0.246,
-      "executed_at": "2026-11-04T09:08:03+05:30",
+      "duration_s": 0.144,
+      "executed_at": "2026-11-04T20:54:43+05:30",
       "status": "Pass"
     },
     {
@@ -3231,8 +3231,8 @@
       "actual": [
         "score=True -> HTTP 400 'score must be a number'; grade rows unchanged"
       ],
-      "duration_s": 0.25,
-      "executed_at": "2026-11-04T09:08:03+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:43+05:30",
       "status": "Pass"
     },
     {
@@ -3256,8 +3256,8 @@
       "actual": [
         "score='abc' -> HTTP 400 'score must be a number'; grade rows unchanged"
       ],
-      "duration_s": 0.254,
-      "executed_at": "2026-11-04T09:08:04+05:30",
+      "duration_s": 0.13,
+      "executed_at": "2026-11-04T20:54:44+05:30",
       "status": "Pass"
     },
     {
@@ -3281,8 +3281,8 @@
       "actual": [
         "{'subject_code': 'XX999', 'assessment': 'ISA', 'score': 10} -> HTTP 400 'subject_code must be an existing subject'"
       ],
-      "duration_s": 0.314,
-      "executed_at": "2026-11-04T09:08:04+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:44+05:30",
       "status": "Pass"
     },
     {
@@ -3306,8 +3306,8 @@
       "actual": [
         "{'subject_code': 'AM301', 'assessment': 'Quiz', 'score': 10} -> HTTP 400 'assessment must be one of ['ESA', 'ISA']'"
       ],
-      "duration_s": 0.267,
-      "executed_at": "2026-11-04T09:08:05+05:30",
+      "duration_s": 0.13,
+      "executed_at": "2026-11-04T20:54:44+05:30",
       "status": "Pass"
     },
     {
@@ -3331,8 +3331,8 @@
       "actual": [
         "{'assessment': 'ISA', 'score': 10} -> HTTP 400 'subject_code must be an existing subject'"
       ],
-      "duration_s": 0.274,
-      "executed_at": "2026-11-04T09:08:06+05:30",
+      "duration_s": 0.135,
+      "executed_at": "2026-11-04T20:54:44+05:30",
       "status": "Pass"
     },
     {
@@ -3354,8 +3354,8 @@
       "actual": [
         "unknown student -> 404; non-JSON body -> 400"
       ],
-      "duration_s": 0.256,
-      "executed_at": "2026-11-04T09:08:06+05:30",
+      "duration_s": 0.131,
+      "executed_at": "2026-11-04T20:54:45+05:30",
       "status": "Pass"
     },
     {
@@ -3378,8 +3378,8 @@
       "actual": [
         "{'PES1UG24AM001': '57/60 = 95.0%', 'PES1UG24AM002': '36/60 = 60.0%', 'PES1UG24AM005': '45/60 = 75.0%'}"
       ],
-      "duration_s": 0.264,
-      "executed_at": "2026-11-04T09:08:07+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:45+05:30",
       "status": "Pass"
     },
     {
@@ -3403,8 +3403,8 @@
       "actual": [
         "after 4 entries: 3/4 = 75.0%; correction HTTP 200 -> 4/4 = 100.0%"
       ],
-      "duration_s": 0.517,
-      "executed_at": "2026-11-04T09:08:08+05:30",
+      "duration_s": 0.13,
+      "executed_at": "2026-11-04T20:54:45+05:30",
       "status": "Pass"
     },
     {
@@ -3428,8 +3428,8 @@
       "actual": [
         "status='Present' -> HTTP 400 'status must be 'present' or 'absent''"
       ],
-      "duration_s": 0.328,
-      "executed_at": "2026-11-04T09:08:08+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:45+05:30",
       "status": "Pass"
     },
     {
@@ -3453,8 +3453,8 @@
       "actual": [
         "status='P' -> HTTP 400 'status must be 'present' or 'absent''"
       ],
-      "duration_s": 0.347,
-      "executed_at": "2026-11-04T09:08:09+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:46+05:30",
       "status": "Pass"
     },
     {
@@ -3478,8 +3478,8 @@
       "actual": [
         "status='' -> HTTP 400 'status must be 'present' or 'absent''"
       ],
-      "duration_s": 0.253,
-      "executed_at": "2026-11-04T09:08:09+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:46+05:30",
       "status": "Pass"
     },
     {
@@ -3503,8 +3503,8 @@
       "actual": [
         "status='late' -> HTTP 400 'status must be 'present' or 'absent''"
       ],
-      "duration_s": 0.24,
-      "executed_at": "2026-11-04T09:08:10+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:46+05:30",
       "status": "Pass"
     },
     {
@@ -3528,8 +3528,8 @@
       "actual": [
         "status=None -> HTTP 400 'status must be 'present' or 'absent''"
       ],
-      "duration_s": 0.267,
-      "executed_at": "2026-11-04T09:08:11+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:46+05:30",
       "status": "Pass"
     },
     {
@@ -3553,8 +3553,8 @@
       "actual": [
         "status=1 -> HTTP 400 'status must be 'present' or 'absent''"
       ],
-      "duration_s": 0.281,
-      "executed_at": "2026-11-04T09:08:11+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:47+05:30",
       "status": "Pass"
     },
     {
@@ -3578,8 +3578,8 @@
       "actual": [
         "date='2026-13-01' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
       ],
-      "duration_s": 0.33,
-      "executed_at": "2026-11-04T09:08:12+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:47+05:30",
       "status": "Pass"
     },
     {
@@ -3603,8 +3603,8 @@
       "actual": [
         "date='2026-02-30' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
       ],
-      "duration_s": 0.252,
-      "executed_at": "2026-11-04T09:08:12+05:30",
+      "duration_s": 0.136,
+      "executed_at": "2026-11-04T20:54:47+05:30",
       "status": "Pass"
     },
     {
@@ -3628,8 +3628,8 @@
       "actual": [
         "date='03-08-2026' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
       ],
-      "duration_s": 0.24,
-      "executed_at": "2026-11-04T09:08:13+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:48+05:30",
       "status": "Pass"
     },
     {
@@ -3653,8 +3653,8 @@
       "actual": [
         "date='2026/08/03' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
       ],
-      "duration_s": 0.265,
-      "executed_at": "2026-11-04T09:08:13+05:30",
+      "duration_s": 0.125,
+      "executed_at": "2026-11-04T20:54:48+05:30",
       "status": "Pass"
     },
     {
@@ -3678,8 +3678,8 @@
       "actual": [
         "date='' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
       ],
-      "duration_s": 0.256,
-      "executed_at": "2026-11-04T09:08:14+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:48+05:30",
       "status": "Pass"
     },
     {
@@ -3703,8 +3703,8 @@
       "actual": [
         "date='yesterday' -> HTTP 400 'date must be a valid date in YYYY-MM-DD format'"
       ],
-      "duration_s": 0.273,
-      "executed_at": "2026-11-04T09:08:14+05:30",
+      "duration_s": 0.147,
+      "executed_at": "2026-11-04T20:54:48+05:30",
       "status": "Pass"
     },
     {
@@ -3728,8 +3728,8 @@
       "actual": [
         "date='2026-11-05' -> HTTP 400 'Attendance cannot be recorded for a future date'"
       ],
-      "duration_s": 0.226,
-      "executed_at": "2026-11-04T09:08:15+05:30",
+      "duration_s": 0.138,
+      "executed_at": "2026-11-04T20:54:49+05:30",
       "status": "Pass"
     },
     {
@@ -3753,8 +3753,8 @@
       "actual": [
         "subject_code='XX999' -> HTTP 400 'subject_code must be an existing subject'"
       ],
-      "duration_s": 0.264,
-      "executed_at": "2026-11-04T09:08:15+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:49+05:30",
       "status": "Pass"
     },
     {
@@ -3778,8 +3778,8 @@
       "actual": [
         "HTTP 403; rows stored=0"
       ],
-      "duration_s": 0.285,
-      "executed_at": "2026-11-04T09:08:16+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:49+05:30",
       "status": "Pass"
     },
     {
@@ -3803,8 +3803,8 @@
       "actual": [
         "4 x absent -> 0/4 = 0.0%"
       ],
-      "duration_s": 0.499,
-      "executed_at": "2026-11-04T09:08:17+05:30",
+      "duration_s": 0.128,
+      "executed_at": "2026-11-04T20:54:49+05:30",
       "status": "Pass"
     },
     {
@@ -3828,8 +3828,8 @@
       "actual": [
         "4 x present -> 4/4 = 100.0%"
       ],
-      "duration_s": 0.491,
-      "executed_at": "2026-11-04T09:08:18+05:30",
+      "duration_s": 0.13,
+      "executed_at": "2026-11-04T20:54:50+05:30",
       "status": "Pass"
     },
     {
@@ -3851,10 +3851,10 @@
         "expected": "Availability >= 99% in the window; faulty requests receive 4xx responses (never 5xx, never a dropped connection)."
       },
       "actual": [
-        "400/400 probes OK = 100.00% over 16.8 s; fault responses [400, 401, 404, 405], 5xx/dropped = 0"
+        "400/400 probes OK = 100.00% over 1.9 s; fault responses [400, 401, 404, 405], 5xx/dropped = 0"
       ],
-      "duration_s": 17.762,
-      "executed_at": "2026-11-04T09:07:25+05:30",
+      "duration_s": 2.566,
+      "executed_at": "2026-11-04T20:54:27+05:30",
       "status": "Pass"
     },
     {
@@ -3878,8 +3878,8 @@
       "actual": [
         "failure -> HTTP 500 {'error': 'An unexpected error occurred', 'status': 500}; health afterwards HTTP 200"
       ],
-      "duration_s": 0.544,
-      "executed_at": "2026-11-04T09:07:26+05:30",
+      "duration_s": 0.267,
+      "executed_at": "2026-11-04T20:54:27+05:30",
       "status": "Pass"
     },
     {
@@ -3903,8 +3903,8 @@
       "actual": [
         "HTTP 200 text/csv; attachment; filename=\"APAS_Report_PES1UG24AM001_2026-11-04.csv\"; 9 subject rows; CGPA 9.39; overall 86.91; attendance ['57', '60', '95.0']"
       ],
-      "duration_s": 0.307,
-      "executed_at": "2026-11-04T09:06:45+05:30",
+      "duration_s": 0.138,
+      "executed_at": "2026-11-04T20:54:18+05:30",
       "status": "Pass"
     },
     {
@@ -3927,8 +3927,8 @@
       "actual": [
         "CSV flags='Failed AM302 (35.0%)'; JSON CGPA=5.52"
       ],
-      "duration_s": 0.31,
-      "executed_at": "2026-11-04T09:06:45+05:30",
+      "duration_s": 0.132,
+      "executed_at": "2026-11-04T20:54:18+05:30",
       "status": "Pass"
     },
     {
@@ -3951,8 +3951,8 @@
       "actual": [
         "own/other/missing/bad format -> [200, 403, 404, 400]"
       ],
-      "duration_s": 0.617,
-      "executed_at": "2026-11-04T09:06:46+05:30",
+      "duration_s": 0.255,
+      "executed_at": "2026-11-04T20:54:18+05:30",
       "status": "Pass"
     },
     {
@@ -3977,8 +3977,8 @@
       "actual": [
         "20 protected API operations -> all HTTP 401; /dashboard -> 302 /login"
       ],
-      "duration_s": 0.005,
-      "executed_at": "2026-11-04T09:08:18+05:30",
+      "duration_s": 0.003,
+      "executed_at": "2026-11-04T20:54:50+05:30",
       "status": "Pass"
     },
     {
@@ -4002,8 +4002,8 @@
       "actual": [
         "Authorization 'Bearer invalidtoken...' -> HTTP 401"
       ],
-      "duration_s": 0.004,
-      "executed_at": "2026-11-04T09:08:18+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:50+05:30",
       "status": "Pass"
     },
     {
@@ -4027,8 +4027,8 @@
       "actual": [
         "Authorization 'Bearer ...' -> HTTP 401"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:08:18+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:50+05:30",
       "status": "Pass"
     },
     {
@@ -4052,8 +4052,8 @@
       "actual": [
         "Authorization 'Basic YWRtaW46QWRtaW5AQV...' -> HTTP 401"
       ],
-      "duration_s": 0.001,
-      "executed_at": "2026-11-04T09:08:19+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:50+05:30",
       "status": "Pass"
     },
     {
@@ -4077,8 +4077,8 @@
       "actual": [
         "Authorization 'Bearer ' OR '1'='1...' -> HTTP 401"
       ],
-      "duration_s": 0.002,
-      "executed_at": "2026-11-04T09:08:19+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:50+05:30",
       "status": "Pass"
     },
     {
@@ -4100,10 +4100,10 @@
         "expected": "HTTP 401."
       },
       "actual": [
-        "Authorization 'Bearer EImuPffbV5Y9JrRbk...' -> HTTP 401"
+        "Authorization 'Bearer ds--duX8Fap60g8lz...' -> HTTP 401"
       ],
-      "duration_s": 0.334,
-      "executed_at": "2026-11-04T09:08:20+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:51+05:30",
       "status": "Pass"
     },
     {
@@ -4127,8 +4127,8 @@
       "actual": [
         "GET /api/students/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.324,
-      "executed_at": "2026-11-04T09:08:20+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:51+05:30",
       "status": "Pass"
     },
     {
@@ -4152,8 +4152,8 @@
       "actual": [
         "GET /api/students/PES1UG24AM003/grades as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.343,
-      "executed_at": "2026-11-04T09:08:21+05:30",
+      "duration_s": 0.128,
+      "executed_at": "2026-11-04T20:54:51+05:30",
       "status": "Pass"
     },
     {
@@ -4177,8 +4177,8 @@
       "actual": [
         "GET /api/students/PES1UG24AM003/attendance as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.309,
-      "executed_at": "2026-11-04T09:08:22+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:51+05:30",
       "status": "Pass"
     },
     {
@@ -4202,8 +4202,8 @@
       "actual": [
         "GET /api/analytics/performance/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.33,
-      "executed_at": "2026-11-04T09:08:22+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:52+05:30",
       "status": "Pass"
     },
     {
@@ -4227,8 +4227,8 @@
       "actual": [
         "GET /api/analytics/trends/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.431,
-      "executed_at": "2026-11-04T09:08:23+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:52+05:30",
       "status": "Pass"
     },
     {
@@ -4252,8 +4252,8 @@
       "actual": [
         "GET /api/analytics/insights/PES1UG24AM003 as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.28,
-      "executed_at": "2026-11-04T09:08:24+05:30",
+      "duration_s": 0.123,
+      "executed_at": "2026-11-04T20:54:52+05:30",
       "status": "Pass"
     },
     {
@@ -4277,8 +4277,8 @@
       "actual": [
         "POST /api/reports as aarav -> HTTP 403, no data leaked"
       ],
-      "duration_s": 0.258,
-      "executed_at": "2026-11-04T09:08:24+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:52+05:30",
       "status": "Pass"
     },
     {
@@ -4302,8 +4302,8 @@
       "actual": [
         "POST -> 403, PUT -> 403; stored score still 20.0"
       ],
-      "duration_s": 0.359,
-      "executed_at": "2026-11-04T09:08:25+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:53+05:30",
       "status": "Pass"
     },
     {
@@ -4327,8 +4327,8 @@
       "actual": [
         "grade/profile/thresholds/audit -> [403, 403, 403, 403]; profile unchanged ('Aarav Sharma')"
       ],
-      "duration_s": 0.513,
-      "executed_at": "2026-11-04T09:08:26+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:53+05:30",
       "status": "Pass"
     },
     {
@@ -4351,8 +4351,8 @@
       "actual": [
         "HTTP GET -> 301 https://localhost/dashboard; HTTP POST -> 403; HSTS='max-age=31536000; includeSubDomains'; cookie Secure"
       ],
-      "duration_s": 0.265,
-      "executed_at": "2026-11-04T09:08:26+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:53+05:30",
       "status": "Pass"
     },
     {
@@ -4374,10 +4374,10 @@
         "expected": "TLS 1.2 and 1.3 handshakes succeed; TLS 1.0 and 1.1 handshakes fail."
       },
       "actual": [
-        "TLSv1: refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1032)); TLSv1.1: refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1032)); TLSv1.2: accepted (TLSv1.2, ECDHE-RSA-AES256-GCM-SHA384); TLSv1.3: accepted (TLSv1.3, TLS_AES_256_GCM_SHA384)"
+        "TLSv1: refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1000)); TLSv1.1: refused (SSLError: [SSL: TLSV1_ALERT_PROTOCOL_VERSION] tlsv1 alert protocol version (_ssl.c:1000)); TLSv1.2: accepted (TLSv1.2, ECDHE-RSA-AES256-GCM-SHA384); TLSv1.3: accepted (TLSv1.3, TLS_AES_256_GCM_SHA384)"
       ],
-      "duration_s": 0.569,
-      "executed_at": "2026-11-04T09:08:27+05:30",
+      "duration_s": 0.213,
+      "executed_at": "2026-11-04T20:54:53+05:30",
       "status": "Pass"
     },
     {
@@ -4401,8 +4401,8 @@
       "actual": [
         "spoofed GET -> HTTP 301; spoofed POST login -> HTTP 403"
       ],
-      "duration_s": 0.003,
-      "executed_at": "2026-11-04T09:08:27+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:53+05:30",
       "status": "Pass"
     },
     {
@@ -4425,8 +4425,8 @@
       "actual": [
         "9 accounts: pbkdf2:sha256:600000, salt length 16, 64-hex digest; no plaintext passwords found in DB file (143360 bytes scanned)"
       ],
-      "duration_s": 0.003,
-      "executed_at": "2026-11-04T09:08:27+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:53+05:30",
       "status": "Pass"
     },
     {
@@ -4448,8 +4448,8 @@
       "actual": [
         "same password -> 2 different hashes; correct verifies True; case-changed password verifies False"
       ],
-      "duration_s": 0.984,
-      "executed_at": "2026-11-04T09:08:29+05:30",
+      "duration_s": 0.484,
+      "executed_at": "2026-11-04T20:54:54+05:30",
       "status": "Pass"
     },
     {
@@ -4471,8 +4471,8 @@
       "actual": [
         "4 responses scanned; no password data found"
       ],
-      "duration_s": 0.483,
-      "executed_at": "2026-11-04T09:08:29+05:30",
+      "duration_s": 0.247,
+      "executed_at": "2026-11-04T20:54:54+05:30",
       "status": "Pass"
     },
     {
@@ -4492,10 +4492,10 @@
         "expected": "Three auth.login entries: success (fac.rao, user id), failure (fac.rao, \"wrong password\"), failure (ghost, \"unknown user\"); each with an ISO-8601 UTC timestamp within 60 s of now."
       },
       "actual": [
-        "entries=[('fac.rao', 'success', None), ('fac.rao', 'failure', 'wrong password'), ('ghost', 'failure', 'unknown user')]; timestamps ['2026-11-04T03:38:30+00:00', '2026-11-04T03:38:30+00:00', '2026-11-04T03:38:31+00:00']"
+        "entries=[('fac.rao', 'success', None), ('fac.rao', 'failure', 'wrong password'), ('ghost', 'failure', 'unknown user')]; timestamps ['2026-11-04T15:24:55+00:00', '2026-11-04T15:24:55+00:00', '2026-11-04T15:24:55+00:00']"
       ],
-      "duration_s": 0.951,
-      "executed_at": "2026-11-04T09:08:31+05:30",
+      "duration_s": 0.372,
+      "executed_at": "2026-11-04T20:54:55+05:30",
       "status": "Pass"
     },
     {
@@ -4515,10 +4515,10 @@
         "expected": "grade.update entry with user fac.rao, entity PES1UG24AM003, old 20, new 25; access.denied entry for aarav with the requested path."
       },
       "actual": [
-        "grade.update by fac.rao {'assessment': 'ISA', 'new': 25, 'old': 20.0, 'subject_code': 'AM301'} at 2026-11-04T03:38:31+00:00; access.denied for aarav {\"path\": \"/api/students/PES1UG24AM003/grades\"}"
+        "grade.update by fac.rao {'assessment': 'ISA', 'new': 25, 'old': 20.0, 'subject_code': 'AM301'} at 2026-11-04T15:24:55+00:00; access.denied for aarav {\"path\": \"/api/students/PES1UG24AM003/grades\"}"
       ],
-      "duration_s": 0.649,
-      "executed_at": "2026-11-04T09:08:32+05:30",
+      "duration_s": 0.246,
+      "executed_at": "2026-11-04T20:54:55+05:30",
       "status": "Pass"
     },
     {
@@ -4540,8 +4540,8 @@
       "actual": [
         "2 audit entries scanned; no passwords or tokens present"
       ],
-      "duration_s": 0.686,
-      "executed_at": "2026-11-04T09:08:33+05:30",
+      "duration_s": 0.244,
+      "executed_at": "2026-11-04T20:54:56+05:30",
       "status": "Pass"
     },
     {
@@ -4565,8 +4565,8 @@
       "actual": [
         "/api/students/..%2F..%2Fetc%2Fpasswd -> HTTP 404 'The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.'"
       ],
-      "duration_s": 0.355,
-      "executed_at": "2026-11-04T09:08:33+05:30",
+      "duration_s": 0.134,
+      "executed_at": "2026-11-04T20:54:56+05:30",
       "status": "Pass"
     },
     {
@@ -4590,8 +4590,8 @@
       "actual": [
         "/api/students/PES1'%20OR%20'1'='1 -> HTTP 404 'Student not found'"
       ],
-      "duration_s": 0.32,
-      "executed_at": "2026-11-04T09:08:34+05:30",
+      "duration_s": 0.124,
+      "executed_at": "2026-11-04T20:54:56+05:30",
       "status": "Pass"
     },
     {
@@ -4615,8 +4615,8 @@
       "actual": [
         "/api/analytics/performance/%3Cscript%3E -> HTTP 404 'Student not found'"
       ],
-      "duration_s": 0.308,
-      "executed_at": "2026-11-04T09:08:35+05:30",
+      "duration_s": 0.122,
+      "executed_at": "2026-11-04T20:54:56+05:30",
       "status": "Pass"
     },
     {
@@ -4639,8 +4639,8 @@
       "actual": [
         "4 pages checked, 0 problems: ['login', 'student dashboard', 'admin overview', 'admin student view']"
       ],
-      "duration_s": 0.594,
-      "executed_at": "2026-11-04T09:07:30+05:30",
+      "duration_s": 0.268,
+      "executed_at": "2026-11-04T20:54:29+05:30",
       "status": "Pass"
     },
     {
@@ -4662,8 +4662,8 @@
       "actual": [
         "Both error cases render role=\"alert\" message linked by aria-describedby"
       ],
-      "duration_s": 0.282,
-      "executed_at": "2026-11-04T09:07:30+05:30",
+      "duration_s": 0.125,
+      "executed_at": "2026-11-04T20:54:29+05:30",
       "status": "Pass"
     },
     {
@@ -4686,8 +4686,8 @@
       "actual": [
         "text/bg 16.46:1; text/surface 15.21:1; text-muted/bg 7.84:1; text-muted/surface 7.25:1; link/bg 7.36:1; link/surface 6.8:1; on-primary/primary 7.36:1; danger/bg 7.52:1; warning-text/warning-bg 7.51:1; border/bg 4.76:1; border/surface 4.4:1; focus/bg 5.49:1; focus/surface 5.08:1; chart-bar/surface 6.8:1; chart-line/surface 4.97:1"
       ],
-      "duration_s": 0.003,
-      "executed_at": "2026-11-04T09:07:30+05:30",
+      "duration_s": 0.001,
+      "executed_at": "2026-11-04T20:54:29+05:30",
       "status": "Pass"
     },
     {
@@ -4709,8 +4709,8 @@
       "actual": [
         ":focus-visible outline 3px; skip link shown on focus; viewport meta present; tables in scroll wrapper"
       ],
-      "duration_s": 0.003,
-      "executed_at": "2026-11-04T09:07:30+05:30",
+      "duration_s": 0.0,
+      "executed_at": "2026-11-04T20:54:29+05:30",
       "status": "Pass"
     },
     {
@@ -4734,8 +4734,8 @@
       "actual": [
         "student=PES1UG24AM001 CGPA=9.39 overall=86.91% attendance=95.0%; ?student_id=AM003 still returned PES1UG24AM001"
       ],
-      "duration_s": 0.402,
-      "executed_at": "2026-11-04T09:06:38+05:30",
+      "duration_s": 0.128,
+      "executed_at": "2026-11-04T20:54:15+05:30",
       "status": "Pass"
     },
     {
@@ -4759,8 +4759,8 @@
       "actual": [
         "API CGPA=7.82, attendance=60.0; HTML KPIs={'kpi-cgpa': '7.82', 'kpi-overall': '70.64', 'kpi-attendance': '60.0'}"
       ],
-      "duration_s": 0.377,
-      "executed_at": "2026-11-04T09:06:39+05:30",
+      "duration_s": 0.135,
+      "executed_at": "2026-11-04T20:54:15+05:30",
       "status": "Pass"
     },
     {
@@ -4783,8 +4783,8 @@
       "actual": [
         "API students=6, flagged=2, at_risk=2; HTML {'kpi-students': '6', 'kpi-flagged': '2', 'kpi-at-risk': '2'}"
       ],
-      "duration_s": 0.436,
-      "executed_at": "2026-11-04T09:06:40+05:30",
+      "duration_s": 0.129,
+      "executed_at": "2026-11-04T20:54:16+05:30",
       "status": "Pass"
     },
     {
@@ -4806,8 +4806,8 @@
       "actual": [
         "API 404, HTML 404 'Student not found'"
       ],
-      "duration_s": 0.419,
-      "executed_at": "2026-11-04T09:06:41+05:30",
+      "duration_s": 0.126,
+      "executed_at": "2026-11-04T20:54:16+05:30",
       "status": "Pass"
     },
     {
@@ -4832,8 +4832,8 @@
       "actual": [
         "flagged_count 2 -> 3; Rohan reasons ['Overall performance 44.55% (below 50%)', 'Failed AM302 (35.0%)']"
       ],
-      "duration_s": 0.394,
-      "executed_at": "2026-11-04T09:06:40+05:30",
+      "duration_s": 0.127,
+      "executed_at": "2026-11-04T20:54:16+05:30",
       "status": "Pass"
     },
     {
@@ -4856,8 +4856,8 @@
       "actual": [
         "subject bars=[('AM301', '42.0', '67.2'), ('AM302', '35.0', '56.0'), ('AM303', '45.0', '72.0')]; attendance bars=[('AM301', 80.0), ('AM302', 80.0), ('AM303', 80.0)]"
       ],
-      "duration_s": 0.451,
-      "executed_at": "2026-11-04T09:06:42+05:30",
+      "duration_s": 0.167,
+      "executed_at": "2026-11-04T20:54:17+05:30",
       "status": "Pass"
     },
     {
@@ -4880,8 +4880,8 @@
       "actual": [
         "points=[('1', '9.09', '54.56'), ('2', '9.36', '50.24'), ('3', '9.73', '44.32')]"
       ],
-      "duration_s": 0.352,
-      "executed_at": "2026-11-04T09:06:43+05:30",
+      "duration_s": 0.138,
+      "executed_at": "2026-11-04T20:54:17+05:30",
       "status": "Pass"
     },
     {
@@ -4905,8 +4905,8 @@
       "actual": [
         "AM302 bar value=50.0 height=80.0"
       ],
-      "duration_s": 0.458,
-      "executed_at": "2026-11-04T09:06:43+05:30",
+      "duration_s": 0.141,
+      "executed_at": "2026-11-04T20:54:17+05:30",
       "status": "Pass"
     },
     {
@@ -4929,8 +4929,8 @@
       "actual": [
         "HTTP 200; no SVG charts rendered; empty-state messages shown"
       ],
-      "duration_s": 0.364,
-      "executed_at": "2026-11-04T09:06:44+05:30",
+      "duration_s": 0.133,
+      "executed_at": "2026-11-04T20:54:17+05:30",
       "status": "Pass"
     }
   ]

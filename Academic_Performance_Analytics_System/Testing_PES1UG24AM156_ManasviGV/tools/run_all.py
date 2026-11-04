@@ -2,6 +2,9 @@
 
     python tools/run_all.py              # run all tests, then build deliverables/
     python tools/run_all.py --new-cycle  # archive the current results as cycle 1 first
+
+Refilling ../testing/ from blank templates is opt-in (--fill-templates) because teammates now edit
+those files directly on main; refilling would overwrite their changes.
 """
 import argparse
 import shutil
@@ -16,6 +19,8 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--new-cycle", action="store_true",
                         help="copy the current results/*.json to results/cycle1/ before running")
+    parser.add_argument("--fill-templates", action="store_true",
+                        help="also overwrite ../testing/ from team_templates/ (discards teammates' edits there)")
     args = parser.parse_args()
     results = ROOT / "results"
     if args.new_cycle and (results / "execution_results.json").exists():
@@ -26,7 +31,8 @@ def main():
         f.unlink()
     code = subprocess.call([sys.executable, "-m", "pytest", "-p", "no:cacheprovider"], cwd=ROOT)
     subprocess.check_call([sys.executable, str(ROOT / "tools" / "generate_reports.py")], cwd=ROOT)
-    subprocess.check_call([sys.executable, str(ROOT / "tools" / "fill_team_templates.py")], cwd=ROOT)
+    if args.fill_templates:
+        subprocess.check_call([sys.executable, str(ROOT / "tools" / "fill_team_templates.py")], cwd=ROOT)
     return code
 
 

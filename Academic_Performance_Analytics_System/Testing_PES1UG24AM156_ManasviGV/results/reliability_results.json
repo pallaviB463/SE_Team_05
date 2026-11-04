@@ -2,7 +2,7 @@
   "probes": 400,
   "successful": 400,
   "availability_pct": 100.0,
-  "window_s": 16.8,
+  "window_s": 1.9,
   "fault_requests": 400,
   "fault_status_codes": [
     400,

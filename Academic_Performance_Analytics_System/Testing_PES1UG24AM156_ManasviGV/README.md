@@ -51,7 +51,7 @@ Requires Python 3.10+ with `flask`, `pytest`, `requests`, `cryptography` and `py
 python3 tools/run_all.py
 ```
 
-That runs every test, rebuilds `deliverables/` and refills `../testing/`. To run only one suite:
+That runs every test and rebuilds `deliverables/`. It no longer touches `../testing/` (teammates edit those files on main); `--fill-templates` refills it from blank templates and overwrites their edits, so only use it deliberately. To run only one suite:
 
 ```bash
 python3 -m pytest tests/test_security.py -v
