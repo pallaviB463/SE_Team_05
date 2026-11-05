@@ -1,4 +1,7 @@
-
+"""
+Branch Coverage Test Suite
+Tests decision branches and boundary conditions in the traffic fine application.
+"""
 import pytest
 from traffic_fine import speeding_fine, license_action, total_penalty
 
