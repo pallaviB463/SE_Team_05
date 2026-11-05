@@ -1,0 +1,18 @@
+> coverage run -m pytest CodeCoverageTest_income_tax.py
+============================= test session starts =============================
+platform win32 -- Python 3.13.9, pytest-9.1.1, pluggy-1.6.0
+rootdir: C:\Users\palla\Downloads\Lab06\L6_L7_57_income_tax\LAB6
+plugins: anyio-4.15.1, langsmith-0.6.8, typeguard-4.6.0
+collected 16 items
+
+CodeCoverageTest_income_tax.py ................                          [100%]
+
+============================= 16 passed in 0.07s ==============================
+
+> coverage report -m --include="income_tax.py"
+Name            Stmts   Miss  Cover   Missing
+---------------------------------------------
+income_tax.py      39      0   100%
+---------------------------------------------
+TOTAL              39      0   100%
+
