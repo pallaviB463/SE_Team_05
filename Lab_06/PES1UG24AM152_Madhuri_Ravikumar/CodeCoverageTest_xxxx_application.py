@@ -1,4 +1,7 @@
-
+"""
+Code Coverage Test Suite
+Tests all major functions in the traffic fine application.
+"""
 import pytest
 from traffic_fine import speeding_fine, license_action, total_penalty
 
