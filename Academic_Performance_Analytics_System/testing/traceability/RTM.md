@@ -19,7 +19,7 @@
 | APAS-F-015 | Insights and recommendations | Functional | Medium | TC-PRED-03 | 3 (3 passed) | Pass | - |
 | APAS-NF-001 | Dashboard response time | Non-Functional | High | TC-PERF-01 | 3 (3 passed) | Pass (with limitation) | DEF-002 (closed) |
 | APAS-NF-002 | Monthly availability | Non-Functional | High | TC-REL-01 | 2 (2 passed) | Pass (with limitation) | - |
-| APAS-NF-003 | Access restrictions for records | Non-Functional | High | TC-SEC-01 | 3 (3 passed) | Pass | - |
+| APAS-NF-003 | Access restrictions for records | Non-Functional | High | TC-SEC-01, TC-SEC-02 | 3 (3 passed) | Pass | - |
 | APAS-NF-004 | Audit logging and retention | Non-Functional | High | TC-AUD-01 | 4 (4 passed) | Pass | - |
 | APAS-NF-005 | UI accessibility | Non-Functional | Medium | TC-UX-01 | 4 (4 passed) | Pass | - |
 | APAS-SR-001 | Secure user authentication | Security | High | TC-SEC-01 | 4 (4 passed) | Pass | - |
@@ -28,7 +28,7 @@
 | APAS-SR-004 | Secure password hashing | Security | High | TC-SEC-04 | 3 (3 passed) | Pass | - |
 | APAS-SR-005 | Security event audit logging | Security | High | TC-SEC-05 | 4 (4 passed) | Pass | - |
 
-All 25 requirements (15 functional, 5 non-functional, 5 security) map to at least one test case. TC-SEC-01 covers APAS-NF-003 and APAS-SR-001.
+All 25 requirements (15 functional, 5 non-functional, 5 security) map to at least one test case. TC-SEC-01 and TC-SEC-02 cover APAS-NF-003; TC-SEC-01 also covers APAS-SR-001.
 
 Execution status added by Manasvi G V from the cycle 2 run (2026-10-20). Sub-case counts include supporting cases mapped to the requirement (e.g. TC-SEC-05.4 also covers APAS-NF-003). Review note DOC-005: APAS-NF-003 is also exercised by TC-SEC-02 (role checks).
 
