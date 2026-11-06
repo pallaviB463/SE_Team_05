@@ -11,6 +11,27 @@ Full functional, non-functional, and security verification of the APAS reference
 |---|---|---|---|---|
 | 24 (88 sub-cases, 196 runs) | 24 (100%) | 0 | 0 | 0 |
 
+### 2.1 Final Automated Regression Verification
+
+**Execution Date:** 05-11-2026  
+**QA Lead:** Neha Rastogi  
+**Environment:** Windows, Python 3.11.9, Flask 3.1.3, pytest 9.1.1, SQLite 3.45.1
+
+| Metric | Result |
+|---|---|
+| Total automated test executions | 199 |
+| Passed | 199 |
+| Failed | 0 |
+| Pass percentage | 100% |
+| Regression status | PASS |
+
+**Defect Reverification:**
+
+- **DEF-001 (Critical):** Closed. TLS 1.0 and 1.1 connections were rejected, while TLS 1.2 and 1.3 were accepted.
+- **DEF-002 (Major):** Closed. Dashboard performance testing recorded an overall p95 response time of 1.209 seconds against the 3-second requirement, with 50 concurrent users and 300 requests.
+
+**Conclusion:** All 199 automated test executions passed. Both previously reported software defects have supporting verification evidence. No failures were observed in the final automated regression run.
+
 ## 3. Defects
 - Execution defects (Software): Identified: 2 | Resolved: 2 | Open: 0 | Open critical: 0
   - DEF-001 (Critical - HTTPS spoofing bypass): Closed

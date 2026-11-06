@@ -31,3 +31,25 @@
 All 25 requirements (15 functional, 5 non-functional, 5 security) map to at least one test case. TC-SEC-01 covers APAS-NF-003 and APAS-SR-001.
 
 Execution status added by Manasvi G V from the cycle 2 run (2026-10-20). Sub-case counts include supporting cases mapped to the requirement (e.g. TC-SEC-05.4 also covers APAS-NF-003). Review note DOC-005: APAS-NF-003 is also exercised by TC-SEC-02 (role checks).
+
+## Final Regression Verification — 05 November 2026
+
+**Verified by:** Neha Rastogi (QA Lead / Test Coordinator)
+
+| Verification Metric | Result |
+|---|---|
+| Requirements mapped | 25/25 (100%) |
+| Automated test executions | 199 |
+| Passed | 199 |
+| Failed | 0 |
+| Regression status | PASS |
+| DEF-001 | Closed — TLS verification passed |
+| DEF-002 | Closed — Dashboard performance verification passed |
+
+### Verification Evidence
+
+- `Testing_PES1UG24AM156_ManasviGV/results/execution_results.json`
+- `Testing_PES1UG24AM156_ManasviGV/results/tls_results.json`
+- `Testing_PES1UG24AM156_ManasviGV/results/performance_results.json`
+
+**Conclusion:** All 25 requirements remain mapped to test cases. The final automated regression run recorded 199 passes and zero failures. Both previously identified software defects are marked Closed and have supporting verification results. Previously documented testing limitations remain applicable.
