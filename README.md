@@ -46,7 +46,6 @@ A comprehensive student performance tracking system that analyzes grades, attend
   * **Static Review Approvals:** Formal sign-off on 9 documentation review findings documented in [`SRS_Review_Corrections.md`](Academic_Performance_Analytics_System/SRS_Review_Corrections.md).
 * **Sprint 2 Demo Video:** [`Academic_Performance_Analytics_System/Sprint_2_demo.mp4`](Academic_Performance_Analytics_System/Sprint_2_demo.mp4)
 * **Official Release:** [`v1.0.0`](https://github.com/pallaviB463/SE_Team_05/releases/tag/v1.0.0)
-* **Final Presentation:** Ready for presentations starting Nov 09, 2026.
 
 ---
 
