@@ -1,49 +1,47 @@
-
 # Lab 7 – Fuzz Testing: Traffic Fine Application
 
-## Overview
+## 1. Overview
 
-This lab focuses on fuzz testing a Python application that handles traffic fine information. The objective is to test how the application behaves when it receives different types of inputs, including valid, invalid, unexpected, and boundary-value inputs.
+This lab focuses on performing fuzz testing on a Python-based Traffic Fine Application using **Hypothesis** and **Pytest**.
 
-The application contains three main functions:
+The objective is to evaluate how the application handles valid, invalid, unexpected, and boundary-value inputs. Property-based testing is used to automatically generate different inputs and identify potential input-validation issues.
 
-1. `parse_ticket_id()` – Parses a traffic ticket ID into its prefix, year, and serial number.
-2. `total_fines()` – Calculates the total fine amount from comma-separated values, with a maximum limit of 10,000.
+The application consists of three main functions:
+
+1. `parse_ticket_id()` – Parses a ticket ID into its prefix, year, and serial number.
+2. `total_fines()` – Calculates the total fine amount from comma-separated values, subject to a maximum limit of 10,000.
 3. `speed_excess()` – Calculates the percentage by which a vehicle's speed exceeds the speed limit.
 
-## Objectives
+## 2. Objectives
 
 - Understand the concept of fuzz testing.
-- Generate different input values automatically.
+- Generate different inputs automatically using Hypothesis.
 - Test application behaviour with unexpected and malformed inputs.
 - Identify input-validation issues and runtime errors.
-- Improve the robustness of the application.
+- Improve application robustness through input validation.
 - Verify the implementation using automated tests.
 
-## Technologies Used
+## 3. Technologies Used
 
 - Python 3.11
 - Pytest – Testing framework.
 - Hypothesis – Property-based testing library.
 
-## Project Structure
+## 4. Project Structure
 
 ```text
-lab7/
+PES1UG24AM152_MadhuriRavikumar/
 │
 ├── traffic_fine.py
 ├── test_traffic_fine.py
 ├── README.md
-├── FUZZ_TESTING.md
-│
-├── ApplicationOutput.png
-├── Pytest_Results.png
-└── FuzzTesting.png
+├── Fuzz_Testing_Baseline_Results.md
+└── Screenshots.pdf
 ```
 
-## Implementation
+## 5. Application Implementation
 
-### 1. Ticket ID Parsing
+### 5.1 Ticket ID Parsing
 
 The `parse_ticket_id()` function accepts a ticket ID in the format:
 
@@ -53,7 +51,7 @@ It separates the prefix, year, and serial number, converts the numeric fields in
 
 Input validation is included to reject malformed ticket IDs and non-integer year or serial values.
 
-### 2. Total Fine Calculation
+### 5.2 Total Fine Calculation
 
 The `total_fines()` function accepts comma-separated fine amounts.
 
@@ -65,7 +63,7 @@ The function converts the values into integers and calculates their sum. If the 
 
 Negative values and invalid fine amounts are rejected.
 
-### 3. Speed Excess Calculation
+### 5.3 Speed Excess Calculation
 
 The `speed_excess()` function accepts a speed reading in the format:
 
@@ -73,7 +71,7 @@ The `speed_excess()` function accepts a speed reading in the format:
 
 It calculates the percentage by which the recorded speed exceeds the speed limit.
 
-The formula used is:
+Formula:
 
 ```python
 (speed - limit) * 100 // limit
@@ -81,7 +79,7 @@ The formula used is:
 
 Invalid readings and zero or negative speed limits are rejected.
 
-## Installation
+## 6. Installation
 
 Install the required dependencies:
 
@@ -89,7 +87,7 @@ Install the required dependencies:
 pip install pytest hypothesis
 ```
 
-## Running the Application
+## 7. Running the Application
 
 Execute:
 
@@ -113,7 +111,7 @@ Total Fines: 2000
 Percent Over Limit: 20
 ```
 
-## Running the Tests
+## 8. Running the Tests
 
 Execute the following command:
 
@@ -121,9 +119,9 @@ Execute the following command:
 pytest -v
 ```
 
-The test suite uses Pytest and Hypothesis to check the application's behaviour across generated and manually specified inputs.
+The test suite uses Pytest and Hypothesis to check application behaviour across generated and manually specified inputs.
 
-## Test Results
+## 9. Test Results
 
 The final test execution completed successfully:
 
@@ -132,20 +130,31 @@ The final test execution completed successfully:
 - Failed: 0
 - Execution time: 1.14 seconds
 
-## Screenshots
+The initial testing phase identified input-validation issues involving negative fine amounts, zero speed limits, and negative speed limits.
 
-The following screenshots document the application execution and testing process:
+These issues were addressed by adding validation checks to the application.
 
-| Screenshot | Description |
-|---|---|
-| `ApplicationOutput.png` | Successful execution of the traffic fine application |
-| `Pytest_Results.png` | Summary of the successful test execution |
-| `FuzzTesting.png` | Workflow of the fuzz testing process |
+## 10. Screenshots and Documentation
 
-## Conclusion
+The following evidence is included in `Screenshots.pdf`:
 
-Fuzz testing was performed on the traffic fine application using Hypothesis and Pytest. Different input values were tested to examine the behaviour of the three functions.
+- Successful execution of the Traffic Fine Application.
+- Initial fuzz testing results showing failures.
+- Final fuzz testing results showing all 13 tests passing.
+- Application implementation and execution evidence.
 
-During testing, input-validation issues involving negative fine amounts, zero and negative speed limits, and malformed ticket IDs were identified and addressed.
+Detailed methodology, test cases, identified issues, corrective actions, and final results are documented in:
 
-After implementing the validation checks, all 13 tests passed successfully. This demonstrates that the tested functions handle the selected valid, invalid, and boundary-value inputs as expected.
+`Fuzz_Testing_Baseline_Results.md`
+
+## 11. Conclusion
+
+Fuzz testing was performed on the Traffic Fine Application using Hypothesis and Pytest.
+
+The testing process examined valid inputs, arbitrary generated strings, None values, malformed ticket IDs, and boundary conditions involving fine amounts and speed limits.
+
+The initial tests helped identify input-validation issues. These issues were addressed by adding appropriate validation and exception handling to the application.
+
+After the changes, all 13 tests passed successfully.
+
+The lab demonstrates how property-based testing can explore a wider range of inputs than manually written test cases alone and improve application robustness.
